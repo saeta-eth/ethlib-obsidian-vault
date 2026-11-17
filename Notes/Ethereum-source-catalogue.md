@@ -32,6 +32,7 @@ Follow-up batch 5 adds [progressive SSZ presence](Progressive-SSZ-presence-and-c
 Follow-up batch 6 adds [creation collisions and rollback](Creation-collisions-rollback-and-destruction.md) for E04, [AES modes and authentication failure](AES-counter-modes-and-authentication-failure.md) for C03, [account validation and module authority](Account-abstraction-validation-and-module-authority.md) for A06.
 Follow-up batch 7 adds [EVM arithmetic and shift boundaries](EVM-word-arithmetic-and-shift-boundaries.md) for E05, [password KDF parameters and resource bounds](Password-KDF-parameters-and-resource-boundaries.md) for C05, and [token callback order and hook authority](Token-callback-order-and-hook-authority.md) for A09.
 Follow-up batch 8 adds [system calls and execution request commitments](System-calls-and-execution-request-commitments.md) for E07, [curve validation, ECDSA, and recovery boundaries](Curve-validation-ECDSA-and-recovery-boundaries.md) for C06, and a [payment URI revision assessment](Payment-URI-revisions-and-request-boundaries.md) for A13.
+Follow-up batch 9 adds [receipt status and block commitments](Receipts-status-gas-and-block-commitments.md) for E08, [deterministic nonce conversions](Deterministic-nonces-and-RFC6979-conversions.md) for C07, and a [cross-chain message and token-authority assessment](Cross-chain-message-identity-and-token-authority.md) for A14.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities

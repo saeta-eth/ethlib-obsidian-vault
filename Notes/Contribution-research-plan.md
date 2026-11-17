@@ -490,20 +490,50 @@ All selected numbered standards were already mapped, so the inventory remains 1,
 The 70 questions and priority assignments are unchanged.
 Each first entry leaves broader fork composition, cryptographic security, or consumer conformance for later work.
 
+### Follow-up batch 9: receipts, deterministic nonces, and cross-chain authority
+
+This batch connects three byte representations to the conditions their consumers must check.
+E08 separates receipt outcomes from other block commitments, C07 separates seed conversion from nonce rejection, and A14 separates message identity from token authority.
+E08 and C07 retain their When needed priorities; A14 remains Unresolved.
+The cross-chain entry assesses the interfaces without selecting a bridge or assigning an EthLib implementation.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E08: [receipt status and block commitments](Receipts-status-gas-and-block-commitments.md) | Execution consumers need to distinguish included-transaction outcomes, cumulative gas, surviving logs, and separately committed block objects. | Selected pinned EIPs and the Shanghai Yellow Paper support a complete constructed type-2 receipt and its status-zero variant. Later gas amendments, proposed logs, and a full header schema remain separate. |
+| C07: [deterministic nonce conversions](Deterministic-nonces-and-RFC6979-conversions.md) | Signing callers need exact fixed-width conversions, candidate bounds, and the selected hash/order profile before changing deterministic nonce generation. | RFC 6979's published P-256/SHA-256 control supports a nonce and HMAC-state calculation. The secp256k1 profile, local retry bound, distinct-hash variant, and low-s normalization retain their own conditions. |
+| A14: [cross-chain message and token-authority assessment](Cross-chain-message-identity-and-token-authority.md) | A bridge consumer needs separate source evidence, replay state, and local mint/burn permissions. | Complete ERC-5164/7802 texts and selected ABI rules support a constructed call with an 84-byte identity trailer and a conditional retry ledger. Bridge trust, finality, token mapping, and acceptance of trailing calldata need explicit assumptions. |
+
+The notes identify their selected source passages and applicability limits.
+The receipt note separates Final rules from Last Call/Draft log proposals and qualifies its London gas example.
+The nonce note keeps the Informational RFC's procedure and published P-256 control separate from code-profile observations and general security arguments.
+The cross-chain assessment preserves Last Call/Draft status, transport-verification SHOULD, and the replay/failure MUST requirements.
+Its Unresolved priority does not change when this first assessment is indexed.
+
+Independent calculations reproduced the complete 268-byte constructed receipt, status-zero encoding, and conditional gas subtraction.
+They reproduced RFC 6979's published P-256 nonce from the stated SHA-256, private-key, and order inputs, without checking a complete signature or curve operation.
+The nonce note distinguishes calculated HMAC intermediates from the published output.
+The calculations also checked the bridge-call selectors, published interface ID, 68-byte function data, 84-byte trailer, 152-byte combined calldata, and conditional ledger arithmetic.
+No EVM call, transaction execution, receipt-trie root, bridge transport, token call, EthLib binding, Lean build, or proof replay ran.
+
+All selected numbered standards and external references were already catalogued.
+The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the additional-source count remains 66 and the literature register remains at 17.
+The 70 questions and priority assignments are unchanged.
+Each first entry leaves broader fork composition, signature security, or a chosen bridge's conformance and trust model for later work.
+
 ## Current coverage
 
-41 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-29 families still need a first entry.
+44 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+26 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | C07 |
-| 3 | E08, E09, E10, E11, E12 |
+| 2 | None. |
+| 3 | E09, E10, E11, E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
 | 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
-| 6 | A14, A15 |
+| 6 | A15 |
 
 ## Assess sources systematically
 
@@ -641,5 +671,6 @@ Follow-up batch 5 adds three bounded source notes, with progressive-layout roots
 Follow-up batch 6 adds three bounded source notes, with CREATE2 address and gas calculations, published CTR blocks and derived GCM cases, and account nonce/mode/call bytes.
 Follow-up batch 7 adds three bounded source notes, with published shift/copy controls, password-derivation outputs and qualified cost arithmetic, and hook lookup/selector and nested-send calculations.
 Follow-up batch 8 adds two bounded source notes and a URI revision assessment, with request bytes and hashes, standalone curve/signature/recovery arithmetic, and fixed URI-field and exact amount checks.
+Follow-up batch 9 adds two bounded source notes and a cross-chain assessment, with constructed receipt bytes, a published deterministic nonce and HMAC-state calculation, and bridge-call/conditional-ledger checks.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
