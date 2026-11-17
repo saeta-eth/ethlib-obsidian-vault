@@ -637,10 +637,39 @@ There remain 1,232 inventory documents, 138 mapped and 1,094 Unassessed; additio
 The 70 questions, numbered-source family assignments, and priorities are unchanged.
 A selected fork/preset, trusted checkpoint procedure, or complete external-builder deployment still requires its own assessment.
 
+### Follow-up batch 14: checkpoint assumptions and light-client choices
+
+This batch separates a calculated age, a client store's progress, and proposed changes to its protocol.
+N03 connects changing weight to checkpoint assumptions, N04 traces conditional light-client updates, and N05 compares incompatible candidate directions.
+Their First, When needed, and Unresolved priorities remain unchanged.
+The entries do not choose a trusted checkpoint, deployed fork, or replacement proof system.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| N03: [weak subjectivity, churn, and balance changes](Weak-subjectivity-churn-and-balance-change-boundaries.md) | Consensus contributions need separate bounds for membership changes, balance changes, and the checkpoint supplied to an age check. | Two pinned EIPs and selected Gasper v3 passages support complete conditional period arithmetic and precise checked-arithmetic hypotheses. Source units remain unresolved, and neither the formula nor its example establishes trace safety or checkpoint authenticity. |
+| N04: [light-client trusted roots and updates](Light-client-trusted-roots-and-update-boundaries.md) | A light-client consumer needs an external anchor and must distinguish validation, optimistic progress, normal finality, and committee rotation. | Pinned peer-specification support and API schemas supply threshold/period cases under explicit cryptographic assumptions. Forced-store progression remains separate from consensus finality. |
+| N05: [light-client amendment candidates](Light-client-amendment-candidates-and-applicability.md) | An amendment contribution needs one selected proposal and a composition rule before changing historical proofs or removing their objects. | Three complete pinned proposal texts support a conditional backfill comparator and applicability map. Older supporting revisions, missing infrastructure, and activation-unit ambiguity remain explicit. |
+
+The weak-subjectivity note preserves EIP-8061's stated ETH cap and bare constant as distinct readings rather than silently choosing a conversion.
+It separates a checked arithmetic result and a safety-margin theorem's additional bound from claims about actual balance-change histories.
+The baseline light-client note treats committee positions separately from stake and preserves strict optimistic versus inclusive two-thirds comparisons.
+It records that the optional timeout path can promote an attested header into a field named finalized without the normal path's finality evidence.
+The amendment assessment retains N05's Unresolved priority and does not combine sync-committee additions with removal absent transition rules.
+
+Independent integer calculations reproduced both unit interpretations, the separate Gwei floors, positive divisor, displayed overflow bounds, and conditional inclusive checkpoint-age comparison.
+They checked the four 512-position update cases, period/slot ordering, assumed-valid committee rotation, backfill-ranking cases and tie controls, and the conditional 2/64 reward fraction.
+No inactivity-leak or beacon transition, checkpoint authentication, Merkle/BLS verification, full update/backfill fixture, RPC, ZK proof system, benchmark, EthLib binding, Lean build, or proof replay ran.
+
+The catalogue pins N04's supporting/API sources and updates R05's selected reading to include section 8.7.
+Reusing the already listed Beacon API pin removes its last generic URL, so additional source entries decrease from 70 to 69.
+The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed, with 17 literature entries.
+The 70 questions, numbered-source family assignments, and priorities are unchanged.
+Configuration units, trace bounds, anchor acquisition, and a selected amendment composition remain later work.
+
 ## Current coverage
 
-56 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-14 families still need a first entry.
+59 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+11 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
@@ -649,7 +678,7 @@ An entry covers its stated question and reading depth, rather than the entire fa
 | 2 | None. |
 | 3 | E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N03, N04, N05, N07, N08 |
+| 5 | N07, N08 |
 | 6 | None. |
 
 ## Assess sources systematically
@@ -793,5 +822,6 @@ Follow-up batch 10 adds three bounded source entries, with a constructed account
 Follow-up batch 11 adds three bounded source entries, with conditional fork/signature arithmetic, published QUIC Initial-key controls, and constructed deletion/history JSON checks.
 Follow-up batch 12 adds a state-tree design assessment and two bounded source notes, with layout/preimage arithmetic, conditional gossip transitions, and archive-framing/index checks.
 Follow-up batch 13 adds three bounded source notes, with a constructed shuffle/filter trace, root-response JSON checks, and unsigned builder-registration bytes and value arithmetic.
+Follow-up batch 14 adds two bounded source notes and an amendment assessment, with qualified period arithmetic, conditional light-client updates, and proposal-ranking/fraction checks.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
