@@ -666,10 +666,36 @@ The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed, with 17 
 The 70 questions, numbered-source family assignments, and priorities are unchanged.
 Configuration units, trace bounds, anchor acquisition, and a selected amendment composition remain later work.
 
+### Follow-up batch 15: availability evidence and consensus models
+
+This batch separates data retrieval, proposed block obligations, and research-model conclusions.
+N06 connects cells to custody and recovery, N07 separates commitments from execution and payment, and N08 compares historical tree selection with ledger properties.
+Their existing priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| N06: [PeerDAS custody and recovery boundaries](PeerDAS-custody-sampling-and-recovery-boundaries.md) | Data-availability contributions need separate cryptographic bindings, distinct-index thresholds and peer-service assumptions. | Pinned EIPs and linked Fulu passages supply a complete node-ID-zero assignment and cell-byte exercise. Counts establish neither code binding nor adversarial-network availability. |
+| N07: [enshrined PBS and inclusion-list obligations](Enshrined-PBS-and-inclusion-list-obligations.md) | Block contributions need actor-specific timing, pending-payment stages, and a validator's frozen inclusion view. | Selected EIP-7732 and complete EIP-7805 support conditional thresholds, reservation arithmetic and terminal eligibility cases. Timing, domain allocation and schemas still need a selected joint composition. |
+| N08: [GHOST and Bitcoin Backbone assumptions](GHOST-subtrees-and-Bitcoin-Backbone-assumptions.md) | Consensus comparisons need a defined tree weight and explicit communication, adversary and ledger-property hypotheses. | Exact conference versions support a complete equal-difficulty tree and selected property statements. The later ePrint argument and complete proofs remain unread or unaudited. |
+
+The PeerDAS example keeps deterministic custody distinct from locally randomized peer sampling and requires distinct cells from the same row for recovery.
+The PBS comparison preserves payload timeliness versus execution validation, PTC counts versus attesting balance, and withdrawal stages versus a payment receipt.
+The inclusion-list case checks missing transactions against payload-end state, with provisional timing and composition questions explicit.
+The historical comparison distinguishes subtree work from latest validator messages and preserves the selected conference version's liveness quantifiers.
+
+Independent Python calculations reproduced the eight custody hashes, sorted sets, cell counts and threshold countercase.
+They checked timing fractions, strict vote boundaries, reservation and payment-weight arithmetic, conditional arrival/terminal checks, subtree sizes, depths and both selected paths.
+No KZG/Merkle/BLS verification, reconstruction, network, full transition, transaction execution, payment, mining simulation, probability bound, EthLib binding, Lean build or proof replay ran.
+
+The catalogue pins N06's EIP-linked supporting revision and adds the separately identified Backbone publisher PDF.
+Additional source entries increase from 69 to 71, while the inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed, with 17 literature entries.
+The 70 questions, numbered-source family assignments and priorities are unchanged.
+Network assumptions, joint proposal composition and full research arguments remain later work.
+
 ## Current coverage
 
-59 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-11 families still need a first entry.
+62 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+8 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
@@ -677,8 +703,8 @@ An entry covers its stated question and reading depth, rather than the entire fa
 | 1 | None. |
 | 2 | None. |
 | 3 | E12 |
-| 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N07, N08 |
+| 4 | C02, C10, C11, C12, C13, C14, C15 |
+| 5 | None. |
 | 6 | None. |
 
 ## Assess sources systematically
