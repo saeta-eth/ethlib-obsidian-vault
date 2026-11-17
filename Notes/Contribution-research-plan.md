@@ -550,19 +550,47 @@ The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the 
 The 70 questions, source-family assignments, and priority recommendations are unchanged.
 Each first entry leaves a complete verifier audit, network admission policy, or chosen governance consumer for later work.
 
+### Follow-up batch 11: activation, transport identity, and signing operations
+
+This batch separates three kinds of conditions that a consumer must preserve.
+E11 qualifies execution rules by their activation, W06 separates transport key derivation from identity, and I04 assigns key-movement obligations to the operation and actor that supply them.
+All three retain their When needed priorities.
+The notes support future contribution decisions without selecting a new EthLib implementation.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E11: [historical fork activation and Merge boundaries](Historical-fork-activation-and-Merge-boundaries.md) | Historical validation needs the activation condition and surviving transaction forms, as well as the amended header rules. | Five pinned EIPs and selected Shanghai Yellow Paper passages support legacy v arithmetic and a conditional terminal-difficulty trace. Complete PoW validity and PoS canonical selection remain separate. |
+| W06: [TLS/QUIC transcripts and Initial keys](TLS-QUIC-transcripts-and-initial-key-boundaries.md) | Transport consumers need to know which transcript, key, certificate, and intended identity each check covers. | Selected primary RFCs and pinned libp2p profiles support the complete published QUIC v1 Initial-key control. Certificate, Finished, packet, and connection execution remain outside scope. |
+| I04: [key-management and remote-signing obligations](Key-management-and-remote-signing-obligations.md) | Key movement must preserve signing history and distinguish local deletion from remote signer registration or signing. | Exact API schema revisions and selected keystore/interchange rules support conditional per-key deletion outcomes. A successful HTTP response does not establish all keys were removed or all copies stopped signing. |
+
+The notes identify their source versions, reading depth, and applicability limits.
+The historical note preserves EIP-155's SHOULD/MUST distinction and EIP-4399's override of the original zero mixHash constant.
+The transport note keeps four encryption levels separate from three packet-number spaces and treats public Initial derivation separately from authenticated identity.
+The key-management note keeps local deletion atomicity, retained history, remote registration, and optional signingRoot verification within their stated schema scopes.
+ERC-2335 remains Review and EIP-3076 remains Last Call at the selected snapshots; their metadata is distinct from the interchange format version.
+
+Independent calculations reproduced the scaled threshold and signature-v arithmetic and the empty-ommer hash.
+They reproduced RFC 9001 Appendix A.1's five complete labels and nine secret/key/IV values, and checked the constructed deletion JSON, byte lengths, status/history alignment, and repeat-history conditions.
+No PoW/PoS block validation, signature, TLS/QUIC packet, certificate, network endpoint, actual key deletion, remote signing, EthLib binding, Lean build, or proof replay ran.
+
+The catalogue now pins both official API repositories at the revisions read by I04.
+The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the additional-source count remains 66 and the literature register remains at 17.
+The 70 questions, source-family assignments, and priority recommendations are unchanged.
+Each entry leaves complete transition validation, connection processing, or a chosen signing deployment for later work.
+
 ## Current coverage
 
-47 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-23 families still need a first entry.
+50 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+20 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
 | 2 | None. |
-| 3 | E10, E11, E12 |
+| 3 | E10, E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W06, W07, I02, I03, I04, I06 |
+| 5 | N02, N03, N04, N05, N07, N08, W07, I02, I03, I06 |
 | 6 | None. |
 
 ## Assess sources systematically
@@ -703,5 +731,6 @@ Follow-up batch 7 adds three bounded source notes, with published shift/copy con
 Follow-up batch 8 adds two bounded source notes and a URI revision assessment, with request bytes and hashes, standalone curve/signature/recovery arithmetic, and fixed URI-field and exact amount checks.
 Follow-up batch 9 adds two bounded source notes and a cross-chain assessment, with constructed receipt bytes, a published deterministic nonce and HMAC-state calculation, and bridge-call/conditional-ledger checks.
 Follow-up batch 10 adds three bounded source entries, with a constructed account proof and conditional absence, published fork-hash controls and capability arithmetic, and clock/delegation/metadata calculations.
+Follow-up batch 11 adds three bounded source entries, with conditional fork/signature arithmetic, published QUIC Initial-key controls, and constructed deletion/history JSON checks.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
