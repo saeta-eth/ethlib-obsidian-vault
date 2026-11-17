@@ -434,18 +434,46 @@ All selected numbered standards were already mapped, so the inventory remains 1,
 The 70 questions and priority assignments are unchanged.
 Each first entry leaves deeper fork composition, lifecycle history, or implementation-specific account behaviour for later work.
 
+### Follow-up batch 7: word boundaries, password cost, and token hooks
+
+This batch follows three caller obligations through small, explicit examples.
+E05 distinguishes word interpretation from memory ranges, C05 separates password-derivation validity from affordable resources, and A09 separates hook registration from spending authority.
+Their When needed priorities remain unchanged.
+The selection supplies bounded source knowledge without assigning new EthLib implementations.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E05: [word arithmetic and shift boundaries](EVM-word-arithmetic-and-shift-boundaries.md) | Execution callers need exact signed rounding, large-shift, overlap, and memory-growth semantics before replacing instructions or proving rewrites. | Selected Yellow Paper rules and seven opcode EIPs support published shift/copy controls and derived arithmetic. Environment values and opcode availability retain their fork and caller context. |
+| C05: [password KDF parameters and resource boundaries](Password-KDF-parameters-and-resource-boundaries.md) | Keystore callers need algorithm bounds and resource-admission policy to remain separate from password preparation and decryption. | RFC 8018/7914 and selected ERC-2335 passages support complete small controls, block counts, and qualified memory/work models. Expensive fixture derivation and current protection-cost recommendations remain outside scope. |
+| A09: [token callback order and hook authority](Token-callback-order-and-hook-authority.md) | Token consumers need to identify who selects a callback, which balances it observes, and what its rejection undoes. | Pinned ERC-223/777/1363/1820 and ERC-820's supersession notice support lookup/selector calculations and a conditional nested-send ledger. Source tensions and operator authority remain distinct. |
+
+The notes identify their selected source passages and applicability limits.
+The password note distinguishes Informational RFCs from deployment policy and explicitly qualifies EthLib's buffer-payload and mixed-work models.
+The callback note retains ERC-223 return/event-order tensions and the difference between ERC-1820's prose and embedded registration exceptions.
+These readings do not establish general reentrancy safety, an application's resource budget, or arbitrary environment validity.
+
+Independent calculations matched all 38 printed EIP-145 controls, published MCOPY overlap cases, and derived zero-length and memory-expansion arithmetic.
+They reproduced RFC 7914's complete small PBKDF2/scrypt outputs, the two single-iteration HMAC blocks, and the selected table/core counts and memory/work model totals.
+They also reproduced the registry-name hashes, callback selectors, and the nested-send ledger's conserved total of 110.
+No EVM, token callback, registry, heavy scrypt case, EthLib binding, Lean build, or proof replay ran.
+
+All selected numbered standards and external references were already catalogued.
+The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed, the additional-source count remains 65, and the literature register remains at 17.
+The 70 questions and priority assignments are unchanged.
+Each first entry leaves broader opcode composition, password-security policy, or application-specific hook behaviour for later work.
+
 ## Current coverage
 
-35 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-35 families still need a first entry.
+38 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+32 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
 | 2 | C06, C07 |
-| 3 | E05, E07, E08, E09, E10, E11, E12, A09 |
-| 4 | C02, C05, C10, C11, C12, C13, C14, C15, N06 |
+| 3 | E07, E08, E09, E10, E11, E12 |
+| 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
 | 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
 | 6 | A13, A14, A15 |
 
@@ -583,5 +611,6 @@ Follow-up batch 3 adds three reviewed notes, with hash-padding, curve/HKDF, sign
 Follow-up batch 4 adds three reviewed notes, with ModExp byte/gas cases, interchange JSON/refusal arithmetic, and a contract-signature ABI wrapper calculation.
 Follow-up batch 5 adds three bounded source notes, with progressive-layout roots and branches, published CRC controls and complete Snappy frames, and metadata/event/royalty calculations.
 Follow-up batch 6 adds three bounded source notes, with CREATE2 address and gas calculations, published CTR blocks and derived GCM cases, and account nonce/mode/call bytes.
+Follow-up batch 7 adds three bounded source notes, with published shift/copy controls, password-derivation outputs and qualified cost arithmetic, and hook lookup/selector and nested-send calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

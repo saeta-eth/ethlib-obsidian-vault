@@ -30,6 +30,7 @@ Follow-up batch 3 adds [Keccak and SHA-3 padding](Keccak-SHA3-padding-and-domain
 Follow-up batch 4 adds [MODEXP bytes and gas](Modexp-precompile-bytes-and-gas.md) for E06, [slashing-protection imports](Slashing-protection-imports-and-missing-roots.md) for I05, and [contract-signature validation](Contract-signatures-and-counterfactual-validation.md) for A05.
 Follow-up batch 5 adds [progressive SSZ presence](Progressive-SSZ-presence-and-compatible-schemas.md) for S03, [Snappy frames and response boundaries](Snappy-frames-and-response-chunk-boundaries.md) for W04, and [metadata updates and royalty queries](Metadata-updates-and-royalty-query-limits.md) for A08.
 Follow-up batch 6 adds [creation collisions and rollback](Creation-collisions-rollback-and-destruction.md) for E04, [AES modes and authentication failure](AES-counter-modes-and-authentication-failure.md) for C03, [account validation and module authority](Account-abstraction-validation-and-module-authority.md) for A06.
+Follow-up batch 7 adds [EVM arithmetic and shift boundaries](EVM-word-arithmetic-and-shift-boundaries.md) for E05, [password KDF parameters and resource bounds](Password-KDF-parameters-and-resource-boundaries.md) for C05, and [token callback order and hook authority](Token-callback-order-and-hook-authority.md) for A09.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities
