@@ -36,7 +36,7 @@ The census resolves 365 Moved entries to their ERC destinations, leaving 1,232 d
 It includes all statuses and categories in those snapshots.
 It excludes unmerged proposals and files outside the numbered document paths; RFCs, API repositories, and papers have their separate catalogue entries.
 
-Of those documents, 136 are mapped to at least one candidate family and 1,096 remain Unassessed for note relevance.
+Of those documents, 138 are mapped to at least one candidate family and 1,094 remain Unassessed for note relevance.
 Mapping is a proposed knowledge connection, not evidence that the entire source has been reviewed or that EthLib implements it.
 The paper register is a literature seed rather than a complete literature survey.
 
@@ -125,7 +125,7 @@ The reading also assesses two previously Unassessed inventory entries:
 | EIP-7 → A10 | Its caller/value rules are a direct prerequisite for explaining a proxy's `DELEGATECALL` context. | Overview, Specification, and Rationale; gas amendments are outside the proxy trace. |
 | EIP-2780 → E02 | Its runtime-gas rules explain why failure before the first frame differs from failure inside it. | Selected runtime-gas and authorization-processing sections; Last Call at the inventory pin, without a network activation claim. |
 
-These source mappings bring the total to 131 mapped documents and 1,101 Unassessed documents without changing the metadata census or family priorities.
+At the Phase 3 delivery, these source mappings brought the total to 131 mapped documents and 1,101 Unassessed documents without changing the metadata census or family priorities.
 After follow-up batch 1, ten Phase 3 families still needed their first source note:
 
 | Family | Next bounded question |
@@ -204,7 +204,7 @@ Independent calculations checked the quorum example, identity preimage/protobuf/
 PyCryptodome 3.23.0 reproduced the public RFC 8032 signature control and checked a signature on the constructed identity message, including rejection of changed messages.
 This did not run a Noise handshake, EthLib, a consensus client, or an Engine endpoint.
 
-The catalogue adds RFC 8032 and RFC 7748 as primary support for W05's identity and DH example, bringing its additional source entries to 57.
+Phase 5 added RFC 8032 and RFC 7748 as primary support for W05's identity and DH example, bringing additional source entries to 57.
 I01's Engine API entry now pins the revision read by the note and cited by EthLib.
 The numbered inventory, source mappings, and family priorities stay unchanged.
 The notes preserve source limitations: shared fixed-set assumptions for the one-third bound, a libp2p actor-wording defect, and unspecified total precedence among simultaneous Engine failures.
@@ -253,10 +253,10 @@ A separate metadata comparison checked all 1,232 records on the tracked fields a
 These checks did not execute a vault, resolver, Provider, wallet, or EthLib.
 
 The four assessed EIPs, 2255, 3085, 3326, and 5792, now map to A11.
-This brings the mapped total to 135 and leaves 1,097 Unassessed entries in the baseline census.
+At the Phase 6 delivery, these mappings brought the total to 135 and left 1,097 Unassessed entries in the baseline census.
 A11's When needed priority is retained; the assessment does not settle every request schema or source discrepancy.
 RFC 1035 joins A12's encoding references, and R17, the fixed-version DeFi systematization paper, supplies contextual reading for A07.
-The catalogue now has 17 literature entries and 59 additional source entries, with all 70 family priorities unchanged.
+At that delivery, the catalogue had 17 literature entries and 59 additional source entries, with all 70 family priorities unchanged.
 
 The refresh observed an unchanged EIPs head and a newer ERCs head, `50b3a3cdd2c12e2b81288b56f073c0ee812f95a8`.
 It found no added or removed IDs, tracked metadata changes, or changed redirects: the census remains 607 EIPs and 625 ERCs with 365 resolved redirects.
@@ -302,8 +302,8 @@ These are source-model and example checks, without executing EthLib, the officia
 
 EIP-1283 moves from Unassessed to E03 because EIP-2200 explicitly inherits its original/current/new vocabulary.
 The assessment covers that definition passage as a historical prerequisite, not its superseded standalone gas schedule or complete argument.
-This brings the inventory to 136 mapped documents and 1,096 Unassessed documents, with its 1,232 source records and baseline pins retained.
-The historical SSZ Merkle-proof document joins S02's references, bringing additional source entries to 60.
+At the follow-up batch 1 delivery, this brought the inventory to 136 mapped documents and 1,096 Unassessed documents, with its 1,232 source records and baseline pins retained.
+The historical SSZ Merkle-proof document joined S02's references, bringing additional source entries to 60.
 The literature register stays at 17 entries.
 
 At the follow-up batch 1 delivery, 20 of the 70 families had a first note or assessment entry, and 50 still needed one.
@@ -350,22 +350,49 @@ Their original priorities remain unchanged.
 Each note received a separate source review, including selected Lean definitions where the note cites them.
 Independent calculations reproduced hash outputs and padding boundaries, published discovery-v5 ECDH/HKDF keys and the identity-preimage hash, and receiver selectors, XOR, and balance arithmetic.
 No ECDSA verification, contract execution, live handshake, EthLib execution, or Lean proof replay ran.
-The added original Keccak reference brings additional source entries to 61; the numbered census remains 136 mapped and 1,096 Unassessed, with 17 literature entries unchanged.
+At the follow-up batch 3 delivery, the original Keccak reference brought additional source entries to 61.
+The numbered census then had 136 mapped and 1,096 Unassessed entries, with 17 literature entries unchanged.
 C01 retains bit-oriented APIs and cryptanalysis, W02 retains complete packet/state transitions, and A02 retains implementation-specific callback and hybrid-policy cases.
+
+
+### Follow-up batch 4: precompile contracts, signing history, and contract policy
+
+This batch separates three caller boundaries: a precompile's byte contract, a validator's imported history, and a signing account's validation policy.
+E06 extends execution knowledge beyond integer arithmetic, I05 connects key movement to future refusal conditions, and A05 distinguishes arbitrary contract policy from ECDSA recovery.
+Their original When needed priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E06: [MODEXP bytes and gas](Modexp-precompile-bytes-and-gas.md) | Precompile callers need declared lengths, output width, and a chosen fork's gas relation in addition to a modular power. | Short-exponent examples compose EIP-198/2565 and the pinned Yellow Paper. The long-exponent wording difference and later amendments remain separate questions. |
+| I05: [slashing-protection imports](Slashing-protection-imports-and-missing-roots.md) | Signing-history contributions need refusal floors, repeat evidence, and preserved boundaries across imports. | A constructed EIP-3076 file exposes unknown roots, minimums, conservative maxima, and repeated imports, with parser/proof limits identified. |
+| A05: [contract signatures](Contract-signatures-and-counterfactual-validation.md) | Signature callers need the expected account's current policy and exact wrapper-first validation order. | ERC-1271/6492 supply a complete synthetic ABI wrapper and conditional deployment/preparation trace. Reference-helper branches remain distinct from broad prose assurances. |
+
+EIP-7823 and EIP-7883 move from Unassessed to E06 because they directly amend the same precompile's length acceptance and price.
+Reading covered their selected Specifications as later-amendment context, not complete arithmetic proofs, deployment evidence, or a calculation of the later fork's full behavior.
+Both are Final at the pinned EIPs revision; status is separate from applicability to the Berlin examples.
+These assessments bring the census to 138 mapped and 1,094 Unassessed entries, with all 1,232 source records and metadata pins retained.
+The catalogue keeps 61 additional source entries and 17 literature entries; its added Yellow Paper link for E06 already existed in other families.
+
+Each note received a separate source review, including selected Lean definitions and theorem statements where cited, followed by an integration review.
+Independent calculations checked nine bounded ModExp byte/gas cases, the complete interchange fixture and conditional refusal/import arithmetic, and the contract-signature selector and ABI wrapper.
+No EVM, signer, BLS/signature verification, deployment, EthLib execution, or Lean proof replay ran.
+
+E06 retains long-exponent and later-fork cases, I05 retains full database concurrency and signer integration, and A05 retains deployed-helper and account-policy audits.
+The initial entries do not exhaust these families.
 
 ## Current coverage
 
-26 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-44 families still need a first entry.
+29 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+41 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | S03, C06, C07, A05, A06 |
-| 3 | E04, E05, E06, E07, E08, E09, E10, E11, E12, A09 |
+| 2 | S03, C06, C07, A06 |
+| 3 | E04, E05, E07, E08, E09, E10, E11, E12, A09 |
 | 4 | C02, C03, C05, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W03, W04, W06, W07, I02, I03, I04, I05, I06 |
+| 5 | N02, N03, N04, N05, N07, N08, W03, W04, W06, W07, I02, I03, I04, I06 |
 | 6 | A08, A13, A14, A15 |
 
 ## Assess sources systematically
@@ -499,5 +526,6 @@ The Phase 6 calculations used exact rational arithmetic, PyCryptodome 3.23.0 for
 Follow-up batch 1 adds three reviewed notes, with Python 3.14.8 standard-library byte, hash, HMAC, and gas-model calculations.
 Follow-up batch 2 adds three reviewed notes, with independent JSON, RLP, Keccak, curve-coordinate, and conditional permit-state calculations.
 Follow-up batch 3 adds three reviewed notes, with hash-padding, curve/HKDF, signature-preimage, selector, and conditional transfer calculations.
+Follow-up batch 4 adds three reviewed notes, with ModExp byte/gas cases, interchange JSON/refusal arithmetic, and a contract-signature ABI wrapper calculation.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

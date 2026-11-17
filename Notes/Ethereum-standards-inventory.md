@@ -60,8 +60,8 @@ Review changed requirements and applicability before updating a source note.
 
 ## Assessment meaning
 
-136 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
-The remaining 1096 are Unassessed for note relevance.
+138 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
+The remaining 1094 are Unassessed for note relevance.
 A family link is a proposed knowledge connection, not evidence that the full document has been read or that EthLib implements it.
 Unassessed does not mean irrelevant, rejected, or lower priority.
 Requires lists the source metadata dependencies; it is not a complete cross-specification dependency graph.
@@ -367,7 +367,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-7805](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7805.md) Fork-choice enforced Inclusion Lists (FOCIL) | Draft | None recorded | N07 |
 | [EIP-7807](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7807.md) SSZ execution blocks | Draft | 7495, 7773, 7916 | Unassessed |
 | [EIP-7819](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7819.md) SETDELEGATE instruction | Draft | 7702 | Unassessed |
-| [EIP-7823](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7823.md) Set upper bounds for MODEXP | Final | 198 | Unassessed |
+| [EIP-7823](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7823.md) Set upper bounds for MODEXP | Final | 198 | E06 |
 | [EIP-7825](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7825.md) Transaction Gas Limit Cap | Final | None recorded | Unassessed |
 | [EIP-7830](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7830.md) Contract size limit increase for EOF | Stagnant | 170, 3540, 3860 | Unassessed |
 | [EIP-7833](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7833.md) Scheduled function calls | Stagnant | None recorded | Unassessed |
@@ -381,7 +381,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-7873](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7873.md) EOF - TXCREATE and InitcodeTransaction type | Stagnant | 3540, 3670, 3860, 7620 | Unassessed |
 | [EIP-7877](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7877.md) Enhanced RETURN opcodes | Stagnant | 6, 1153, 3855 | Unassessed |
 | [EIP-7880](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7880.md) EOF - EXTCODEADDRESS instruction | Review | 7692, 7702, 7761 | Unassessed |
-| [EIP-7883](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7883.md) ModExp Gas Cost Increase | Final | 2565 | Unassessed |
+| [EIP-7883](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7883.md) ModExp Gas Cost Increase | Final | 2565 | E06 |
 | [EIP-7885](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7885.md) Precompile for NTT operations | Draft | None recorded | Unassessed |
 | [EIP-7886](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7886.md) Delayed execution | Stagnant | 1559, 2930, 4844, 7623, 7702 | Unassessed |
 | [EIP-7889](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7889.md) Emit log on revert | Stagnant | None recorded | Unassessed |
