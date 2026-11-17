@@ -717,10 +717,35 @@ Additional source entries increase from 71 to 72, with 17 literature entries.
 The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed; the 70 questions, numbered-source family assignments and priorities remain unchanged.
 Reading the corrected amortization paper and complete PeerDAS security argument remains explicit follow-up work.
 
+### Follow-up batch 17: hash-signature variants and randomness properties
+
+This batch connects exact scheme choices to the assumptions behind their security explanations.
+C13 compares a stateless signature profile, C14 counts admissible digests and retries, and C15 separates verifiable values from randomness and selection claims.
+Their existing priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| C13: [stateless signatures and leanSPHINCS boundaries](Stateless-hash-signatures-and-leanSPHINCS-boundaries.md) | Signature contributions need one selected configuration before importing addressing, digest or FORS rules. | FIPS 205 and a pinned design provide a comparison with selected Lean definitions and complete constructed layout arithmetic. Differences in addresses, framing and public material remain reconciliation questions. |
+| C14: [WOTS+C codewords and grinding budgets](WOTS-C-target-sum-codewords-and-grinding-budgets.md) | Signing explanations need the accepted codeword set, retry cap and experiment's query budget. | A separately identified NIST-hosted author paper supports exact small-set enumeration and larger target-sum counts. Geometric tails require the stated idealized fresh-input model. |
+| C15: [VRF properties and random-oracle assumptions](VRF-properties-and-random-oracle-assumptions.md) | Randomness contributions need to distinguish valid proofs, unique values, residual prediction games and permitted choice of inputs. | Selected original papers support a complete finite-map comparison. A toy selection bias or a consistent oracle table is not a concrete VRF security experiment. |
+
+The stateless-signature comparison preserves source-specific formats rather than asserting conformance across different revisions.
+The target-sum calculation distinguishes an unbounded expected search from a capped search that can fail, and honest signing work from an adversary's experiment budget.
+The randomness comparison keeps uniqueness of values distinct from uniqueness of proof strings and from unbiased protocol selection.
+
+Independent Python calculations reproduced the complete constructed 34-byte digest's FORS indices, tree/leaf slices, ignored-bit control and signature byte ranges.
+They enumerated the small target-sum set, counted the 58-digit set exactly, checked conditional retry arithmetic and enumerated all 64 finite functions in the selection example.
+No signature, message-hash preimage, hash-chain execution, VRF operation, cryptographic experiment, benchmark, EthLib binding, Lean build or proof replay ran.
+
+The catalogue adds the dated NIST-hosted author version and updates the four literature reading records while retaining their limits.
+Additional source entries increase from 72 to 73, with 17 literature entries.
+The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed; the 70 questions, numbered-source family assignments and priorities remain unchanged.
+Scheme reconciliation, complete security arguments and any concrete-hash transfer remain later work.
+
 ## Current coverage
 
-65 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-5 families still need a first entry.
+68 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+2 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
@@ -728,7 +753,7 @@ An entry covers its stated question and reading depth, rather than the entire fa
 | 1 | None. |
 | 2 | None. |
 | 3 | E12 |
-| 4 | C02, C13, C14, C15 |
+| 4 | C02 |
 | 5 | None. |
 | 6 | None. |
 
