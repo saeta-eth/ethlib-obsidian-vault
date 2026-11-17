@@ -306,8 +306,8 @@ This brings the inventory to 136 mapped documents and 1,096 Unassessed documents
 The historical SSZ Merkle-proof document joins S02's references, bringing additional source entries to 60.
 The literature register stays at 17 entries.
 
-After this batch, 20 of the 70 families have a first note or assessment entry, and 50 still need one.
-The remaining first-entry counts are nine for Phase 2, ten for Phase 3, ten for Phase 4, seventeen for Phase 5, and four for Phase 6.
+At the follow-up batch 1 delivery, 20 of the 70 families had a first note or assessment entry, and 50 still needed one.
+The remaining first-entry counts were nine for Phase 2, ten for Phase 3, ten for Phase 4, seventeen for Phase 5, and four for Phase 6.
 S02 retains multi-chunk and nested-variable layouts, E03 retains rollback and later gas amendments, and C04 retains additional vectors and protocol-specific context encodings.
 The initial notes do not exhaust these families.
 
@@ -329,22 +329,43 @@ These sources were already mapped in the catalogue, so no inventory assessment o
 Each note received a separate source review, followed by a navigation and catalogue review.
 Independent calculations checked the constructed RPC JSON and widths, the published ENR's RLP/content hash and node address, and the synthetic permit's signing bytes and conditional state trace.
 They used Python 3.12.15 with `rlp` 4.1.0 and PyCryptodome 3.23.0 where needed, without executing EthLib, a signature verifier, a token, or a network endpoint.
-The census remains 1,232 documents, with 136 mapped and 1,096 Unassessed; the catalogue retains 60 additional source entries and 17 literature entries.
+At the follow-up batch 2 delivery, the census remained 1,232 documents, with 136 mapped and 1,096 Unassessed.
+The catalogue then contained 60 additional source entries and 17 literature entries.
 S05 retains complete trie verification and wider method profiles, W01 retains discovery packet/state-machine analysis, and A04 retains signature validation and full token integration cases.
+
+
+### Follow-up batch 3: hash domains, discovery keys, and receiver callbacks
+
+This batch connects a foundational hash choice to two callers that depend on exact encodings and actor roles.
+C01 explains the hash-domain distinction used by selectors, addresses, and namehash.
+W02 builds on ENR and HKDF before broader discovery-state questions, while A02 separates interface advertising from acceptance of a particular transfer.
+Their original priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| C01: [Keccak and SHA-3 padding](Keccak-SHA3-padding-and-domains.md) | Hash callers need the correct domain and preimage, rather than selecting by output width. | Original Keccak, FIPS 202, and the pinned Yellow Paper distinguish bit suffixes, byte padding, and a rate boundary. Selected algorithm sections were read without a full cryptanalysis review. |
+| W02: [challenge and key binding](Discovery-v5-challenge-and-key-binding.md) | Discovery callers need to bind the expected peer, stored challenge, endpoint, and key direction. | A conditional exchange connects exact signature/HKDF inputs to separate published primitive fixtures. Complete packet/state-machine execution stays outside the note. |
+| A02: [receiver interfaces and callbacks](Token-receiver-interfaces-and-callbacks.md) | Token integrations need separate interface claims, operator arguments, and acceptance results. | ERC-165/721/1155 supply selector calculations and conditional transfer traces. Alternate-hook wording and operator tensions remain explicit. |
+
+Each note received a separate source review, including selected Lean definitions where the note cites them.
+Independent calculations reproduced hash outputs and padding boundaries, published discovery-v5 ECDH/HKDF keys and the identity-preimage hash, and receiver selectors, XOR, and balance arithmetic.
+No ECDSA verification, contract execution, live handshake, EthLib execution, or Lean proof replay ran.
+The added original Keccak reference brings additional source entries to 61; the numbered census remains 136 mapped and 1,096 Unassessed, with 17 literature entries unchanged.
+C01 retains bit-oriented APIs and cryptanalysis, W02 retains complete packet/state transitions, and A02 retains implementation-specific callback and hybrid-policy cases.
 
 ## Current coverage
 
-23 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-47 families still need a first entry.
+26 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+44 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | S03, C01, C06, C07, A02, A05, A06 |
+| 2 | S03, C06, C07, A05, A06 |
 | 3 | E04, E05, E06, E07, E08, E09, E10, E11, E12, A09 |
 | 4 | C02, C03, C05, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W02, W03, W04, W06, W07, I02, I03, I04, I05, I06 |
+| 5 | N02, N03, N04, N05, N07, N08, W03, W04, W06, W07, I02, I03, I04, I05, I06 |
 | 6 | A08, A13, A14, A15 |
 
 ## Assess sources systematically
@@ -477,5 +498,6 @@ The Phase 5 calculations used set and list operations and PyCryptodome 3.23.0 fo
 The Phase 6 calculations used exact rational arithmetic, PyCryptodome 3.23.0 for Keccak-256, and comparisons of refreshed metadata and document bytes.
 Follow-up batch 1 adds three reviewed notes, with Python 3.14.8 standard-library byte, hash, HMAC, and gas-model calculations.
 Follow-up batch 2 adds three reviewed notes, with independent JSON, RLP, Keccak, curve-coordinate, and conditional permit-state calculations.
+Follow-up batch 3 adds three reviewed notes, with hash-padding, curve/HKDF, signature-preimage, selector, and conditional transfer calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

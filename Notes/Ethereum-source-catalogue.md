@@ -14,7 +14,7 @@ It covers protocol rules, application interfaces, cryptographic standards, netwo
 The priorities are provisional writing recommendations, not implementation assignments or proof-gap findings.
 
 There are 70 candidate note families: 22 marked First, 44 When needed, and 4 Unresolved.
-They reference 136 distinct numbered standards and 60 additional source entries.
+They reference 136 distinct numbered standards and 61 additional source entries.
 The [full standards inventory](Ethereum-standards-inventory.md) retains every EIP and ERC in the recorded repository snapshots.
 An inventory entry outside these families remains Unassessed; omission from a family is not a rejection.
 
@@ -26,6 +26,7 @@ Phase 5 adds [accountable safety](Accountable-safety-and-validator-overlap.md) f
 Phase 6 adds [vault rounding and limits](ERC-4626-rounding-and-vault-limits.md) for A07, [ENS resolver boundaries](ENS-namehash-and-resolver-boundaries.md) for A12, and a [wallet RPC assessment and source refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) for A11.
 Follow-up batch 1 adds [SSZ offsets, roots, and branches](SSZ-offsets-roots-and-branches.md) for S02, [storage gas and refunds](Storage-gas-and-refund-accounting.md) for E03, and [HKDF extract/expand](HKDF-extract-expand-and-context.md) for C04.
 Follow-up batch 2 adds [RPC quantities and block state](JSON-RPC-quantities-and-block-state.md) for S05, [ENR record identity](ENR-record-bytes-and-identity.md) for W01, and [permit authority](Permit-nonces-and-allowance-authority.md) for A04.
+Follow-up batch 3 adds [Keccak and SHA-3 padding](Keccak-SHA3-padding-and-domains.md) for C01, [discovery-v5 key binding](Discovery-v5-challenge-and-key-binding.md) for W02, and [receiver callbacks](Token-receiver-interfaces-and-callbacks.md) for A02.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities
@@ -82,7 +83,7 @@ A reference match, a document status, or a research theorem alone does not estab
 
 | ID and candidate note family | Sources | Question or useful output | Priority and reason |
 | --- | --- | --- | --- |
-| **C01 Keccak, SHA-3, and domain separation** | [FIPS 202](https://csrc.nist.gov/pubs/fips/202/final) | Explain permutation, padding, byte order, and why Ethereum Keccak outputs differ from SHA-3. | **First.** Used across hashes, addresses, execution, Ethash, and hash-based constructions. |
+| **C01 Keccak, SHA-3, and domain separation** | [FIPS 202](https://csrc.nist.gov/pubs/fips/202/final), [The Keccak reference, version 3.0](https://keccak.team/files/Keccak-reference-3.0.pdf), [Yellow Paper, pinned Shanghai text](https://github.com/ethereum/yellowpaper/blob/efc5f9a1f356cba376c978eedb63cb0363c2aa85/Paper.tex) | Explain permutation, padding, byte order, and why Ethereum Keccak outputs differ from SHA-3. | **First.** Used across hashes, addresses, execution, Ethash, and hash-based constructions. |
 | **C02 Compression functions versus whole-message hashes** | [EIP-152](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-152.md), [FIPS 180-4](https://csrc.nist.gov/pubs/fips/180-4/upd1/final), [RFC 7693](https://www.rfc-editor.org/rfc/rfc7693.html) | Trace lengths, chaining state, word order, padding, and configurable BLAKE2 compression inputs. | **When needed.** Avoid confusing a precompile's compression contract with a complete hash. |
 | **C03 AES, CTR, and authenticated encryption** | [FIPS 197](https://csrc.nist.gov/pubs/fips/197/final), [SP 800-38A](https://csrc.nist.gov/pubs/sp/800/38/a/final), [SP 800-38D](https://csrc.nist.gov/pubs/sp/800/38/d/final) | Separate block correctness, counter/IV obligations, partial blocks, and failed authentication tags. | **When needed.** Shared keystore/networking primitives with different security goals. |
 | **C04 HMAC and extract/expand key derivation** | [RFC 2104](https://www.rfc-editor.org/rfc/rfc2104.html), [RFC 5869](https://www.rfc-editor.org/rfc/rfc5869.html) | Trace salt, keying material, PRK, info, and the expansion limit using published vectors. | **When needed.** Shared dependency of validator keys and secure channels. |

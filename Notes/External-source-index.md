@@ -41,6 +41,9 @@ Read the source section for the rule being changed, and check its version and ap
 | [JSON-RPC quantities and block state](JSON-RPC-quantities-and-block-state.md) | S05 | Which encodings and block selectors identify a state query, and what does a returned proof establish? | Pinned EIP-1474/1898/1186 passages; conditional requests and a separately trusted state root. |
 | [ENR record bytes and identity](ENR-record-bytes-and-identity.md) | W01 | Which bytes authenticate an ENR and derive its node address, and what remains an endpoint claim? | Pinned EIP-778 and devp2p passages; published record, content preimage, and v4 key/address encodings. |
 | [Permit nonces and allowance authority](Permit-nonces-and-allowance-authority.md) | A04 | How do owner and token nonces distinguish two signed approvals from token transfer authority? | Pinned ERC-2612/4494 with ERC-20 and EIP-712 context; conditional state trace and synthetic signing bytes. |
+| [Keccak, SHA-3 padding, and domains](Keccak-SHA3-padding-and-domains.md) | C01 | Which suffix and padding bits distinguish Ethereum Keccak-256 from SHA3-256? | FIPS 202, original Keccak reference, and pinned Yellow Paper; complete byte blocks and boundary calculations. |
+| [Discovery v5 challenge and key binding](Discovery-v5-challenge-and-key-binding.md) | W02 | How do the challenge, identity signature, shared point, and directional keys bind different inputs? | Pinned devp2p v5.1 passages and separate published primitive fixtures; conditional actor trace and caller obligations. |
+| [Token receiver interfaces and callbacks](Token-receiver-interfaces-and-callbacks.md) | A02 | How do interface discovery and magic return values differ for one accepted transfer? | Pinned ERC-165/721/1155 sections; selector/XOR calculations and conditional callback traces with source tensions retained. |
 
 ## Planning and discovery
 
