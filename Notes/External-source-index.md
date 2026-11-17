@@ -29,6 +29,9 @@ Read the source section for the rule being changed, and check its version and ap
 | [Validator key derivation and keystores](Validator-key-derivation-and-keystores.md) | C16 | How do seed derivation, validator paths, and keystore checks establish different facts? | Compared ERC-2333/2334/2335 revisions; published master/child and PBKDF2 fixtures; password bytes and bounded retry scope. |
 | [BLS ciphersuites and verification preconditions](BLS-ciphersuites-and-verification-preconditions.md) | C08 | Which point checks, domains, and caller possession proofs qualify aggregate verification? | BLS draft-04, RFC 9380, exact tags, symbolic rogue-key example, and selected EthLib game statements. |
 | [KZG openings and setup assumptions](KZG-openings-and-setup-assumptions.md) | C09 | What does an opening equation establish, and which setup and binding assumptions remain? | Versioned 2010 report, pinned EIPs, insecure scalar example, and qualified algebraic reductions; source conflict preserved. |
+| [Accountable safety and validator overlap](Accountable-safety-and-validator-overlap.md) | N01 | Which shared stake and vote assumptions turn conflicting finalizations into a slashable-weight bound? | Casper FFG v4, fixed-set definitions and qualified attestation bridge; twelve-unit quorum example. |
+| [Noise handshakes and libp2p peer identity](Noise-handshakes-and-libp2p-peer-identity.md) | W05 | How do the channel's static key, the signing identity, and a caller's expected Peer ID differ? | Noise revision 34 and pinned libp2p rules; exact Ed25519 identity bytes, separate from EthLib's secp256k1 profile. |
+| [Engine newPayloadV3 outcomes and order](Engine-newPayloadV3-outcomes-and-order.md) | I01 | Which response is an error or payload status, and which checks and ancestry determine it? | Pinned Paris/Shanghai/Cancun inheritance and Prague boundary; observed EthLib order distinguished from unspecified source precedence. |
 
 ## Planning and discovery
 

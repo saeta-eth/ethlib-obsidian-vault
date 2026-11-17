@@ -11,6 +11,7 @@ Begin with [document status and upgrade inclusion](Notes/Source-status-and-upgra
 For representation and signing work, read [canonical RLP](Notes/RLP-canonical-encoding.md), [ABI encoding and event topics](Notes/ABI-encoding-and-event-topics.md), and [signed-data preimages and domains](Notes/Signed-data-preimages-and-domains.md).
 For execution-state work, continue with [typed transaction envelopes](Notes/Typed-transaction-envelopes-and-signing.md), [authorization order and rollback](Notes/Authorization-order-and-rollback.md), and [proxy/delegation context](Notes/Proxies-delegation-and-storage-context.md).
 For cryptographic work, read [validator key derivation and keystores](Notes/Validator-key-derivation-and-keystores.md), [BLS verification preconditions](Notes/BLS-ciphersuites-and-verification-preconditions.md), and [KZG openings and setup assumptions](Notes/KZG-openings-and-setup-assumptions.md).
+For consensus and client boundaries, read [accountable safety](Notes/Accountable-safety-and-validator-overlap.md), [Noise peer identity](Notes/Noise-handshakes-and-libp2p-peer-identity.md), and [Engine newPayloadV3 outcomes](Notes/Engine-newPayloadV3-outcomes-and-order.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.

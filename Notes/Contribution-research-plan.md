@@ -189,6 +189,54 @@ C16 retains deeper path and scrypt cases; C08 retains aggregate-PoP security gam
 The initial notes do not exhaust these families.
 Phase 5 can take its selected consensus, networking, and interface batch from the next queue.
 
+### Phase 5 batch and follow-up questions
+
+This batch selects one question from consensus research, peer authentication, and the execution/consensus interface.
+N01 supplies a bounded safety argument, W05 separates channel and peer identity, and I01 separates method errors from payload validation outcomes.
+These notes give each boundary its actors, source roles, and remaining obligations.
+
+| Selected family and note | Connection and contribution value | Additional knowledge and bounded result |
+| --- | --- | --- |
+| N01: [accountable safety](Accountable-safety-and-validator-overlap.md) | Consensus proofs need explicit membership, weights, ancestry, vote views, and threshold conditions. | A twelve-unit example connects quorum overlap and incompatible votes to the paper's fixed-set argument and a qualified attestation-data bridge. |
+| W05: [Noise peer identity](Noise-handshakes-and-libp2p-peer-identity.md) | Networking callers must distinguish a channel's static DH key, its authenticated signing identity, and the expected remote peer. | The XX actor trace and exact identity bytes connect Noise revision 34 to pinned libp2p rules, including early-data limits and EthLib's narrower identity profile. |
+| I01: [Engine newPayloadV3](Engine-newPayloadV3-outcomes-and-order.md) | Interface work must distinguish JSON-RPC errors, payload statuses, ancestry-dependent hashes, and caller forkchoice updates. | A Cancun-scoped decision table and overlapping-failure case separate inherited API requirements from EthLib's observed order. |
+
+Each note received a separate source review.
+Independent calculations checked the quorum example, identity preimage/protobuf/Peer ID bytes, and the Engine examples' array order and timestamp/ancestry conditions.
+PyCryptodome 3.23.0 reproduced the public RFC 8032 signature control and checked a signature on the constructed identity message, including rejection of changed messages.
+This did not run a Noise handshake, EthLib, a consensus client, or an Engine endpoint.
+
+The catalogue adds RFC 8032 and RFC 7748 as primary support for W05's identity and DH example, bringing its additional source entries to 57.
+I01's Engine API entry now pins the revision read by the note and cited by EthLib.
+The numbered inventory, source mappings, and family priorities stay unchanged.
+The notes preserve source limitations: shared fixed-set assumptions for the one-third bound, a libp2p actor-wording defect, and unspecified total precedence among simultaneous Engine failures.
+
+Seventeen Phase 5 families still need their first source note:
+
+| Family | Next bounded question |
+| --- | --- |
+| N02 | How do one shuffle and weighted committee rule depend on the seed and validator lifecycle? |
+| N03 | Which membership and weight-change bounds qualify one checkpoint-age argument? |
+| N04 | How do a trusted root, committee branch, and signature threshold qualify one light-client update? |
+| N05 | Which amendment revision and applicability decision define one light-client candidate? |
+| N07 | Which actors and deadlines distinguish one enshrined PBS or inclusion-list obligation? |
+| N08 | Which network and adversary model qualifies one historical GHOST or backbone result? |
+| W01 | Which signed record bytes bind one ENR identity and advertised discovery endpoint? |
+| W02 | How do one WHOAREYOU exchange and identity proof establish discovery-v5 session keys? |
+| W03 | Which compatibility and capability rules govern one RLPx handshake? |
+| W04 | How do decoded length, framing checksum, and context constrain one response chunk? |
+| W06 | How do one TLS or QUIC transcript and certificate bind the remote libp2p identity? |
+| W07 | Which validation result and cache state determine one gossipsub transition? |
+| I02 | How do one Beacon API identifier and state-dependent flags determine its response? |
+| I03 | Which signature, release condition, and payment claim belong to one Builder/Relay operation? |
+| I04 | Which atomicity and signing-history obligations qualify one key-management operation? |
+| I05 | How do missing roots and repeated imports affect one slashing-protection interchange case? |
+| I06 | Which framing and authentication checks qualify one history/archive read? |
+
+N01 retains dynamic stake and liveness arguments; W05 retains handshake-security and interoperability analysis; I01 retains other methods and inherited-validation cases.
+The initial notes do not exhaust these families.
+Phase 6 can take its selected application and catalogue-renewal batch from the next queue.
+
 ## Assess sources systematically
 
 For each candidate, record four judgments before assigning a writing priority:
@@ -311,9 +359,10 @@ Keep EthLib's contribution rules and complete proof-coverage descriptions in the
 The 1,232-document inventory is a metadata census of the two pinned repositories, not a semantic review of all their requirements.
 The 70-family catalogue combines metadata checks, selected external-source reading, and inspected EthLib source references.
 The 16 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
-The two Phase 1 notes and the three notes in each of Phases 2, 3, and 4 record their completed reading and review limits.
+The two Phase 1 notes and the three notes in each of Phases 2 through 5 record their completed reading and review limits.
 The Phase 2 byte calculations used Python 3.12.15, `rlp` 4.1.0, `eth-abi` 5.2.0, and PyCryptodome 3.23.0 in an isolated temporary environment.
 The Phase 3 calculations used separate RLP/Keccak tools and source-derived state traces, with no EthLib execution.
 The Phase 4 calculations used Python's hash, HMAC, PBKDF2, and Unicode functions, PyCryptodome 3.23.0 for AES, and scalar or symbolic arithmetic.
+The Phase 5 calculations used set and list operations and PyCryptodome 3.23.0 for the public Ed25519 example.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
