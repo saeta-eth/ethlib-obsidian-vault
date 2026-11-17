@@ -742,18 +742,45 @@ Additional source entries increase from 72 to 73, with 17 literature entries.
 The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed; the 70 questions, numbered-source family assignments and priorities remain unchanged.
 Scheme reconciliation, complete security arguments and any concrete-hash transfer remain later work.
 
+### Follow-up batch 18: compression contracts and formal-semantics evidence
+
+This batch supplies the last two first entries in the original catalogue.
+C02 separates a compression call from a complete hash, and E12 distinguishes operational rules, testing and property verification in a historical formalization.
+Their When needed priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| C02: [compression functions and complete hashes](Compression-functions-and-whole-message-hash-boundaries.md) | Hash and precompile contributions need exact initialization, byte order, length/counter units, finalization and round counts. | Primary standards and a pinned EIP supply complete abc padding and compression inputs with published controls. Matching one complete hash does not identify every accepted compression input with that hash construction. |
+| E12: [KEVM semantics and validation evidence](KEVM-semantics-and-validation-evidence-boundaries.md) | EVM comparisons need the chosen schedule, frame state and proposition before interpreting a test or formal proof. | An exact historical paper and separately pinned normative rules support complete stack/gas traces. No modern fork coverage, cross-formalization equivalence or replayed verification follows from those examples. |
+
+The compression example preserves SHA's big-endian bit length and BLAKE2's little-endian state and byte counter.
+It separates the precompile's accepted round counts and operation charge from a complete BLAKE2b invocation and surrounding call costs.
+The semantics comparison keeps historical schedule and test evidence distinct from a chosen normative rule and a quantified property statement.
+
+Independent Python transcriptions reproduced EIP-152 vectors 4 through 7 and checked complete abc hashes with hashlib.
+Byte calculations checked SHA padding, field offsets, word order, counter separation and digest-size initialization.
+A separate constructed frame calculation checked both PUSH steps, ADD and STOP with nine gas, out-of-gas with eight, subtraction order and stack underflow.
+No EVM/precompile or KEVM execution, transaction replay, benchmark, EthLib binding, Lean build or proof replay ran; the billions-of-rounds compression vector was not evaluated.
+
+The catalogue adds the already listed pinned Yellow Paper to E12 and updates the selected KEVM reading record.
+Counts remain 73 additional source entries and 17 literature entries, with 1,232 inventory documents, 138 mapped and 1,094 Unassessed.
+All 70 questions, numbered-source family assignments and priorities are unchanged.
+Every original family now has a first source note or bounded assessment; unresolved interpretations and deeper source review remain explicit.
+
 ## Current coverage
 
-68 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-2 families still need a first entry.
-An entry covers its stated question and reading depth, rather than the entire family.
+All 70 catalogue families now have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+No family remains in the first-entry queue.
+Each entry covers its stated question, source revision and reading depth.
+The 1,232-document inventory remains a metadata census, not a semantic review of every standard.
+Unread or inaccessible paper arguments, unresolved source differences and deeper family research remain explicit follow-up work.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
 | 2 | None. |
-| 3 | E12 |
-| 4 | C02 |
+| 3 | None. |
+| 4 | None. |
 | 5 | None. |
 | 6 | None. |
 
@@ -899,5 +926,10 @@ Follow-up batch 11 adds three bounded source entries, with conditional fork/sign
 Follow-up batch 12 adds a state-tree design assessment and two bounded source notes, with layout/preimage arithmetic, conditional gossip transitions, and archive-framing/index checks.
 Follow-up batch 13 adds three bounded source notes, with a constructed shuffle/filter trace, root-response JSON checks, and unsigned builder-registration bytes and value arithmetic.
 Follow-up batch 14 adds two bounded source notes and an amendment assessment, with qualified period arithmetic, conditional light-client updates, and proposal-ranking/fraction checks.
-Detailed reading and note writing for the remaining catalogue questions stay planned work.
+Follow-up batch 15 adds three bounded source notes, with custody hashes, cell counts, conditional payment/inclusion cases and a historical block-tree comparison.
+Follow-up batch 16 adds three bounded entries, with quotient/convolution controls, binding-game countercases and target-sum/state-index examples.
+Follow-up batch 17 adds three bounded source notes, with digest/layout checks, exact codeword counts, retry arithmetic and finite-map comparisons.
+Follow-up batch 18 supplies the last two first entries, with published compression controls, complete-hash checks and constructed frame-gas traces.
+All 70 catalogue families now have a first entry; the recorded reading limits and unresolved questions determine the next research.
+Detailed source review, amendment comparisons and deeper questions within each family remain planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
