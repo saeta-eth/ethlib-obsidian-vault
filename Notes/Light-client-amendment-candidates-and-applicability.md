@@ -3,7 +3,6 @@ created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
 catalogue_family: N05
-assessment_priority: Unresolved
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 eips_commit: "8194528a2ee9a4893a398a5871c470ab0ac3b09a"
 baseline_support_commit: "834e40604ae4411e565bd6540da50b008b2496dc"
@@ -18,7 +17,7 @@ tags:
 
 Adding sync-committee accountability, recording historical update choices, and removing the sync committee are different proposals.
 They cannot be applied as one automatic upgrade to an existing light-client implementation.
-This assessment keeps N05 Unresolved until a target proposal revision, fork context, and composition rule are chosen.
+Applicability remains unresolved without a target proposal revision, fork context, and composition rule.
 
 ## Source identities and baseline
 
@@ -38,11 +37,11 @@ This note neither modifies that baseline nor claims EthLib implementation or pro
 
 ## Three distinct changes
 
-| Candidate | Proposed change | Boundary left for a contribution |
+| Candidate | Proposed change | Applicability conditions |
 | --- | --- | --- |
-| EIP-7657 | Add sync-committee slashing evidence and consensus validation. | Select applicable evidence shapes, fork-specific branches, and supporting protection/inclusion infrastructure. |
-| EIP-7658 | Track a period's best sync data in BeaconState for historical backfill. | Specify the backfill exchange and how its proofs connect to an accepted historical state. |
-| EIP-8390 | Remove sync committees and the Altair light-client protocol, relying on an external proof-based replacement. | Define and assess that replacement, transition conditions, and consumer migration. |
+| EIP-7657 | Add sync-committee slashing evidence and consensus validation. | Applicable evidence shapes, fork-specific branches, and supporting protection/inclusion infrastructure must be selected. |
+| EIP-7658 | Track a period's best sync data in BeaconState for historical backfill. | The backfill exchange and its proofs' connection to an accepted historical state must be specified. |
+| EIP-8390 | Remove sync committees and the Altair light-client protocol, relying on an external proof-based replacement. | The replacement, transition conditions, and consumer migration require definition and assessment. |
 
 Status alone selects none of these paths and establishes no activation date.
 The first two retain the mechanism that the third proposes removing.
@@ -115,9 +114,9 @@ Combining them requires additional transition/schema decisions, not simply conca
 
 ## Assessment and limits
 
-The reusable contribution value is a versioned applicability map: baseline, candidate change, inherited assumptions, and unresolved consumer obligations.
-A first implementation or proof task needs one chosen proposal, reconciled activation units, exact inherited schemas, and a stated trust/security model.
-No replacement deployment or migration plan is selected by this assessment.
+The applicability map distinguishes the versioned baseline, candidate change, inherited assumptions, and unresolved consumer obligations.
+Applying a proposal requires a chosen revision, reconciled activation units, exact inherited schemas, and a stated trust/security model.
+This comparison specifies no replacement deployment or migration procedure.
 
 Python checked the four conditional ranking results, 341/342 boundary, earlier/equal-slot controls, and exact `2/64` fraction.
 No BLS signature, Merkle branch, BeaconState transition, backfill client, ZK proof system, deployment benchmark, EthLib binding, Lean build, or proof replay ran.

@@ -156,7 +156,6 @@ One source distinction remains explicit: EIP-7702 Behavior refunds an authority 
 EthLib's [`delegate`][delegate] uses existence and documents the difference for an existing empty account.
 The trace avoids that case through A's nonzero nonce.
 This note does not resolve the difference or establish complete conformance.
-The selected sources, theorem statements, and explanation received a separate review.
 An independent calculation followed the source's ordered rules under the stated recovery assumptions and reproduced the table's nonces, code, warming, and refund credits.
 It also checked the 100000-gas authorization contribution and the two nonce bounds.
 No Lean build, proof check, execution test, signature-vector test, or network-adoption audit was run.

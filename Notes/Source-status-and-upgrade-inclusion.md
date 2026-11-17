@@ -14,7 +14,7 @@ tags:
 # Document status and upgrade inclusion
 
 An EIP's document status, its inclusion in a network upgrade, and EthLib's support for it answer different questions.
-Record all three before using a rule in a contribution.
+None of those records substitutes for the others.
 This note explains the distinction at the pinned sources below; it does not audit the activation of a particular upgrade.
 
 ## Sources examined
@@ -33,7 +33,7 @@ Those are the statuses of the process documents themselves.
 | Record | What it establishes | What still needs checking |
 | --- | --- | --- |
 | EIP document status | Where the text stands in its editorial lifecycle. | Its inclusion in the target upgrade and activation on the target network. |
-| Inclusion stage in an upgrade meta EIP | The proposal's treatment in that named upgrade. | The exact revision and activation conditions relevant to the task. |
+| Inclusion stage in an upgrade meta EIP | The proposal's treatment in that named upgrade. | The exact revision and activation conditions for the target upgrade and network. |
 | EthLib implementation at a commit | Which definitions and rules that checkout supplies. | Agreement with the source, operation-specific support, and proof hypotheses. |
 
 EIP-1 defines Final as a final standard whose later changes are limited to errata and non-normative clarification.
@@ -58,14 +58,14 @@ The meta EIP records inclusion.
 After activation, EIP-7723 requires the activated EIPs to move to Included and other stage lists to be removed.
 The stages generally concern Core EIPs; the process also permits assigning stages to non-Core EIPs.
 
-## A worked decision
+## A conditional example
 
-Suppose a task presents an EIP marked Final and asks to apply it to upgrade U.
+Suppose an EIP marked Final is listed for upgrade U.
 The meta EIP for U lists it as Considered for Inclusion.
 These facts establish a final document and a candidate for devnet work, not activation in U.
 
-Before changing a fork-specific definition, identify the required revision and the upgrade's activation evidence.
-Then check EthLib's policy and the actual operation at the chosen commit.
+A fork-specific claim also depends on the relevant source revision, activation evidence and operation support at the chosen commit.
+EthLib's admission policy is a separate question.
 This example is a deduction from the two process definitions, not a claim about a particular EIP or network.
 
 ## Applying the distinction to EthLib
@@ -73,13 +73,12 @@ This example is a deduction from the two process definitions, not a claim about 
 At the inspected commit, EthLib puts Considered or Scheduled work on the named upgrade branch.
 Its architecture uses a mainnet activation recorded by the meta EIP as the signal for merging the upgrade into master, with only its Scheduled EIPs.
 It also states separate entry rules for blob-parameter changes, standards outside the EIP process, and maintainer-selected exceptions.
-Read that policy before deciding where a contribution belongs; Final alone is not its admission rule.
+Final alone is not that policy's admission rule.
 
 Recognising a fork name also does not establish that every operation implements its rules.
-Consult the relevant definition and export support boundary before making that claim.
+That claim depends on the relevant definition and export support boundary.
 
 ## Review limits
 
 The cited process sections and repository policy were read for this note.
 No network activation table, complete amendment history, Lean proof, or test suite was checked.
-For a concrete contribution, recheck the target source revision, upgrade meta EIP, network configuration, and operation support.

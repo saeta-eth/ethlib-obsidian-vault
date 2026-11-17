@@ -157,8 +157,8 @@ The theorem [`Produced.complete_authenticates`][proof] requires a state produced
 Its conclusion retains the static-key binding, successful signature verification, and successful identity-key decoding.
 It is not a computational handshake-security theorem for arbitrary constructed states.
 
-This review read the cited passages and selected definitions and theorem statements, and recomputed the displayed byte lengths.
-The sources and explanation received a separate review.
+Reading covered the cited passages and selected definitions and theorem statements.
+The displayed byte lengths were recomputed.
 Independent calculations reproduced the displayed bytes and the RFC 8032 Test 1 signature as a control.
 PyCryptodome 3.23.0 signed the constructed 56-byte message using the public test seed, verified it, and rejected a changed static key or omitted prefix.
 These checks exercised the Ed25519 example with separate tools, not EthLib's secp256k1 profile.

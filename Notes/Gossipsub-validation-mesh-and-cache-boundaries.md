@@ -111,7 +111,7 @@ EthLib's selected [parameter definition][lean-parameters] uses six retained wind
 
 A separate Python list-window calculation reproduced all six table rows, including three pre-shift advertisement opportunities and payload eviction at heartbeat 5.
 It did not execute EthLib or model a network.
-Source review and this example do not validate topic-specific Ethereum rules, score tuning, adversarial resilience, eventual delivery, or a complete implementation.
+The selected source passages and this example do not establish topic-specific Ethereum rules, score tuning, adversarial resilience, eventual delivery, or a complete implementation.
 No client, binding, Lean build or proof replay ran for this note.
 
 [v10]: https://github.com/libp2p/specs/blob/c750236de43cd8b246a824b377dfdb26bae686db/pubsub/gossipsub/gossipsub-v1.0.md

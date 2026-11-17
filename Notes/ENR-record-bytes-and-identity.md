@@ -148,7 +148,6 @@ Callers must keep these operations' distinct guarantees when composing them.
 
 An isolated Python base64/RLP calculation reproduced the decoded fields, list lengths and content bytes.
 PyCryptodome 3.23.0 supplied Keccak-256, and an integer curve calculation decompressed the key and reproduced the published node ID.
-The source passages, explanation, and selected definitions received a separate review.
 Independent RLP, Keccak, and curve calculations reproduced the record/content lengths, signed-content hash, and published node ID, including the distinct result with prefix `04`.
 Those calculations did not execute EthLib, verify the ECDSA signature, contact a peer or establish endpoint reachability.
 No Lean build or proof replay ran.

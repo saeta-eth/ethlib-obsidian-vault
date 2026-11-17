@@ -109,7 +109,7 @@ Now conditionally supply a valid follow-up with finalized 8192, attested 8193, s
 Normal application rotates current/next from C0/C1 to C1/C2.
 These are constructed arithmetic cases, not a complete bootstrap, published vector or observed chain.
 
-## Forced updates and contribution limits
+## Forced updates and limits
 
 The baseline says force-update processing MAY be called based on use-case-dependent heuristics.
 It applies a stored best update when the local slot is strictly beyond the stored finalized slot plus the update timeout.

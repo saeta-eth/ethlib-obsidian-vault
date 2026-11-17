@@ -112,14 +112,13 @@ EIP-2718 defines typed transactions and receipts as a type byte followed by an o
 It does not require every future payload to use RLP.
 Select the envelope type first, then apply that type's payload specification; do not send every complete typed transaction to a whole-item RLP decoder.
 
-For an EthLib contribution, inspect the pinned [encoder][encode] and [decoder][decode], then the caller's field rules.
+The pinned [encoder][encode] and [decoder][decode] do not replace the caller's field rules.
 The statement [`decode_eq_ok_iff`][canonical] relates successful generic decoding to successful encoding at the recorded commit.
 Its scope does not establish transaction validity or remove size and scalar conditions.
 
 ## Review limits
 
 The listed external passages and relevant EthLib declarations were read.
-An independent source review found no material discrepancy in the selected passages or explanation.
 Python package `rlp` 4.1.0 reproduced the nested encoding, both 55/56-byte boundary cases, and the empty/scalar byte encodings, and rejected all seven listed malformed whole inputs.
 No Lean build, proof replay, binding test, or client comparison was run.
 The worked bytes are source-derived calculations checked with a separate codec, not an imported test vector or evidence that EthLib passed them.

@@ -156,12 +156,11 @@ These are selected definitions read, not a claim about all SSZ proofs or impleme
 
 An isolated Python calculation reproduced the serialization, both displayed roots, and the branch at 6.
 Reversing the sibling order produced a different root.
-The source passages, explanation, and cited definitions received a separate review.
 An independent standard-library calculation reproduced the bytes, roots, and branch, with controls for changed sibling order, path, data, and length.
 It also checked the displayed small malformed-input boundaries in a schema-specific decoder.
 Neither calculation executed the official SSZ package or EthLib.
 No Lean build, proof replay, or full malformed-input suite ran.
-Remaining scope includes nested variable-size elements, bitlist delimiters, progressive types, unions, multiproofs, and broader source-to-code correspondence.
+These calculations do not cover nested variable-size elements, bitlist delimiters, progressive types, unions, multiproofs, or broader source-to-code correspondence.
 
 [prose]: https://github.com/ethereum/consensus-specs/blob/802485ec74a6986542bd53bf153189623aab440c/ssz/simple-serialize.md
 [official]: https://github.com/ethereum/ssz-specs/tree/4c2f08805080c6b4b12ede7bf48ad6a80229f4b1

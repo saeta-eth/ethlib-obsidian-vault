@@ -142,7 +142,6 @@ The [`absentFields`][absent] policy accepts zero balance/nonce and selected zero
 The module explicitly identifies missing EIP-1186 rules for those absent-account hash fields; that local policy is not attributed to a universal RPC requirement here.
 These are definition observations, not theorem-coverage findings.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Python RLP construction and PyCryptodome 3.23.0 Keccak checked the widths, displayed account/node encodings, root, different-address path and changed-balance/nested-list negative controls.
 No generic verifier, live RPC, storage proof, EthLib binding, Lean build or proof replay ran.

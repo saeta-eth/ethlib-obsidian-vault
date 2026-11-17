@@ -147,8 +147,6 @@ RFC 8018's salt and iteration discussion explains costs of password search, whil
 Choosing current protection costs requires a separate policy decision and measurements for the intended environment.
 No historical iteration example here is promoted into current guidance.
 
-A separate source review checked the cited passages and the conditions stated in this note.
-Independent calculations reproduced the displayed example values.
 Python's `hashlib` reproduced both published controls, and `hmac` reproduced the two `c = 1` PBKDF2 blocks independently of the PBKDF2 helper.
 Integer arithmetic checked the table payloads, block/core/HMAC counts and the two EthLib model totals.
 No EthLib binding, heavy scrypt case, benchmark, Unicode-conformance suite, Lean build or proof replay ran.

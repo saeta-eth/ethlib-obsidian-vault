@@ -151,11 +151,10 @@ These byte operations are the relevant primitive entrypoints for investigating t
 Reading them establishes neither name normalization nor registry, resolver, or metadata authorization behavior.
 
 This note read the cited sources and selected hash definitions.
-The sources and explanation received a separate review.
 PyCryptodome 3.23.0 independently reproduced all three published namehash vectors and the four displayed interface identifiers.
 The 64-byte outer preimages and nine-byte DNS encoding were also checked.
 The displayed node values are the ERC's published vectors; no EthLib namehash execution, Lean build, proof replay, or live ENS lookup was performed.
-Wildcard resolution, off-chain lookup, multi-chain address records, and current normalization require separate source review before extending this baseline.
+Wildcard resolution, off-chain lookup, multi-chain address records, and current normalization are outside this baseline.
 
 [e137]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-137.md
 [e181]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-181.md

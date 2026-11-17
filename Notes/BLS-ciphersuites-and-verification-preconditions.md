@@ -135,10 +135,9 @@ The extra `aP2` input matters when comparing assumptions.
 This note does not audit the separate aggregate-PoP games or turn the pairing trace into a computational-security theorem.
 
 Review covered the cited source passages and selected definitions and theorem statements.
-The explanation and selected statements received a separate source review.
 The two ASCII byte counts, XMD length suffix, and symbolic cancellation in the rogue-key example were checked independently.
 No Lean build, proof check, pairing execution, signature vector, or constant-time assessment was run for this note.
-Further contributions can use these boundaries to investigate caller PoP registration, cancellation of aggregate keys, and wrong-domain rejection without treating an algebraic check as a security audit.
+Caller PoP registration, cancellation of aggregate keys, and wrong-domain rejection require evidence beyond this algebraic check.
 
 [draft]: https://www.ietf.org/archive/id/draft-irtf-cfrg-bls-signature-04.txt
 [rfc]: https://www.rfc-editor.org/rfc/rfc9380

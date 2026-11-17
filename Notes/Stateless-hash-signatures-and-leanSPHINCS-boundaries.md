@@ -17,7 +17,7 @@ tags:
 
 Stateless signing selects a few-time key from a message digest instead of allocating a fresh leaf with a persistent counter.
 That change removes an index-allocation obligation, but does not give every hash-signature variant the same parameters, encoding or security budget.
-The useful contribution question is which exact scheme a proposed definition or test is meant to describe.
+Definitions and tests require an explicit scheme profile.
 
 ## Sources and their roles
 
@@ -62,7 +62,8 @@ However, selected source passages differ:
 
 The design's table and the Lean profile both give 7,740 signature bytes for this layered FORS choice.
 Matching that length does not resolve the differing inputs or establish interoperability.
-The source-selection task is to identify and document the intended profile, not silently repair one description using the other.
+The intended profile must be explicit.
+Silently combining the two descriptions does not resolve their differences.
 
 ## Complete constructed digest and index trace
 
@@ -127,7 +128,7 @@ Its caller's budget is distinct from stateful leaf allocation and must not be re
 
 Standalone integer and byte calculations checked the shown indices, ignored-bit control, all-zero/all-one boundaries and field sizes.
 No cryptographic signature, key generation, hash-tree evaluation, Lean build or proof replay ran.
-The remaining contribution work includes resolving the design/profile differences and selecting source-specific interoperability evidence before making conformance or security claims.
+Conformance or security claims require resolution of the design/profile differences and source-specific interoperability evidence.
 
 [fips-record]: https://csrc.nist.gov/pubs/fips/205/final
 [fips]: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.205.pdf

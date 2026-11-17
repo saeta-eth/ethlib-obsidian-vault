@@ -106,7 +106,7 @@ c0
 For a representation-only failure variant with the other fields fixed, status zero encodes as `80`, replacing `01` at byte offset 4.
 Integer zero uses the empty byte string, not the byte `00`; the total size remains 268 bytes.
 This variant does not claim an execution witness with the same gas consumption.
-Rolled-back EVM logs are absent; later proposals for protocol-generated logs need their own rules.
+Rolled-back EVM logs are absent; this example does not apply the later proposals for protocol-generated logs.
 
 ## Header commitments have different domains
 
@@ -145,7 +145,6 @@ At EthLib commit `4f5f4111d17b040fe562bc0f2c362ebf625ed78d`, [`Outcome`][lean-re
 The receipt module explicitly describes later Glamsterdam sender-paid cumulative gas separately from block gas; those referenced amendments were not assessed here.
 These are observations of definitions, not proof-coverage claims.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 An independent Python RLP calculation checked field prefixes, the complete 268-byte encoding, the status-zero variant and the conditional gas subtraction.
 No transaction execution, receipt-trie root, network query, EthLib binding, Lean build or proof replay ran.

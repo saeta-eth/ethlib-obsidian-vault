@@ -3,7 +3,6 @@ created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
 catalogue_family: E10
-assessment_priority: Unresolved
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 eips_commit: "8194528a2ee9a4893a398a5871c470ab0ac3b09a"
 tags:
@@ -17,7 +16,7 @@ tags:
 
 Changing a state tree changes key placement, value encoding, proof objects and migration obligations together.
 A shared account layout does not make two proposed commitments interchangeable.
-This first assessment leaves E10 Unresolved because a target design, reconciled specification and migration context still need selection.
+A target design revision, reconciled specification and migration context remain unresolved in this comparison.
 
 ## Sources and reading scope
 
@@ -134,15 +133,15 @@ The EIP-6800 rationale describes an initially empty new tree receiving changes a
 EIP-7864's rationale likewise starts a new tree, freezes the MPT and refers to later migration; their Fork sections delegate transition details elsewhere.
 A layout comparison alone does not determine lookup precedence, migration completion or availability of historical proof data.
 An existing MPT proof remains a statement about its original root and scheme; these index calculations do not convert it into a new-tree proof.
-Those delegated rules need a separate reading before proposing a transition implementation.
+The delegated transition rules were not assessed here.
 
-## Selected context and remaining decision
+## Selected context and unresolved conditions
 
 At EthLib commit `4f5f4111d17b040fe562bc0f2c362ebf625ed78d`, [`encodeAccount`][account] takes a storage root for the RLP account tuple, and [`stateEntries`][state] constructs account values with separately computed storage roots.
 These definitions identify the existing representation relevant to the comparison; they establish neither a missing module nor a commitment to a replacement design.
 
-The next contribution needs a chosen design revision, reconciled parameters, cryptographic/hash specification and migration rule set.
-Keep E10 Unresolved until that target and its proof obligations are explicit.
+A transition implementation depends on a chosen design revision, reconciled parameters, cryptographic/hash specification and migration rule set.
+Those choices and their proof obligations are unresolved here.
 Python checked the packed value, preimage widths, input-limb counts and index/suffix arithmetic.
 No Pedersen commitment, binary hash selection, root, witness, proof, migration, EthLib binding, Lean build or proof replay ran.
 

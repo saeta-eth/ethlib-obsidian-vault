@@ -16,7 +16,7 @@ Prefer primary standards, papers, interface specifications and author or venue p
 Read the relevant primary passage before stating a rule or using a note in a contribution.
 Follow declared dependencies and relevant amendments, keeping those relationships distinct from additional comparisons.
 The [standards inventory](Notes/Ethereum-standards-inventory.md) keeps documents whose relevance is Unassessed visible.
-An omitted source or an Unresolved applicability choice is not a rejection.
+An unmapped source or an unresolved applicability choice is not a rejection.
 
 Use a separate note when different actors, algorithms or revisions require different explanations.
 Keep sources and unresolved questions available when a note covers only part of a family.
@@ -41,7 +41,9 @@ Metadata inspection, an abstract, selected passages and a complete argument revi
 Document status, applicability to a fork, network adoption and EthLib support also require separate evidence.
 
 Do not add phase or batch fields for organizing the writing or publication of knowledge notes.
-Keep writing schedules and publication chronology out of their prose.
+Keep writing schedules, effort estimates and publication chronology out of their prose.
+State unresolved technical conditions directly.
+Omit generic review-completion narration when it adds no source scope, result or evidence.
 Source revisions, review dates and applicability conditions belong with the explanation they qualify.
 Git records the publication history.
 

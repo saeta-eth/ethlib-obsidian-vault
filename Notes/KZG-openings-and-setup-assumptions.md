@@ -17,7 +17,7 @@ tags:
 # KZG openings and setup assumptions
 
 A KZG opening checks an evaluation of a committed polynomial.
-Before changing it, separate the polynomial identity, valid input encodings, setup consistency, and the assumption that an adversary cannot forge openings.
+The polynomial identity, valid input encodings, setup consistency, and the assumption that an adversary cannot forge openings establish different facts.
 The [BLS note](BLS-ciphersuites-and-verification-preconditions.md) supplies the related group-validation context.
 
 ## Sources and their roles
@@ -29,7 +29,7 @@ The [BLS note](BLS-ciphersuites-and-verification-preconditions.md) supplies the 
 | [EIP-7594][e7594], same pin. | Specification and Networking introduce cell openings and their transport obligations. They do not turn a single-point equation into a complete sampling-security argument. |
 
 The paper defines a research construction, not Ethereum's wire format.
-For contributions, cite the EIP for its rules.
+The EIP supplies the Ethereum rules.
 EthLib's [source policy][policy] permits provenance notes naming an EIP's linked consensus-specs text, without making that peer specification an independent authority.
 
 The [KZG README][readme] records an unresolved choice between the Final EIPs' frozen references, EthLib as the later referenced text, and the consensus text amended through activation and removal.
@@ -147,7 +147,6 @@ It concludes that the decoded values agree or its search returns a strong Diffie
 That algebraic reduction does not prove that solving the problem is computationally hard.
 
 The cited source sections, definitions, and these complete theorem statements and proofs were read.
-The explanation and selected statements received a separate source review.
 An independent calculation checked the source-derived quotient identity at all 17 scalar inputs, the opening equation at `tau = 5`, and the known-trapdoor false opening.
 No Lean build, proof replay, Ethereum KZG vector, ceremony audit, or full binding-coverage assessment was performed.
 

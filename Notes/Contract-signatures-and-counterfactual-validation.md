@@ -27,7 +27,7 @@ The reference Solidity is examined as published example code, not as an audited 
 
 For a separate account-model boundary, reading also covered the Abstract and Delegation indicator subsection of [EIP-7702][7702], Final at EIPs commit `8194528a2ee9a4893a398a5871c470ab0ac3b09a`.
 Document status does not establish network activation or a contract's conformance.
-This is external-source preparation for EthLib commit `4f5f4111d17b040fe562bc0f2c362ebf625ed78d`, without implementation or proof-coverage claims.
+No implementation or proof-coverage claim is made for EthLib commit `4f5f4111d17b040fe562bc0f2c362ebf625ed78d`.
 
 ## A magic return value answers a policy question
 
@@ -146,7 +146,6 @@ ERC-6492 leaves correct deployment permissions to the account implementation and
 Wrapper detection does not establish those permissions or application-specific replay protection.
 Local byte construction checked the complete tuple offsets, lengths, padding and marker.
 PyCryptodome 3.23.0 reproduced the ERC-1271 selector.
-The source passages and explanation received a separate review, including decoding the displayed wrapper.
 An independent manual construction and ABI encode/decode comparison reproduced the complete wrapper, offsets, lengths, padding, and suffix.
 No signature verification, contract deployment, RPC simulation, EVM execution, EthLib build or Lean proof replay ran.
 

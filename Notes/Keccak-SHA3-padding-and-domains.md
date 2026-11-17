@@ -128,15 +128,14 @@ At the pinned EthLib commit, [`keccakF`][permutation] applies the 24 rounds.
 [`spongeAbsorb` and `keccak256`][entry] connect padding, block absorption, and the 32-byte result.
 These are observations from the definitions, not a replay of a Lean proof or a claim about every binding that exposes hashing.
 
-For a contribution involving [ABI selectors and event topics](ABI-encoding-and-event-topics.md) or [ENS namehash](ENS-namehash-and-resolver-boundaries.md), retain the named hash function and exact preimage bytes together.
+[ABI selectors and event topics](ABI-encoding-and-event-topics.md) and [ENS namehash](ENS-namehash-and-resolver-boundaries.md) depend on the named hash function and exact preimage bytes together.
 Replacing a primitive on the basis of a similar name changes those derived identifiers.
 
-## Checks and remaining work
+## Checks and limits
 
 A standalone Python calculation compared bit-oriented suffix-plus-`pad10*1` construction with these byte layouts for empty input, `abc`, 135 zero bytes, and 136 zero bytes.
 All eight comparisons agreed, including padded lengths 136, 136, 136, and 272 bytes in each domain.
 Python's `hashlib.sha3_256` also produced the displayed SHA3-256 outputs.
-The source passages, explanation, and selected definitions received a separate review.
 An independent PyCryptodome 3.23.0 Keccak calculation and standard-library SHA3 calculation reproduced both columns, with separate checks of the byte-padding boundaries.
 
 The selected source sections and pinned EthLib definitions were read; the complete cryptanalysis in the original reference was not reviewed.

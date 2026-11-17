@@ -129,7 +129,7 @@ EIP-7549 fixes the signed `AttestationData.index` to zero and puts committee inf
 It does not erase membership validation: its mutation discussion conditions avoiding first-seen-cache pollution on checking committee membership before registration.
 Neither an outer bitfield nor a [BLS aggregate signature](BLS-ciphersuites-and-verification-preconditions.md) alone supplies that membership evidence.
 
-## Selected EthLib connections and remaining work
+## Selected EthLib connections and limits
 
 At the pinned EthLib commit, [Shuffle.lean][lean-shuffle] defines the pair-bit shuffle and committee slicing; [Accessors.lean][lean-access] defines seeds, active-duty access and fork-dependent balance filtering.
 [ShufflePermutation.lean][lean-permutation] states `shuffledPositions_perm` for `count < 2^64`.
@@ -139,7 +139,7 @@ The selected proofs were read; they were not replayed here and do not assert cry
 
 A standalone Python SHA-256/integer calculation reproduced the displayed constructed shuffle, slices and filter products.
 No beacon transition, EthLib binding, Lean build, proof check, live duty query or fairness experiment ran.
-Further work must select a fork and preset, establish active-set and seed conditions, and assess the required probabilistic model before transferring any security statement.
+Transferring a security statement requires a selected fork and preset, established active-set and seed conditions, and the required probabilistic model.
 
 [7251]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7251.md
 [7549]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7549.md

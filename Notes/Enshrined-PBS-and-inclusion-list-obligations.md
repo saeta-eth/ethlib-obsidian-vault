@@ -128,7 +128,7 @@ These are selected definition observations, without whole-module, proof-coverage
 
 Python checked the timing fractions, strict-majority boundaries, reservation/threshold arithmetic, conditional arrival policy and terminal-state cases.
 No block, state transition, payload execution, valid transaction/signature, P2P network, payment, Merkle/BLS verification, EthLib binding, Lean build or proof replay ran.
-A contribution still needs a selected joint fork revision, reconciled timing/domains/schemas and explicit execution and network assumptions.
+A joint protocol interpretation requires a selected fork revision, reconciled timing/domains/schemas and explicit execution and network assumptions.
 
 [7732]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7732.md
 [7805]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7805.md

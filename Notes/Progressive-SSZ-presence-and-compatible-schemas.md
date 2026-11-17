@@ -163,11 +163,10 @@ At the recorded EthLib pin, [`layoutSlots` and `merkleLayout`][lean-layout] reta
 Its [`selectorWord`][lean-selector] uses the same 32-byte extension observed in Python.
 These are readings of definitions, not a full compatibility theorem review.
 
-A separate source review checked the cited passages and the limits of the explanation.
 An independent calculation also reproduced the displayed example values.
 The standalone calculation checked both roots, both index-41 branches, and rejection of the old branch against the new root.
 It did not execute the official Python package, EthLib, a generated fixture suite, or Lean proofs.
-Nested schema changes, every compatibility-rule pair, and the selector-width source boundary require further review before broader conformance claims.
+These checks do not cover nested schema changes or every compatibility-rule pair, and they leave the selector-width source boundary unresolved.
 
 [7495]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7495.md
 [7916]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7916.md

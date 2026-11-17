@@ -158,10 +158,9 @@ Those caller obligations remain even when the operation succeeds.
 
 [`makeWhoareyou` and `readWhoareyou`][lean-challenge] construct or recover challenge bytes without a freshness cache.
 [`openMessage`][lean-message] takes a node-ID-to-key lookup, leaving the source's endpoint binding to its caller.
-These observations do not establish a complete protocol implementation or a missing-proof task.
+These observations do not establish a complete protocol implementation.
 
 Checks covered input widths, the signature-preimage hash and published KDF outputs using isolated Python integer arithmetic, `hashlib` and `hmac`.
-The source passages, explanation, and selected definitions received a separate review.
 Independent integer-curve and HMAC calculations reproduced the published directional keys, and a separate byte/hash check reproduced the 155-byte identity input and its SHA-256 digest.
 No ECDSA verification, packet-vector decryption, EthLib execution, Lean proof replay or live handshake ran.
 Neither these byte checks nor the ephemeral-static construction establish a general protocol-security theorem.

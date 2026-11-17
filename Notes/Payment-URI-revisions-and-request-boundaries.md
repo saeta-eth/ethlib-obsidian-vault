@@ -3,7 +3,6 @@ created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
 catalogue_family: A13
-assessment_priority: Unresolved
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 ercs_commit: "dbba0f4479dd817d19d7d7771dea0dcd76c68d17"
 rfc3986_version: "January 2005"
@@ -11,20 +10,19 @@ tags:
   - ethlib
   - external-sources
   - payment-uris
-  - assessment
 ---
 
 # Payment URI revisions and request boundaries
 
 An Ethereum payment URI describes a request for a consumer to interpret and present.
 It is not a signed transaction, approval, or payment receipt.
-This assessment keeps A13's priority **Unresolved** because the target revision and consumer workflow are still undecided.
-It supplies a concrete comparison before selecting a parser, transaction builder, or wallet-facing contribution.
+The target revision and consumer profile are unspecified here.
+The selected comparisons do not define a complete consumer parser or transaction builder.
 
-## Source readiness and revision roles
+## Sources and revision roles
 
 The complete short texts were read at ERCs commit `dbba0f4479dd817d19d7d7771dea0dcd76c68d17`, including headers, grammar, semantics, examples, compatibility, and security text.
-The EthLib revision records this assessment's context, without presuming a URI module or implementation need.
+No URI-module implementation or implementation requirement is inferred at the recorded EthLib revision.
 
 | Source | Status and role at the pin |
 | --- | --- |
@@ -131,24 +129,16 @@ For `string=A%2526B`, one decoding yields `A%26B`; another decoding would change
 These ASCII fragments illustrate generic delimiter handling, not a complete Unicode, normalization, or wallet-form-decoding policy.
 The selected ERCs do not settle every character-conversion choice for a production consumer.
 
-## Assessment and remaining choice
+## Consumer conditions and limits
 
-| Judgment | Bounded result |
-| --- | --- |
-| Connection | A URI may supply inputs to a transaction-request consumer; no present EthLib implementation is assumed. |
-| Contribution value | A revision-specific parsing specification could separate syntax, typed values, chain selection, and consumer approval. |
-| Additional knowledge | The examples distinguish native value from token arguments and compare legacy, payment-specific, and envelope formats. |
-| Coverage and effort | Three complete short ERCs and selected RFC sections support this first assessment; full consumer conformance remains a separate task. |
+The examples do not establish full consumer conformance.
 
 ERC-681 makes all supplied arguments user-editable suggestions and asks for an amount when none is supplied.
 Its security text calls for authentic sources and integrity protection because modified requests can redirect irreversible transactions.
 The formats define no intrinsic signature authenticating the request, and parsing does not authorize a consumer to send funds.
 
-Choose a revision/profile and consumer workflow before promoting this family from Unresolved.
-A wallet import review, QR producer, and generic request validator need different outputs and rejection policies.
-A first follow-up can record acceptance/rejection cases against that chosen profile while preserving the grammar discrepancies above.
+A wallet importer, QR producer, and generic request validator need different outputs and rejection policies.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Python exact rational arithmetic reproduced the native amount, and the two published ASCII examples were checked for the stated field boundaries.
 The field checks exercised only the displayed ASCII cases.

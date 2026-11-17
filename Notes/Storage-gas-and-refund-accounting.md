@@ -35,7 +35,6 @@ The three main EIPs are Final at this pin, but their metadata is not an activati
 In particular, EIP-3529's `FORK_BLOCK` remains `TBD` in the text.
 The calculations assume these rules apply, rather than infer a network activation date or block.
 Later amendments, including EIPs 7623, 7778, 8037, and 8038, are outside this calculation.
-Applying it to a later fork requires reading and composing those rules separately.
 
 ## Keep the three values and access state apart
 
@@ -158,10 +157,8 @@ Their later-fork branches are another reason to name the fork instead of present
 
 The selected source passages and cited definitions were read at their exact pins.
 The examples were derived by hand from the composed formulas.
-The source composition, explanation, and cited definitions received a separate review.
 An independent source-model calculation reproduced both traces, the signed refund deltas, the assumed transaction cap, and sentry/no-op controls.
 No Lean build, proof replay, EVM execution, transaction simulation, or full later-amendment review was performed.
-This note supplies contribution background and does not identify an implementation gap.
 
 [2200]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2200.md#specification
 [2929]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2929.md#sstore-changes

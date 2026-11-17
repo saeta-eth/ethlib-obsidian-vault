@@ -93,8 +93,7 @@ Preserve that dependency when comparing historical forks.
 ## EthLib connection and review limits
 
 [Evm/TransferLog.lean](https://github.com/ethereum/EthLib/blob/3df5b24641b4a251ed094af02c02d28a621b31c7/EthLib/Execution/Evm/TransferLog.lean) is the entry point for the log shape and fork-conditional insertion helpers.
-Use the primary source to check emission and ordering, then trace its caller and rollback path for the contribution being made.
 This note does not establish complete agreement of that implementation with the EIP.
 
-The source passages above were read and the byte-layout example was derived from the stated encoding rule.
+The byte-layout example was derived from the stated encoding rule.
 No network adoption audit, Lean proof check, execution test, or complete comparison with every later amendment was performed.

@@ -16,7 +16,7 @@ tags:
 
 `engine_newPayloadV3` submits an execution payload for processing.
 Its response can be a JSON-RPC error, an invalid payload, a payload awaiting validation, or a valid payload.
-Keep those outcomes separate before changing a decoder, caller, or validation check.
+Those outcomes carry different information for a decoder or caller.
 
 ## Source and fork boundary
 
@@ -103,7 +103,6 @@ Do not turn their numbering into an unqualified portable precedence claim.
 EthLib's [`checkNewPayload`][checks] checks decoded parameters, then the active fork, then block construction and hash, then the blob hash array.
 For that overlap, its fork check returns `.unsupportedFork` before the array comparison.
 That is observed implementation order, not a resolution of the source's unspecified tie-break.
-A contribution testing overlapping failures must state which ordering it is pinning and why.
 
 ## Read latestValidHash along the submitted branch
 
@@ -138,9 +137,8 @@ It concludes `.ok (SYNCING, no hash, no reason, no new block/state)` in the help
 That adapter is not the complete JSON-RPC response model.
 
 The cited passages, definitions, and the parent-mismatch theorem's full statement and proof were read.
-The sources and explanation received a separate review.
 Independent calculations checked the illustrative timestamp range, ordered blob arrays, empty array, zero-root distinction, and qualifying ancestor in the examples.
-The examples and decision table are source-derived review cases, not executed client or Lean tests.
+The examples and decision table are source-derived cases, not executed client or Lean tests.
 No build, proof replay, network request to an Engine endpoint, or complete inherited-validation audit was performed.
 
 [repository]: https://github.com/ethereum/execution-apis/tree/3284ee80c3da3e516c53782dde75157cccf1ebdc

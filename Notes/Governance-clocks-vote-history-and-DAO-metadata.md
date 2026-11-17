@@ -3,7 +3,6 @@ created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
 catalogue_family: A15
-assessment_priority: "When needed"
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 ercs_commit: "dbba0f4479dd817d19d7d7771dea0dcd76c68d17"
 tags:
@@ -25,8 +24,8 @@ Keep the clock, delegated weight, and published description separate before conn
 All three have status Review at ERCs commit `dbba0f4479dd817d19d7d7771dea0dcd76c68d17`.
 Reading covered their complete texts, including methods, expected properties, examples, rationale, compatibility, and security sections.
 Linked assets, implementations, and remote metadata were not examined.
-The EthLib commit records the contribution context; this source-only note makes no implementation or theorem-coverage claim.
-A15 retains its When needed priority, with a specific clock/lookup consumer still to be selected.
+No implementation or theorem-coverage claim is made at the recorded EthLib revision.
+A specific clock/lookup consumer is not assumed.
 
 ## The clock determines the meaning of a timepoint
 
@@ -59,7 +58,6 @@ The following cases assume the default block-number mode and current clock 100:
 
 The timepoint MUST match the operating mode, but these lookup/rejection clauses are SHOULD and SHOULD NOT, not MUST guarantees.
 The Methods section also describes immutable past checkpoints with SHOULD; Expected properties separately states that `getPastVotes(a,t)` MUST be constant after `t < clock`.
-Preserve those distinct strengths when stating a contribution's obligation.
 The rationale identifies values at least `2^48` as future lookups; narrowing or wrapping them first would change the question. [Historical lookup][past]
 
 ## Delegation changes voting weight without moving assets
@@ -92,7 +90,7 @@ This does not execute a governor or establish a complete double-voting preventio
 The consumer still needs a chosen proposal snapshot, ballot rules, and execution policy.
 ERC-5805's rationale explains snapshot-based voting, but its interface does not choose those application rules.
 
-Signed delegation needs a separate source decision.
+The signed-delegation text contains unresolved discrepancies.
 ERC-5805's prose compares the current timestamp with `expiry` using `timestamp <= expiry`, while its displayed code reverses that inequality.
 Its typed-message example also prints `primaryType: "Permit"` beside `Delegation` fields.
 This note preserves those discrepancies and supplies no signed-delegation vector or recovery claim. [delegateBySig][signed]
@@ -129,14 +127,12 @@ Metadata can describe proposed calls without granting their execution authority.
 ERC-4824's indexing preferences are also recommendations: registration-factory publication SHOULD take precedence over direct publication, and the latest registration SHOULD take precedence among registrations.
 Those preferences do not establish that a resource is authentic, fresh, or consistent with a particular voting contract.
 
-## Contribution readiness and checks
+## Consumer conditions and checks
 
-A bounded contribution can specify one consumer's clock discovery, lookup boundary, and metadata provenance requirements before implementing a governor integration.
-It should record the voting contract, chosen clock mode, snapshot convention, metadata publisher, and trust policy as separate inputs.
+A consumer's inputs include the voting contract, chosen clock mode, snapshot convention, metadata publisher, and trust policy.
 The open questions are consumer-specific: how to handle unsupported modes, nonconforming lookups, same-clock updates, reorganizations, and conflicting registrations.
-No DAO execution model is selected by this assessment.
+No DAO execution model is selected here.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Python integer calculations checked the `uint48` boundary and conditional delegation sums/history; JSON parsing checked only the constructed document's syntax.
 No token, governor, signature, clock query, remote resource, JSON-LD processor, EthLib binding, Lean build, or proof replay ran.

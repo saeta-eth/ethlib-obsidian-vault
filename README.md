@@ -1,7 +1,7 @@
 # EthLib research vault
 
 A public research notebook for contributing to [EthLib](https://github.com/ethereum/EthLib), a library of Ethereum definitions and proofs in Lean.
-Notes preserve source reading, proof attempts, and open questions between contributions.
+Notes explain external specifications, worked examples and research assumptions relevant to EthLib.
 This is a personal notebook; EthLib's contribution rules, definitions, proofs, and documentation remain the references for work on the library.
 
 ## Start reading

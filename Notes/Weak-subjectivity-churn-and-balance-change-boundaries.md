@@ -103,7 +103,7 @@ period            = 256 + 1317 = 1573 epochs
 The displayed intermediate products are below `2^64`, and the divisor is positive.
 At the source's conversion of 225 epochs per day, that is `1573/225`, approximately 6.991 days, conditional on these inputs and unit interpretation.
 Using the literal `A = 256` Gwei instead gives `delta = 1281000000085` and 1661 epochs.
-That difference demonstrates why an executable contribution must resolve the unit discrepancy before treating either result as the prescribed configuration.
+That difference prevents treating either result as the prescribed configuration without resolving the unit discrepancy.
 Neither result establishes that a particular checkpoint remains safe.
 
 ## What the selected Lean statements establish
@@ -134,7 +134,7 @@ As the [Beacon API note](Beacon-API-identifiers-and-response-evidence.md) explai
 
 Standalone Python integer calculations checked the Gwei allowances, separate floors, both unit interpretations, overflow bounds and conditional endpoint comparisons.
 No beacon transition, deposit/exit queue, inactivity-leak run, checkpoint authentication, RPC, EthLib binding, Lean build or proof check ran.
-A future contribution must select a fork and configuration, resolve units, justify bounds on membership and effective-weight changes, and state how the bootstrap checkpoint is trusted.
+Using the period as a checkpoint-safety limit requires a selected fork and configuration, resolved units, justified bounds on membership and effective-weight changes, and an explicit trust basis for the bootstrap checkpoint.
 
 [7251]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7251.md
 [8061]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-8061.md

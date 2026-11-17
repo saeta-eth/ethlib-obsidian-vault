@@ -114,7 +114,6 @@ At the recorded commit, [the `Log` structure](https://github.com/ethereum/EthLib
 [`depositRequestOfEvent`](https://github.com/ethereum/EthLib/blob/3df5b24641b4a251ed094af02c02d28a621b31c7/EthLib/Execution/Blocks/Requests.lean#L113) parses one fixed deposit-event layout.
 These are limited entry points for log work, not evidence of a general ABI codec.
 The selected source sections and these definitions were inspected.
-An independent source review found no material discrepancy in the selected passages or explanation.
 Python package `eth-abi` 5.2.0 reproduced all four argument words, decoded them to `(7,"cat")`, and reproduced the packed ambiguity.
 PyCryptodome 3.23.0 recomputed the selector with Keccak-256; the 128/132-byte lengths and calldata offset were checked separately.
 No compiler invocation, Lean build, binding test, general decoder audit, or comparison with later ABI revisions was performed.

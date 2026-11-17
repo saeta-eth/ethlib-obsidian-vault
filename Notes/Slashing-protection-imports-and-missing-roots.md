@@ -144,7 +144,7 @@ This is conditional on checker acceptance and its record-level predicates, not a
 
 A standalone Python check parsed the fixture, evaluated the source schema's used keyword subset, checked every entry's widths and decimal fields, and reproduced the minimum/maximum arithmetic.
 No general JSON Schema interoperability test, BLS point/signature validation, validator call, database concurrency test, EthLib execution, or Lean proof replay ran.
-The source interpretation, explanation, and selected definitions and theorem statements received a separate review.
+The selected definitions and theorem statements were examined.
 Independent JSON and integer checks reproduced the fixture, widths, refusal cases, conservative limits, and repeated-import arithmetic.
 
 [eip]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3076.md

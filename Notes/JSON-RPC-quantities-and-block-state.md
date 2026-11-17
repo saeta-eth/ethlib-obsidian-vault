@@ -159,7 +159,6 @@ These code paths cite other EIP revisions and execution-apis schemas, including 
 They are selected implementation observations, not an assertion that every accepted wire form is identical to the three pinned EIPs.
 Reading covered the cited passages and definitions.
 Local JSON parsing checked both requests and the conditional response, including the 20/32-byte inputs and `0x2a = 42`.
-The source passages, explanation, and selected definitions received a separate review.
 Independent JSON and encoding checks reproduced the requests, widths, response value, and Quantity/Data contrasts.
 No live RPC, proof vector, complete trie-verifier review, Lean build, or proof replay ran.
 

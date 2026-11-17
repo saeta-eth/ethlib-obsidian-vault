@@ -140,7 +140,7 @@ It also does not imply liveness, which needs separate hypotheses about available
 EthLib has dynamic and slack variants in the same module.
 Their bounds account for membership changes, weight changes, or weakened quorum denominators.
 The fixed-set one-third conclusion cannot be carried over while discarding those loss terms.
-This note leaves their detailed bounds for another contribution question.
+Their detailed bounds are outside this note's scope.
 
 ## From model votes to attestation data
 
@@ -156,7 +156,6 @@ They are different attestation data describing the same link, and a surround who
 Do not replace this qualified bridge with an unconditional equivalence or a claim about every running client.
 
 Review covered the selected primary passages, model definitions, fixed-set theorem and structural proof, overlap lemma, and cited attestation bridge statements.
-The sources and explanation received a separate review.
 An independent calculation checked the four-link example's ordering, justification, finalization, and exact double-vote set.
 It also checked all 245025 pairs of eight-voter subsets of twelve validators; their minimum overlap is four.
 No Lean build, proof replay, client execution, signature check, full dynamic-model review, or liveness proof audit was performed.

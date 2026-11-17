@@ -26,7 +26,7 @@ Neither that label nor a listed fork name establishes deployed support or networ
 
 Reading covered StateId/BlockId parameters, state/block-root operations, V2 block retrieval, auxiliary fork/finality operations, and selected shared types and headers.
 All fork-specific block schemas, consensus transitions, light-client verification, and server implementations remain outside this reading.
-The EthLib commit records contribution context only; this source-only note makes no coverage or implementation-gap claim.
+No coverage or implementation-gap claim is made at the recorded EthLib revision.
 
 ## Endpoint families determine the object being named
 
@@ -127,10 +127,10 @@ The `/v2/` route is therefore not consensus fork number two, and its JSON `versi
 The state-root operation above advertises only JSON; SSZ support must be checked per operation rather than inferred from another endpoint.
 For binary blocks, choose the corresponding object schema using version and network/preset context; a byte stream does not carry the JSON metadata object.
 
-## Contribution question and checks
+## Consumer conditions and checks
 
-A bounded consumer contribution can retain the requested identifier, resolved root, response metadata, representation, and expected chain context as distinct inputs.
-It should state how mutable aliases, missing local data, unknown versions, and compatibility fallbacks affect its result.
+The requested identifier, resolved root, response metadata, representation, and expected chain context are distinct consumer inputs.
+The constructed exchange does not specify how a consumer handles mutable aliases, missing local data, unknown versions, or compatibility fallbacks.
 If finality verification is required, it also needs an independently justified checkpoint/update-verification procedure; a server boolean alone supplies none.
 No such consensus procedure or deployment policy is selected here.
 

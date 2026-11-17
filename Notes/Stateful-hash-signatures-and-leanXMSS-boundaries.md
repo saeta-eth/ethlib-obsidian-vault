@@ -131,7 +131,7 @@ These selected definitions and the incomparability proof were read; no general u
 
 Python checked all vectors, digest encodings, sums, forward-position relations, index boundaries and serialized-size arithmetic.
 No Keccak chain, key generation, randomizer search, signing/verification, persistent allocator, EthLib binding, Lean build or proof replay ran.
-A contribution still needs a chosen scheme revision, a non-reusing state contract and explicit hash/security assumptions.
+Applying the signature scheme requires a chosen scheme revision, a non-reusing state contract and explicit hash/security assumptions.
 
 [design]: https://github.com/leanEthereum/leanVM/blob/4af2cdddd7cd41b9df2cc7e123e314a91b0b4462/doc/lean_xmss/main.tex
 [rfc]: https://www.rfc-editor.org/rfc/rfc8391.html

@@ -143,11 +143,9 @@ The hash helper consumes its input order; it does not sort or validate request t
 [`checkedSystemCall`][lean-checked] checks request-contract code and call errors.
 These are observations of definitions, not claims of theorem coverage; later-fork additions visible in these files are outside this source reading.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Python byte concatenation, integer conversion and `hashlib.sha256` checked the field sizes, endian conversion, inner/outer hashes and empty-body controls shown here.
 No EVM call, public-key validation, consensus transition, EthLib binding, Lean build or proof replay ran.
-Further work can connect a committed request to a particular consensus transition only after reading that transition's authorization and state conditions.
 
 [4788]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-4788.md
 [2935]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2935.md

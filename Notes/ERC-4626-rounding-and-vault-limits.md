@@ -5,6 +5,8 @@ status: reviewed
 catalogue_family: A07
 ethlib_commit: "3df5b24641b4a251ed094af02c02d28a621b31c7"
 ercs_commit: "dbba0f4479dd817d19d7d7771dea0dcd76c68d17"
+paper_version: "arXiv:2101.08778v6, 2022-09-15"
+paper_sha256: "9079375c121a8033457a952b58b5dc2fb6f2ad9d94ba9ba247b1994b127c5b2c"
 tags:
   - ethlib
   - external-sources
@@ -132,22 +134,33 @@ When it is external, entry and exit functions must update that token's receiver/
 Do not assume every compatible entry point is itself the ERC-20 share contract.
 These contrasts do not review either extension's full interface or state machine.
 
+## Economic security context
+
+[*SoK: Decentralized Finance (DeFi)*, arXiv:2101.08778v6][paper], revised 15 September 2022, is by Sam M. Werner, Daniel Perez, Lewis Gudgeon, Ariah Klages-Mundt, Dominik Harz, and William J. Knottenbelt.
+Reading covered the abstract, §1's scope, and selected opening definitions/discussion in §5, Technical Security, and §6, Economic Security.
+The arguments, empirical cases, and full model assumptions were not reviewed.
+
+The authors distinguish atomic technical exploits from non-atomic economic exploits with costs and incentive risks.
+For tokenized vaults, interface compliance and correct share arithmetic alone do not establish economic security under market interaction.
+The paper does not specify ERC-4626.
+Its market figures describe April 2022, not current conditions.
+
 ## Arithmetic connection and review limits
 
 At the pinned EthLib commit, [`U256`][u256] is `BitVec 256`; addition, subtraction, and multiplication wrap modulo `2^256`.
 A rational formula proved over natural numbers does not automatically survive that representation.
 An intermediate product can overflow even when the final quotient fits.
-An arithmetic contribution needs explicit bounds or a suitable wider calculation, plus the chosen rounding rule.
+A calculation over that representation needs explicit bounds or a suitable wider calculation, plus the chosen rounding rule.
 The ERC's limited overflow exception for conversions is not permission to silently substitute a wrapped ratio.
 Empty-vault initialization, fee accounting, and division-by-zero handling also need implementation-specific definitions; the positive-state example does not determine them.
 
 The cited source sections and the `U256` definition were read.
 The arithmetic was derived by hand from the stated model, not taken from EthLib output or a deployed contract.
-The sources and explanation received a separate review.
 Independent exact-rational calculations reproduced the four rounded amounts, the deposit post-state, and the conditional zero-share example.
 No Lean build, proof replay, EVM execution, live vault query, full extension review, or economic-security audit was performed.
-This note supplies background for an interface or arithmetic contribution without proposing a vault module or making coverage claims.
+No vault-module implementation or coverage claim is made.
 
+[paper]: https://arxiv.org/pdf/2101.08778v6
 [4626]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-4626.md
 [7540]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-7540.md#request-flows
 [7575]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-7575.md#share

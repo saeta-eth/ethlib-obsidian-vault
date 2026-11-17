@@ -142,7 +142,6 @@ At the recorded commit, [`delegatedAddress`](https://github.com/ethereum/EthLib/
 These definitions were inspected; they do not establish a complete proxy-standard implementation or its proof coverage.
 
 The selected source passages were read and the runtime fragments checked against ERC-1167.
-A separate source review checked the context, routing, and rollback explanation, including the source's recommendation strength.
 Independent calculations checked the complete 45-byte runtime, its address/opcode positions, and the 23-byte delegation indicator.
 PyCryptodome 3.23.0 reproduced the published implementation, beacon, and admin slot constants with Keccak-256 and subtraction.
 No EVM execution, compiler invocation, EthLib build, or Lean proof was run.

@@ -150,8 +150,6 @@ This is an implementation's supported profile within the fixed edition, separate
 The caller must preserve those wider invariants.
 The module explicitly makes no constant-time claim, including its tag comparison.
 
-A separate source review checked the cited passages and the conditions stated in this note.
-Independent calculations reproduced the displayed example values.
 PyCryptodome 3.23.0 reproduced all four published CTR blocks, the first counter's AES output, the derived 17-byte case and its bit alteration.
 It also calculated the separate GCM example and its three rejection cases.
 No EthLib binding, Lean build, proof replay, complete protocol integration or security reduction ran.

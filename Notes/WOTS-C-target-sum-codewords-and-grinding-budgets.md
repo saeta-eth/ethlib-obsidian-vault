@@ -135,7 +135,7 @@ This definition supplies an explicit exhaustion outcome, without making the test
 
 Python enumerated the small set, checked its capped calculations, and compared the actual count from dynamic programming with the paper's inclusion-exclusion count.
 No hash evaluation, signing run, empirical timing, allocator, EthLib binding, Lean build, proof replay or full reduction audit ran.
-A contribution must state the encoding, query model and retry cap before attaching a probability or security interpretation to these counts.
+A probability or security interpretation of these counts requires an explicit encoding, query model and retry cap.
 
 [paper]: https://csrc.nist.gov/csrc/media/Events/2022/fourth-pqc-standardization-conference/documents/papers/sphincs-plus-c-pqc2022.pdf
 [record]: https://eprint.iacr.org/2022/778

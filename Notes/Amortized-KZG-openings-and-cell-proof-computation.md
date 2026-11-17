@@ -119,7 +119,7 @@ Thus the two cell-proof scalars are `[10,10]`, distinct objects from the four po
 For larger polynomials, the analogous reusable sums are `T_d=sum_i a_(i+ell*d)*[tau^i]`, and the cell proof evaluates `sum_{d>=1} T_d*c^(d-1)` at `c=y^ell`.
 This is the connection to computing many coset proofs together, not an assertion that Ethereum cells contain two elements.
 
-## Selected EthLib algorithm and remaining work
+## Selected EthLib algorithm and limits
 
 At the recorded commit, [`computeCellsAndKzgProofsPolynomialcoeff`][lean-cells] uses 64-element cosets and 128 cell outputs.
 For 4096 coefficients, its first phase computes 63 multi-scalar multiplications of setup points and shifted coefficient slices.
@@ -130,8 +130,8 @@ The toy calculation uses valid transform sizes, not that fallback behavior.
 
 EIP-7594 requires wrapped proofs for extension cells and checking them against the corresponding blobs and commitments.
 Choosing a faster generation method does not remove those validation obligations.
-A further contribution needs the corrected paper revision, reconciled indexing/coset conventions, and a precise operation or complexity claim before assessing an optimization.
-This bounded entry leaves the corrected argument and any end-to-end optimization assessment open.
+An optimization assessment requires the corrected paper revision, reconciled indexing/coset conventions, and a precise operation or complexity claim.
+The corrected argument and any end-to-end optimization assessment remain outside this note's scope.
 
 Standalone Python compared direct modular DFTs, schoolbook convolution, all four quotient identities and both coset divisions.
 No elliptic-curve group, pairing, BLS field, Ethereum cell proof, setup validation, benchmark, EthLib call, Lean build or proof replay ran.

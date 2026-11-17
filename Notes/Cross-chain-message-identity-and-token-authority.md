@@ -3,7 +3,6 @@ created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
 catalogue_family: A14
-assessment_priority: Unresolved
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 ercs_commit: "dbba0f4479dd817d19d7d7771dea0dcd76c68d17"
 solidity_commit: "73712a01b2de56d9ad91e3b6936f85c90cb7de36"
@@ -19,7 +18,7 @@ tags:
 A cross-chain message identifier tracks an execution; it does not authorize token creation.
 ERC-5164 describes dispatch and execution, while ERC-7802 describes local token mint/burn entry points.
 Connecting them requires a chosen transport, trusted callers, and a token-mapping policy that neither interface supplies.
-This first assessment leaves A14 Unresolved because no particular bridge or integration target has been selected.
+No particular bridge or integration target is assumed.
 
 ## Source versions and reading scope
 
@@ -28,7 +27,7 @@ ERC-5164's printed Last Call deadline is 2023-11-15; that date does not change i
 Reading covered both complete texts: metadata, specifications, rationale, compatibility, security, and ERC-7802's reference implementation.
 Linked bridge implementations and the dependencies' full specifications were not evaluated.
 The byte calculation also uses selected Solidity v0.8.30 [ABI rules][abi] for selectors, static arguments, and packed encoding.
-The EthLib commit records the contribution context; this source-only assessment makes no implementation or proof-coverage claim.
+No implementation or proof-coverage claim is made for the recorded EthLib revision.
 
 ## Dispatch, identity, and retry are separate obligations
 
@@ -104,7 +103,7 @@ The ordinary address argument has 12 leading zero bytes, while the packed traili
 This is a constructed encoding, not a claim that every token decoder accepts trailers or authenticates them.
 The [ABI note](ABI-encoding-and-event-topics.md) explains the two encoding modes.
 
-## Conditional retry ledger and assessment
+## Conditional retry ledger
 
 Assume this token accepts its ABI arguments with the appended 84-byte trailer and its issuer's permission policy authorizes E.
 ERC-7802 alone does not require acceptance of arbitrary trailing calldata.
@@ -122,16 +121,8 @@ Reentrant or concurrent execution paths must also respect the no-double-success 
 No global supply conservation follows: this example contains no authenticated origin burn or lock.
 The [callback note](Token-callback-order-and-hook-authority.md) supplies separate context about local call order and authority.
 
-| Judgment | Bounded result |
-| --- | --- |
-| Connection | Message execution and token permissions are adjacent integration boundaries; no present EthLib module is assumed. |
-| Contribution value | A selected bridge profile could specify accepted evidence, trusted callers, replay state, and the source/destination token relationship. |
-| Additional knowledge | Trailer bytes, retry semantics, and local event callers distinguish identity, authentication, and mint authority. |
-| Coverage and effort | Two complete short texts support this first assessment; transport security and finality require a separate, chosen source and model. |
-
-Choose that bridge and application before promoting the family from Unresolved.
-The [payment-URI assessment](Payment-URI-revisions-and-request-boundaries.md) concerns an earlier request boundary: naming a chain or requested action does not authorize its execution.
-A separate source review checked the cited passages and the conditions stated in this note.
+Transport security and finality depend on a chosen bridge and application model, neither specified by these interfaces.
+The [payment-URI note](Payment-URI-revisions-and-request-boundaries.md) concerns an earlier request boundary: naming a chain or requested action does not authorize its execution.
 Independent calculations reproduced the displayed example values.
 Python with PyCryptodome 3.23.0 reproduced the two selectors, published XOR result, byte lengths/field slices, and conditional ledger arithmetic.
 No transport, token call, EVM, wallet, EthLib binding, Lean build, or proof replay ran.

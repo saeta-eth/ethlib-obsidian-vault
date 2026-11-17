@@ -33,7 +33,7 @@ Each complete short document was read, including its rationale and compatibility
 | [Yellow Paper, pinned Shanghai text][yp] | §7 Contract Creation and selected Appendix H.2 CREATE/CREATE2 entries, for address and creator-nonce boundaries. |
 
 The worked state cases assume the selected rules apply, with empty destination storage and no later resource-accounting amendments.
-Delegation and later state-gas proposals need separate composition; the [authorization note](Authorization-order-and-rollback.md) preserves that distinction.
+Delegation and later state-gas proposals are outside this composition; the [authorization note](Authorization-order-and-rollback.md) preserves that distinction.
 No claim here covers every branch of the pinned EthLib fork model.
 
 ## Address bytes are not deployed runtime code
@@ -148,7 +148,6 @@ The actual deployment predicate also checks storage, and later fork branches cha
 Those observations are not an audit composing every later amendment, nor a claim that EIP-684 alone describes the whole current definition.
 The [proxy note](Proxies-delegation-and-storage-context.md) covers the separate code-versus-storage execution context.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 An isolated PyCryptodome 3.23.0 calculation reproduced the published CREATE2 address and intermediate hashes.
 Integer calculations checked forwarding, size constants, upfront-cost composition, and the assumed nonce/balance arithmetic.

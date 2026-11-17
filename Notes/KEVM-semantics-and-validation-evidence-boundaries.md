@@ -117,7 +117,7 @@ These selected definitions were read, without claiming a proof that their comple
 
 Standalone Python checked the displayed PC, stack and gas arithmetic and the isolated SUB, out-of-gas and underflow controls.
 No KEVM executable, EVM client, contract, EthLib binding, Lean build, proof replay, historical test suite or benchmark ran.
-A useful contribution must pin both semantics and test revisions, relate their states and outcomes, and state whether its evidence is a concrete check or a universally quantified correspondence proof.
+A comparison depends on pinned semantics and test revisions, a relation between their states and outcomes, and an explicit distinction between a concrete check and a universally quantified correspondence proof.
 
 [kevm]: https://fsl.cs.illinois.edu/publications/hildenbrandt-saxena-zhu-rodrigues-daian-guth-moore-zhang-park-rosu-2018-csf.pdf
 [yp]: https://github.com/ethereum/yellowpaper/blob/efc5f9a1f356cba376c978eedb63cb0363c2aa85/Paper.tex

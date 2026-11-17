@@ -116,7 +116,7 @@ Honest successful-round production must exceed adversarial production by a stipu
 The paper's honest-majority interpretation depends on sufficiently fast synchronization relative to proof-of-work production.
 The constructed tree checks none of those probabilistic hypotheses.
 
-## Ethereum and contribution boundaries
+## Ethereum and model boundaries
 
 At the recorded EthLib commit, [`groupVotes` and `tallyVotes`][lean-tally] use latest validator messages and eligible balances, and [`getWeight`][lean-weight] includes conditional proposer boost.
 The selected [`getHead` definitions][lean-head] walk viable children from a justified checkpoint.
@@ -124,7 +124,7 @@ Those code observations distinguish the recorded latest-message machinery from c
 They do not establish a refinement between either paper and EthLib, nor a complete description of every fork branch.
 The [accountable-safety note](Accountable-safety-and-validator-overlap.md) addresses quorum overlap separately.
 
-The useful next contribution is a precise model comparison: choose the source revision, state the adversary and delivery assumptions, and identify the exact chain or ledger property to relate.
+A model comparison requires a source revision, explicit adversary and delivery assumptions, and an exact chain or ledger property to relate.
 One cannot transfer a proof-of-work theorem merely because both algorithms descend through heavy children.
 Standalone Python checked the parent relation, subtree sizes, depths, both selected paths and the tie control.
 No mining simulation, benchmark, probability bound, transaction execution, EthLib call, Lean build or proof replay ran.

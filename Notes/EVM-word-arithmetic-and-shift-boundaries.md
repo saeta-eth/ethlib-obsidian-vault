@@ -162,7 +162,6 @@ At the pinned EthLib commit, [`bitwiseShl`, `bitwiseShr`, and `bitwiseSar`][lean
 [`Op.ofByte`][lean-op] applies fork availability, while [`environmentStep`][lean-env] selects the corresponding block/environment fields.
 These are definition readings, not proofs that arbitrary supplied execution environments are valid.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Standalone Python arithmetic matched all 38 printed EIP-145 shift cases, the two displayed MCOPY overlap cases, the derived rounding case, and the zero-length/expansion calculations.
 A changing-source copy served as a negative control for overlap handling.

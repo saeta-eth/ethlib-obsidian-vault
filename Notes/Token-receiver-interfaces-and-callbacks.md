@@ -124,15 +124,13 @@ ERC-1155 expressly accounts for forwarding and valid re-entry, requiring balance
 That ordering is not a proof that arbitrary application code prevents reentrancy attacks.
 It also supplies no callback requirement for an arbitrary ERC-20 transfer.
 
-## Review limits and contribution use
+## Evidence and limits
 
-This is a source-only preparation note at the recorded EthLib revision, with no claim about token-module implementation or proof coverage.
+This note makes no claim about token-module implementation or proof coverage at the recorded EthLib revision.
 The selectors and XORs were recomputed with PyCryptodome Keccak-256, and the balance arithmetic follows the stated inputs.
-The primary passages and explanation received a separate review.
 Independent calculations reproduced the displayed selectors, receiver-interface XOR, and conditional balance changes.
 No token contract, EVM callback, deployed receiver, or Lean proof was executed.
-A bounded contribution can separate an ERC-165 query result from a transfer's callback outcome, then state the relevant authorization, argument, update-order, and rollback conditions explicitly.
-Keep alternate-hook and hybrid-policy questions visible when selecting that contribution's scope.
+The alternate-hook and hybrid-policy questions remain separate from the named-hook cases traced here.
 
 [165]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-165.md#specification
 [721]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-721.md#specification

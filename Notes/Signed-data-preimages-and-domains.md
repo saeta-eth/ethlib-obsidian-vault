@@ -14,7 +14,7 @@ tags:
 
 # Signed-data preimages and domains
 
-A signature authenticates a digest, so a contribution must establish which bytes produce that digest.
+A signature authenticates a digest whose value depends on the exact encoded bytes.
 ERC-191 distinguishes signing formats, while EIP-712 defines a typed-data encoding and signing domain.
 This note traces their signable bytes through the published Ether Mail example.
 
@@ -149,7 +149,6 @@ This note does not reconcile RPC recovery-value conventions or prescribe transac
 At the recorded commit, [Keccak.keccak256](https://github.com/ethereum/EthLib/blob/3df5b24641b4a251ed094af02c02d28a621b31c7/EthLib/Cryptography/Hash/Keccak.lean#L465) hashes bytes; [Ecdsa.verify and isLowS](https://github.com/ethereum/EthLib/blob/3df5b24641b4a251ed094af02c02d28a621b31c7/EthLib/Cryptography/Secp256k1/Ecdsa.lean#L45) separate verification from the transaction low-s rule.
 These are relevant primitives, not evidence of a complete typed-data implementation.
 
-The pinned text and example assertions were read, and an independent source review found no material discrepancy in the selected passages or explanation.
 A separate calculation used PyCryptodome 3.23.0 for Keccak-256 and `eth-abi` 5.2.0 for static member words.
 It reproduced all four displayed published constants, the complete 128-byte helper result, and the 66-byte preimage without running the published JavaScript.
 It also checked the 96-byte normative member encoding and the personal-sign byte-length example.

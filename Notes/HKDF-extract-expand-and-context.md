@@ -157,8 +157,7 @@ Section 4 also explains that HKDF cannot create entropy or supply a password KDF
 Security depends on input assumptions, the underlying functions, and the protocol; these algorithmic properties do not prove a whole key exchange secure.
 
 The selected definitions and theorem statements were read at the recorded commit.
-The author calculation reproduced the RFC PRK/OKM and derived the displayed intermediate blocks with separate Python tools.
-The source passages, explanation, and cited definitions received a separate review.
+A separate Python calculation reproduced the RFC PRK/OKM and derived the displayed intermediate blocks.
 An independent standard-library calculation reproduced PRK, OKM, both full blocks, message lengths, truncation, and the empty-salt equivalence for these inputs.
 It also checked the counter-bound arithmetic and concrete context contrasts.
 No Lean build, proof replay, EthLib vector execution, protocol-security proof audit, or constant-time assessment was performed.

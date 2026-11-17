@@ -147,15 +147,13 @@ EIP-7823 introduces a 1024-byte bound per declared operand, and EIP-7883 changes
 The pinned Lean definitions contain separate `.fusaka` branches for these rules.
 Those later branches are outside this Berlin calculation, and this note does not infer activation from their presence in the code.
 
-## Review limits and contribution use
+## Evidence and limits
 
 A standalone Python integer/byte calculation reproduced nine short-exponent cases, including the examples, zero-length distinctions, and both gas prices.
 Its zero-modulus branch applies the separately cited Yellow Paper convention.
-The source passages, explanation, and selected definitions received a separate review.
 An independent byte/integer calculation reproduced all nine bounded cases and the original/Berlin gas results, including the floor giving 341.
 No EthLib import, EVM call, Lean build, binding test, or proof replay ran.
 The source reading does not resolve long-exponent ambiguity or assess later amendment interactions.
-A bounded contribution can state byte parsing, fixed output width, and a chosen fork's gas relation separately, while preserving these source questions.
 
 [198]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-198.md#specification
 [2565]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2565.md#specification

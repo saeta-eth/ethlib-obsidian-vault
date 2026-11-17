@@ -31,7 +31,7 @@ These repository versions and document statuses do not establish deployment supp
 Reading covered local/remote keystore operations, their selected types, keymanager Import/Delete flows, and remote public-key/sign operations with selected attestation schemas.
 ERC-2335 supplied selected keystore-format sections; EIP-3076 supplied its schema, conditions, domain descriptions, and security recommendations.
 Other duties, implementation-specific behaviour, and linked cryptographic algorithms were not evaluated.
-The EthLib commit supplies contribution context only; this note makes no implementation or proof-coverage claim.
+No implementation or proof-coverage claim is made at the recorded EthLib revision.
 
 ## Identify which actor holds the key
 

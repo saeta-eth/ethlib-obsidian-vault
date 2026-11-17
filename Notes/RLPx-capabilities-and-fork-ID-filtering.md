@@ -126,7 +126,6 @@ That module explicitly implements the EIP-8 packet form rather than the older fi
 Its `TIMESTAMP_THRESHOLD` is an explicitly documented local choice for interpreting a peer's next value, not a constant mandated by EIP-6122.
 These are selected definition observations, not claims about full negotiation execution or proof coverage.
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 Python `zlib.crc32` reproduced all three displayed EIP-2124 checksums and EIP-6122's fictional timestamp control.
 Integer/set calculations checked the invented capability allocation and the conditional prefix/next-value cases.

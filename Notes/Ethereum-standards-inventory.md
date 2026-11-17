@@ -34,8 +34,32 @@ The grouping uses category when present and type otherwise; it does not infer a 
 | ercs.tar.gz | 8b7132d1de57bea9fc495ca58efed6a3230f4e75d659b72d2d2ecb92b6f95d8f |
 
 Archive names describe the locally downloaded inputs; archive bytes are not copied into the vault.
-To refresh, resolve new repository commits, enumerate the same paths, read the same fields, resolve redirects, and compare added/removed/changed records.
-Review changed requirements and applicability before updating a source note.
+
+## Recorded snapshot comparison
+
+A comparison recorded on 17 November 2026 used the following repository revisions:
+
+| Repository | Inventory baseline | Comparison revision |
+| --- | --- | --- |
+| ethereum/EIPs | `8194528a2ee9a4893a398a5871c470ab0ac3b09a` | Same commit. |
+| ethereum/ERCs | `dbba0f4479dd817d19d7d7771dea0dcd76c68d17` | [Snapshot `50b3a3cd`](https://github.com/ethereum/ERCs/tree/50b3a3cdd2c12e2b81288b56f073c0ee812f95a8). |
+
+The parser reproduced all 1,232 baseline records and 365 redirects exactly before the comparison.
+The compared metadata fields were identifier, title, status, type, category, requires, created, owning repository and path.
+Revision and URL changes follow the source pin and were excluded from semantic metadata differences.
+There were no added or removed IDs, changed selected metadata or changed redirects.
+The comparison census contained 607 EIPs and 625 ERCs, with 365 EIP redirects resolved.
+The comparison ERC archive's SHA-256 is `9640e9ce2c0d0b43e65128ba41d2e4422350909d3e0f780279e3649a06bd85b3`.
+
+Equal metadata does not mean equal bodies.
+A SHA-256 comparison of all 625 numbered ERC Markdown files found changed bytes only in [ERC-8048](https://github.com/ethereum/ERCs/blob/50b3a3cdd2c12e2b81288b56f073c0ee812f95a8/ERCS/erc-8048.md) and [ERC-8049](https://github.com/ethereum/ERCs/blob/50b3a3cdd2c12e2b81288b56f073c0ee812f95a8/ERCS/erc-8049.md).
+Their titles are *Onchain Metadata for Token Registries* and *Contract-Level Onchain Metadata*, both Draft at these pins.
+The changed text was not semantically reviewed in this comparison.
+The selected ERCs 137, 181, 634, 4626, 7540 and 7575 have identical bytes across these revisions.
+The inventory tables retain their baseline pins.
+
+An independent comparison checked the complete metadata records on all nine tracked fields, repository counts and the comparison archive digest.
+These checks covered metadata and document bytes, without protocol execution or proof replay.
 
 ## Counts
 
@@ -58,19 +82,19 @@ Review changed requirements and applicability before updating a source note.
 | Stagnant | 396 |
 | Withdrawn | 45 |
 
-## Assessment meaning
+## Family mapping
 
-138 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
+138 documents are linked to at least one subject family in the [source catalogue](Ethereum-source-catalogue.md).
 The remaining 1094 are Unassessed for note relevance.
 A family link is a proposed knowledge connection, not evidence that the full document has been read or that EthLib implements it.
-Unassessed does not mean irrelevant, rejected, or lower priority.
+Unassessed does not mean irrelevant or rejected.
 Requires lists the source metadata dependencies; it is not a complete cross-specification dependency graph.
-A status such as Final, Draft, Stagnant, or Withdrawn is not a note-writing priority or proof of network activation.
+A status such as Final, Draft, Stagnant or Withdrawn does not establish network activation.
 Read the linked exact revision before using a requirement.
 
 ## Core
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [EIP-2](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2.md) Homestead Hard-fork Changes | Final | None recorded | E11, C06 |
 | [EIP-3](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3.md) Addition of CALLDEPTH opcode | Withdrawn | None recorded | Unassessed |
@@ -524,7 +548,7 @@ Read the linked exact revision before using a requirement.
 
 ## Networking
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [EIP-8](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-8.md) devp2p Forward Compatibility Requirements for Homestead | Final | None recorded | W01, W03 |
 | [EIP-627](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-627.md) Whisper Specification | Final | None recorded | Unassessed |
@@ -560,7 +584,7 @@ Read the linked exact revision before using a requirement.
 
 ## Interface
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [EIP-6](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-6.md) Renaming SUICIDE opcode | Final | None recorded | Unassessed |
 | [EIP-107](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-107.md) safe "eth_sendTransaction" authorization via html popup | Stagnant | None recorded | Unassessed |
@@ -625,7 +649,7 @@ Read the linked exact revision before using a requirement.
 
 ## ERC
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [ERC-20](https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-20.md) Token Standard | Final | None recorded | A01, A04 |
 | [ERC-55](https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-55.md) Mixed-case checksum address encoding | Final | None recorded | Unassessed |
@@ -1255,7 +1279,7 @@ Read the linked exact revision before using a requirement.
 
 ## Meta
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [EIP-1](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1.md) EIP Purpose and Guidelines | Living | None recorded | P01 |
 | [EIP-4](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-4.md) EIP Classification | Final | None recorded | Unassessed |
@@ -1303,7 +1327,7 @@ Read the linked exact revision before using a requirement.
 
 ## Informational
 
-| Document and official title | Document status | Requires | Candidate families or assessment |
+| Document and official title | Document status | Requires | Subject families or assessment |
 | --- | --- | --- | --- |
 | [EIP-1470](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1470.md) Smart Contract Weakness Classification (SWC) | Stagnant | None recorded | Unassessed |
 | [EIP-2069](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2069.md) Recommendation for using YAML ABI in ERCs/EIPs | Stagnant | None recorded | Unassessed |

@@ -31,7 +31,7 @@ Track validation, execution authority, fee sponsorship, and protocol delegation 
 These pins do not establish deployment, wallet support, or fork activation.
 ERC-7579's optional `executeUserOp` comment explicitly references ERC-4337 v0.7, while the pinned ERC-4337 text includes EIP-712 hashing and optional paymaster-signature suffixes.
 Do not assume every historical EntryPoint version implements every rule in this pinned text.
-This note prepares source-based contributions without asserting EthLib account-abstraction coverage.
+This comparison does not assert EthLib account-abstraction coverage.
 
 ## Assign each actor its check
 
@@ -123,7 +123,7 @@ These are contrasts between proposals, not interchangeable module permissions. [
 
 ERC-4337 requires signatures to depend on chain ID and EntryPoint address and specifies an EIP-712 UserOperation hash.
 The account signature is excluded, and its optional paymaster-signature suffix also does not affect that hash.
-Use the [signed-data note](Signed-data-preimages-and-domains.md) before constructing a version-specific preimage.
+The [signed-data note](Signed-data-preimages-and-domains.md) explains the encoding prerequisite for a version-specific preimage.
 
 EIP-7702 instead authorizes a delegation address with an authority account nonce.
 That protocol nonce is distinct from EntryPoint's key/sequence nonce.
@@ -141,11 +141,10 @@ The source warns that omitting this form can leave the current delegation uncomm
 
 ERC-4337's required-functionality passage permits skipping a failed `validateUserOp` and possibly reverting, while its Error codes section requires reverting on validation failures.
 This note preserves that tension and uses successful validation in its trace.
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 A standalone Python calculation checked nonce packing, mode width, and the 56-byte inner call.
 No account, EntryPoint, paymaster, signature, EVM trace, EthLib binding, or Lean proof was executed.
-Full bundler rules, aggregation, hash construction, and post-operation failure recovery require separate version-specific work.
+The trace does not cover full bundler rules, aggregation, hash construction, or version-specific post-operation failure recovery.
 
 [4337]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-4337.md#specification
 [7579]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-7579.md#specification

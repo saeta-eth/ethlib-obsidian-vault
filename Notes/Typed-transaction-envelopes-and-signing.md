@@ -107,7 +107,7 @@ Here `tx_payload_body` is the signed fourteen-field list, not another type-prefi
 Block-body retrieval uses the execution envelope `03 || RLP(tx_payload_body)`.
 The accompanying blobs, commitments, and proofs are not additional signed fields.
 Their counts, commitment hashes, and KZG checks are separate validation obligations.
-Later network-wrapper amendments need separate review.
+This representation does not cover later network-wrapper amendments.
 
 ## Hand-derived unsigned type-2 preimage
 
@@ -162,11 +162,10 @@ At the recorded commit, [`encodeTransaction`][envelope-code] constructs wire byt
 These inspected entry points do not establish complete implementation agreement or identify a missing proof.
 
 The cited passages and declarations were read; the bytes and fee arithmetic were derived by hand.
-A separate source review found no material discrepancy in the selected passages or explanation.
 Independent calculations with `rlp` 4.1.0 and PyCryptodome 3.23.0 reproduced the 33-byte preimage and EIP-155's published signing preimage/hash as a control.
 The displayed conditional fee arithmetic was also checked separately.
 No signature, transaction execution, Lean build, proof replay, or complete amendment audit was performed.
-Later rules, including EIP-8037's gas changes, require their own version and fork assessment.
+This note does not assess the versions or forks of later rules, including EIP-8037's gas changes.
 
 [e155]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-155.md
 [e2718]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2718.md

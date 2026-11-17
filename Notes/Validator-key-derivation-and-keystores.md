@@ -23,7 +23,7 @@ The [BLS note](BLS-ciphersuites-and-verification-preconditions.md) covers signat
 
 The links pin the inventory's ERC revision `dbba0f4479dd817d19d7d7771dea0dcd76c68d17`.
 EthLib's [derivation][old2333], [path][old2334], and [keystore][old2335] sources use revision `be307c948f28897adb8f25afcc253c2c909de35d`.
-I retrieved all three official files at that earlier revision and compared their complete bytes with the inventory copies: each pair is identical.
+A comparison of all three complete official files at that earlier revision with the inventory copies found each pair identical.
 This establishes document equality for these files, not implementation conformance.
 All three documents have status Review at both pins.
 
@@ -167,7 +167,6 @@ Those are models, not proved resource bounds for the running code.
 It is not a cryptographic security theorem.
 
 The cited definitions and theorem statement were read, without a Lean build or proof replay.
-The sources and explanation received a separate review.
 An independent Python calculation reproduced ERC-2333 Test Case 0's master and child, both password-byte examples, and the published PBKDF2 fixture's checksum and decrypted secret.
 It used standard hash/HMAC/PBKDF2 functions and PyCryptodome 3.23.0 for AES-128-CTR.
 Its Unicode 15.0.0 checks cover the displayed examples, not agreement with all of EthLib's Unicode 16.0.0 tables.

@@ -140,11 +140,12 @@ ERC-2612 also retains ERC-20's allowance-replacement race.
 ERC-4494's typed JSON example incorrectly places `value` in its message where its function and type-hash formula use `tokenId`.
 Its copied security discussion also mentions self-submission invalidating prior permits without specifying a corresponding nonce-on-permit rule.
 These passages remain source questions, not permission to mix incompatible fields or nonce behaviour.
-Cached domains need separate chain-split analysis, as both proposals warn.
+Both proposals warn about cached domains in a chain split.
+This comparison does not resolve that boundary.
 
 The selected primary passages were read at the recorded pins.
 PyCryptodome Keccak-256 calculated the synthetic type hash, six-word struct hash, and 66-byte digest above.
-The source passages and explanation received a separate review, including decoding the displayed word layout.
+The displayed word layout was also decoded.
 Independent Keccak and integer calculations reproduced the hashes, input lengths, and conditional nonce/deadline trace.
 No signature, recovery, token execution, live-contract query, Lean build, proof replay, implementation-coverage review, or contract-wallet compatibility audit was performed.
 

@@ -148,7 +148,6 @@ Keep the format's checksum definition, EthLib's rejection behavior and a particu
 They are not a complete streaming response parser.
 The [varint decoder][lean-varint] additionally enforces minimal encoding, a stricter choice than the profile's SHOULD.
 
-A separate source review checked the cited passages and the limits of the explanation.
 An independent calculation also reproduced the displayed example values.
 A standalone bitwise CRC calculation reproduced all four RFC 3720 Appendix B.4 controls before deriving the `abc` checksum and masking.
 Byte arithmetic checked both complete framed streams, the raw literal block and the 22-byte prefixed payload.

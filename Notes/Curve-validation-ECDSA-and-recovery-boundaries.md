@@ -20,7 +20,6 @@ tags:
 
 Decoding a curve point, validating a public key, verifying a signature, and recovering a candidate key answer different questions.
 Ethereum adds transaction rules that its ECRECOVER precompile does not share.
-Preserve those boundaries when a contribution connects bytes, curve arithmetic, and transaction admission.
 
 ## Sources and reading scope
 
@@ -130,8 +129,6 @@ At the pinned EthLib commit, [`Point.decode`][decode] rejects infinity, bad size
 [`validS` and `recoverSender`][sender] impose transaction bounds by fork, while [`ECRECOVER.output`][precompile] accepts v=27/28 and calls recovery without imposing low-s.
 These are observations of the selected definitions, not proof-coverage findings.
 
-A separate source review checked the cited passages and the conditions stated in this note.
-Independent calculations reproduced the displayed example values.
 Standalone Python integer and affine-group calculations matched the published generator bytes, its curve equation and `n*G=O`, both signature equations, low/high classification, and the two parity-adjusted recoveries.
 They also confirmed the different-key result when parity is unchanged.
 No Ethereum transaction, precompile, EthLib binding, Lean build, or proof replay ran.

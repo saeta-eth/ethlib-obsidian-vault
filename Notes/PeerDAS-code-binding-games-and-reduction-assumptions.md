@@ -29,7 +29,7 @@ Its abstract reports replacing reliance on the algebraic group model (AGM) with 
 The direct PDF returned HTTP 403, and the authors' public research pages pointed to that same PDF.
 No paper PDF, exact PDF revision or PDF hash was obtained.
 Consequently, the paper's definitions, reduction losses, efficiency arguments and theorem correspondence are not claimed as reviewed.
-Its detailed Lean citations are pointers for future source review, rather than substitutes for reading the paper.
+Its detailed Lean citations do not substitute for reading the paper.
 
 [EIP-7594][7594] is Final at the recorded EIPs commit, and its complete text was read.
 It describes erasure-coded rows, authenticated cells and columns crossing rows, and permits batch verification of cell proofs in the transaction wrapper.
@@ -119,7 +119,7 @@ A network column contains cells across commitments, so this one-commitment game 
 
 Standalone Python checked all 289 lines over F17 against the altered triple, the displayed quadratic, and all 17 residual-polynomial challenges.
 No KZG/BLS operation, sampling or corruption experiment, EthLib call, Lean build, proof replay or paper-proof audit ran.
-The first research follow-up is to obtain and pin the paper PDF, then compare its exact games, reduction assumptions and efficiency bounds with these selected statements.
+Comparison of the paper's exact games, reduction assumptions and efficiency bounds with these selected statements remains unavailable without the pinned PDF.
 
 [paper]: https://eprint.iacr.org/2025/1683
 [7594]: https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7594.md

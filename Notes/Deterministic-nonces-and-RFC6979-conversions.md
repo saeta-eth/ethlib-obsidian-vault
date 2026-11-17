@@ -142,8 +142,6 @@ The caller supplies the digest; this function does not hash an Ethereum message 
 If that digest uses Keccak while the nonce generator uses HMAC-SHA-256, it is a distinct-hash variant discussed in §3.6, rather than the base same-H procedure checked above.
 The caller must still select the message bytes and signing domain.
 
-A separate source review checked the cited passages and the conditions stated in this note.
-Independent calculations reproduced the displayed example values.
 Python `hashlib` and `hmac` reproduced the published k, the displayed SHA-256 and initialization values, and the stated byte widths and range arithmetic.
 No full signature, EthLib binding, Lean build, proof replay, side-channel test, or general rejection suite ran.
 The selected EthLib definitions explicitly make no constant-time claim.

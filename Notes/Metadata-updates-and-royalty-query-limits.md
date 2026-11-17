@@ -33,7 +33,6 @@ Their status does not establish adoption by a wallet, marketplace, or deployed t
 | [ERC-721][721], [ERC-1155][1155] | Metadata interfaces/schemas and ERC-1155's Metadata Extensions rules. |
 | [Solidity ABI specification][abi] | v0.8.30 at the recorded commit: Function Selector, integer/tuple encoding, and Events. |
 
-This source-only note prepares bounded interface contributions at the recorded EthLib revision.
 It makes no claim about EthLib token-module implementation or proof coverage.
 The [receiver-interface note](Token-receiver-interfaces-and-callbacks.md) explains ERC-165 discovery, and the [ABI note](ABI-encoding-and-event-topics.md) explains selectors and logs.
 
@@ -145,13 +144,11 @@ They MUST pay in the sale's unit of exchange and MUST pay royalties regardless o
 Participating marketplaces SHOULD NOT send a zero-value transaction when the returned amount is zero.
 These obligations do not make every token transfer a sale or cause the view query to move funds. [ERC-2981, Specification and Optional royalty payments][2981]
 
-## Checks and contribution boundary
+## Checks and limits
 
-A separate source review checked the cited passages and the limits of the explanation.
 An independent calculation also reproduced the displayed example values.
 A standalone PyCryptodome calculation reproduced the selector and event topic, and Python integer arithmetic reproduced the quotient, remainder, and encoded token ID.
 No deployed contract, metadata server, royalty payment, EthLib binding, or Lean proof was executed.
-A bounded contribution can keep URI/schema interpretation, change-event decoding, and royalty-query results separate, with explicit unit and policy assumptions.
 The reading does not assess marketplace adoption, content authenticity, or payment enforcement in any implementation.
 
 [1046]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-1046.md#specification

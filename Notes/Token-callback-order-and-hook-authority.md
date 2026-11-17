@@ -35,7 +35,7 @@ That status does not establish deployment or uniform behaviour among tokens bear
 At this pin, ERC-820 is a full document, not a moved-file redirect.
 Its notice says ERC-1820 supersedes it and MUST be used instead, identifying an ERC-165 compatibility fix.
 The lookup examples below consequently use ERC-1820.
-This is a source-only preparation note, with no claim about EthLib token implementation or proof coverage.
+This comparison makes no claim about EthLib token implementation or proof coverage.
 
 ## Compare the callback boundaries
 
@@ -141,13 +141,11 @@ ERC-223's embedded contract-detection helper also warns that code-size checks ha
 A zero code size therefore does not establish every recipient's future behaviour.
 These source limitations reinforce the need to pin the exact standard and function being modelled.
 
-## Checks and contribution scope
+## Checks and limits
 
-A separate source review checked the cited passages and the conditions stated in this note.
 Independent calculations reproduced the displayed example values.
 A standalone PyCryptodome calculation reproduced lookup hashes and callback selectors, and integer arithmetic traced the stated balances.
 No registry query, hook, token contract, EthLib binding, EVM, or Lean proof was executed.
-A bounded contribution can specify who controls hook selection, which balances a callback observes, and what rejection rolls back, without claiming that notification implies spending permission.
 
 [223]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-223.md#specification
 [777]: https://github.com/ethereum/ERCs/blob/dbba0f4479dd817d19d7d7771dea0dcd76c68d17/ERCS/erc-777.md
