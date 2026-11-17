@@ -692,10 +692,35 @@ Additional source entries increase from 69 to 71, while the inventory remains 1,
 The 70 questions, numbered-source family assignments and priorities are unchanged.
 Network assumptions, joint proposal composition and full research arguments remain later work.
 
+### Follow-up batch 16: opening algorithms and cryptographic assumptions
+
+This batch separates an opening algorithm, a binding game and a stateful signature contract.
+C10 explains selected amortization equations, C11 records what the available sources establish, and C12 traces one-time-key state and encoding boundaries.
+Their When needed priorities remain unchanged.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| C10: [amortized KZG openings and cell proofs](Amortized-KZG-openings-and-cell-proof-computation.md) | Cell-proof contributions need the quotient being committed, evaluation order and convolution padding before comparing algorithms. | A pinned older author manuscript and EIP-7594 support a complete F17 control. The corrected ePrint argument remains unread and is not identified with that older version. |
+| C11: [PeerDAS binding games and assumptions](PeerDAS-code-binding-games-and-reduction-assumptions.md) | Security contributions need different winning conditions and an explicit bridge from acceptance to a cryptographic or network conclusion. | Primary metadata, EIP text and selected Lean statements support a bounded assessment and finite-field countercases. The unavailable paper's games and reductions remain unverified against its full text. |
+| C12: [stateful signatures and leanXMSS boundaries](Stateful-hash-signatures-and-leanXMSS-boundaries.md) | Signature contributions need a caller-enforced index policy and the exact scheme's codeword, address and serialization rules. | The pinned design and RFC comparison support complete target-sum exposure and index-boundary examples. Neither the examples nor a stated source theorem establish a deployed state-persistence mechanism. |
+
+The amortized-opening example distinguishes scalar evaluations from group commitments and single-point openings from multi-point cells.
+The binding assessment keeps individually accepted positions, a common low-degree polynomial and a batch's combined equation separate.
+The signature comparison preserves the pinned design's one-use game restriction and separates its classical statement from conjectured quantum security.
+
+Independent Python calculations checked quotient values, direct DFT and convolution identities, two-point division, interpolation and batch-residual roots over F17.
+They also checked target-sum digits, little-endian digest encodings, exposure comparisons, signature-length arithmetic and the 32-bit index boundary.
+No actual KZG proof, pairing, signature, random-oracle experiment, benchmark, state-persistence service, EthLib binding, Lean build or proof replay ran.
+
+The source catalogue records the older author manuscript separately and updates the three literature reading records without claiming inaccessible arguments were reviewed.
+Additional source entries increase from 71 to 72, with 17 literature entries.
+The inventory remains 1,232 documents, 138 mapped and 1,094 Unassessed; the 70 questions, numbered-source family assignments and priorities remain unchanged.
+Reading the corrected amortization paper and complete PeerDAS security argument remains explicit follow-up work.
+
 ## Current coverage
 
-62 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-8 families still need a first entry.
+65 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+5 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
@@ -703,7 +728,7 @@ An entry covers its stated question and reading depth, rather than the entire fa
 | 1 | None. |
 | 2 | None. |
 | 3 | E12 |
-| 4 | C02, C10, C11, C12, C13, C14, C15 |
+| 4 | C02, C13, C14, C15 |
 | 5 | None. |
 | 6 | None. |
 

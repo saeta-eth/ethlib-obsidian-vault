@@ -16,7 +16,7 @@ For application interfaces, read [vault rounding and limits](Notes/ERC-4626-roun
 The first follow-up batch adds [SSZ offsets, roots, and branches](Notes/SSZ-offsets-roots-and-branches.md), [storage gas and refunds](Notes/Storage-gas-and-refund-accounting.md), and [HKDF extract/expand](Notes/HKDF-extract-expand-and-context.md).
 The second follow-up batch adds [RPC quantities and block state](Notes/JSON-RPC-quantities-and-block-state.md), [ENR record identity](Notes/ENR-record-bytes-and-identity.md), and [permit authority](Notes/Permit-nonces-and-allowance-authority.md).
 
-The latest follow-up batch adds [PeerDAS custody and recovery boundaries](Notes/PeerDAS-custody-sampling-and-recovery-boundaries.md), [enshrined PBS and inclusion-list obligations](Notes/Enshrined-PBS-and-inclusion-list-obligations.md), and [GHOST and Bitcoin Backbone assumptions](Notes/GHOST-subtrees-and-Bitcoin-Backbone-assumptions.md).
+The latest follow-up batch adds [Amortized KZG openings and cell proofs](Notes/Amortized-KZG-openings-and-cell-proof-computation.md), [PeerDAS code-binding games and assumptions](Notes/PeerDAS-code-binding-games-and-reduction-assumptions.md), and [Stateful hash signatures and leanXMSS boundaries](Notes/Stateful-hash-signatures-and-leanXMSS-boundaries.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.
