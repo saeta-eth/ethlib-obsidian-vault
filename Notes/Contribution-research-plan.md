@@ -578,19 +578,50 @@ The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the 
 The 70 questions, source-family assignments, and priority recommendations are unchanged.
 Each entry leaves complete transition validation, connection processing, or a chosen signing deployment for later work.
 
+### Follow-up batch 12: state-tree choices, gossip routing, and archive evidence
+
+This batch makes three evidence boundaries explicit.
+E10 compares competing state layouts, W07 separates routing decisions, and I06 separates storage policy and file structure from authenticated history.
+E10 retains its Unresolved priority after this first assessment; W07 and I06 retain When needed.
+The entries identify useful contribution questions without resolving a proposed fork or complete network deployment.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E10: [alternative state-tree designs and migration boundaries](Alternative-state-tree-designs-and-migration-boundaries.md) | A state-layout contribution needs a chosen design and migration rule before assigning meaning to keys or absence. | Selected EIP-6800/7864/7523 passages support shared basic-data packing and Verkle location/preimage arithmetic. Draft inconsistencies, symbolic stems, witness algorithms, and full migration rules remain explicit limits. |
+| W07: [Gossipsub validation, mesh, and caches](Gossipsub-validation-mesh-and-cache-boundaries.md) | Networking contributions need to preserve the distinct effects of validation, duplicates, cache age, score, and backoff. | Selected pinned pubsub and Gossipsub v1.0/v1.1 passages support constructed local cases. Ethereum topic rules, complete router behaviour, and network delivery guarantees remain separate. |
+| I06: [history retention and archive authentication](History-retention-and-archive-authentication-boundaries.md) | Historical-data consumers need a trusted source of canonical commitments as well as correctly framed and indexed bytes. | Pinned retention/accumulator proposals and archive documents support a complete constructed SlotIndex and a length-header boundary. No complete archive, historical root, or chain was validated. |
+
+The state-tree assessment records conflicting binary-draft parameters rather than choosing repairs or a final hash function.
+Its worked packing follows the explicit big-endian field table while retaining the Verkle text's general little-endian convention as a separate source statement.
+Its code-location examples do not assert code exists in the hypothetical no-code account.
+The gossip note distinguishes Accept, Ignore, and Reject from message-ID equality and cache retention, preserving selected version-specific conditions.
+The archive note preserves EIP-4444's 14,299-epoch SHOULD NOT serving rule and MAY pruning rule rather than a blanket retention requirement.
+It records Nimbus's six-byte length field alongside the selected EthLib definition's four-byte length and two reserved bytes.
+These descriptions identify their respective sources without claiming the layouts agree on every header.
+
+Independent calculations checked the 32-byte account packing, Verkle index/suffix boundaries, and complete 64-byte preimages without computing Pedersen commitments.
+They checked the published generic record, constructed 52-byte framing/index exercise, signed offset, and the 2^32 length-header boundary without allocating that payload.
+A separate list-window calculation reproduced the gossip table, including advertisement before shifting, payload eviction, and separate seen-cache assumptions.
+No commitment/witness proof, migration, live router, archive decoder, historical-root reconstruction, chain replay, EthLib binding, Lean build, or proof replay ran.
+
+The catalogue adds the exact Nimbus framing document linked by the pinned archive repository.
+The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; there are now 67 additional source entries and 17 literature entries.
+The 70 questions, numbered-source family assignments, and priorities are unchanged.
+Choosing a target tree, a consensus topic profile, or a trusted archive checkpoint remains later work.
+
 ## Current coverage
 
-50 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-20 families still need a first entry.
+53 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+17 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
 | 2 | None. |
-| 3 | E10, E12 |
+| 3 | E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W07, I02, I03, I06 |
+| 5 | N02, N03, N04, N05, N07, N08, I02, I03 |
 | 6 | None. |
 
 ## Assess sources systematically
@@ -732,5 +763,6 @@ Follow-up batch 8 adds two bounded source notes and a URI revision assessment, w
 Follow-up batch 9 adds two bounded source notes and a cross-chain assessment, with constructed receipt bytes, a published deterministic nonce and HMAC-state calculation, and bridge-call/conditional-ledger checks.
 Follow-up batch 10 adds three bounded source entries, with a constructed account proof and conditional absence, published fork-hash controls and capability arithmetic, and clock/delegation/metadata calculations.
 Follow-up batch 11 adds three bounded source entries, with conditional fork/signature arithmetic, published QUIC Initial-key controls, and constructed deletion/history JSON checks.
+Follow-up batch 12 adds a state-tree design assessment and two bounded source notes, with layout/preimage arithmetic, conditional gossip transitions, and archive-framing/index checks.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
