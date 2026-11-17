@@ -462,20 +462,48 @@ The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed, the 
 The 70 questions and priority assignments are unchanged.
 Each first entry leaves broader opcode composition, password-security policy, or application-specific hook behaviour for later work.
 
+### Follow-up batch 8: execution requests, curve checks, and payment URI revisions
+
+This batch follows three representations to the decisions they do and do not establish.
+E07 separates system calls from request commitments, C06 separates curve and signature checks from key selection, and A13 compares payment-request revisions before choosing a consumer profile.
+E07 and C06 retain their First priorities; A13 remains Unresolved.
+The URI entry is a bounded assessment, not a selected implementation target.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E07: [system calls and execution request commitments](System-calls-and-execution-request-commitments.md) | Execution and consensus callers must distinguish privileged invocation, request extraction, and the commitment to ordered request bodies. | Selected passages from six pinned EIPs support a complete constructed withdrawal request and two-level SHA-256 calculation. The EIP-6110 deposit-type literal discrepancy remains explicit. |
+| C06: [curve validation and recovery boundaries](Curve-validation-ECDSA-and-recovery-boundaries.md) | Signature callers must distinguish coordinate/scalar bounds, valid keys, verification, recovery candidates, and transaction admission. | Selected SEC 1/2 and EIP-2/155 passages connect published generator bytes to a constructed signature pair and parity-adjusted recoveries. Authentic key selection and general security arguments remain separate. |
+| A13: [payment URI revision assessment](Payment-URI-revisions-and-request-boundaries.md) | A transaction-request consumer needs a chosen revision/profile before syntax or amounts can inform an approval workflow. | Complete ERC-67/681/831 texts and selected RFC 3986 sections support published URI cases, exact amount conversion, and delimiter-decoding distinctions. The revision and consumer workflow remain undecided. |
+
+Separate source reviews checked the cited passages and the conditions stated in the notes.
+The system-call note preserves source-specific timing and failure rules without auditing embedded bytecode or linked consensus transitions.
+The curve note keeps SEC key-validity requirements separate from its authentic-key recommendation and Ethereum's transaction/precompile differences.
+The URI assessment preserves the withdrawn, final, and stagnant revisions' different roles and their grammar tensions.
+
+Independent calculations checked the constructed request's field widths, endian conversion, inner/outer hashes, and empty-body controls.
+They reproduced the curve generator encodings, the constructed signature equations, low/high classification, and the parity-dependent recovery cases using standalone integer and affine-group arithmetic.
+They also checked the two published ASCII URI cases and the native amount using exact arithmetic.
+No EVM call, consensus transition, wallet, resolver, payment, EthLib binding, Lean build, or proof replay ran.
+
+RFC 3986 brings the catalogue to 66 additional source entries.
+All selected numbered standards were already mapped, so the inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the literature register remains at 17.
+The 70 questions and priority assignments are unchanged.
+Each first entry leaves broader fork composition, cryptographic security, or consumer conformance for later work.
+
 ## Current coverage
 
-38 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-32 families still need a first entry.
+41 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+29 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | C06, C07 |
-| 3 | E07, E08, E09, E10, E11, E12 |
+| 2 | C07 |
+| 3 | E08, E09, E10, E11, E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
 | 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
-| 6 | A13, A14, A15 |
+| 6 | A14, A15 |
 
 ## Assess sources systematically
 
@@ -612,5 +640,6 @@ Follow-up batch 4 adds three reviewed notes, with ModExp byte/gas cases, interch
 Follow-up batch 5 adds three bounded source notes, with progressive-layout roots and branches, published CRC controls and complete Snappy frames, and metadata/event/royalty calculations.
 Follow-up batch 6 adds three bounded source notes, with CREATE2 address and gas calculations, published CTR blocks and derived GCM cases, and account nonce/mode/call bytes.
 Follow-up batch 7 adds three bounded source notes, with published shift/copy controls, password-derivation outputs and qualified cost arithmetic, and hook lookup/selector and nested-send calculations.
+Follow-up batch 8 adds two bounded source notes and a URI revision assessment, with request bytes and hashes, standalone curve/signature/recovery arithmetic, and fixed URI-field and exact amount checks.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

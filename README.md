@@ -16,7 +16,7 @@ For application interfaces, read [vault rounding and limits](Notes/ERC-4626-roun
 The first follow-up batch adds [SSZ offsets, roots, and branches](Notes/SSZ-offsets-roots-and-branches.md), [storage gas and refunds](Notes/Storage-gas-and-refund-accounting.md), and [HKDF extract/expand](Notes/HKDF-extract-expand-and-context.md).
 The second follow-up batch adds [RPC quantities and block state](Notes/JSON-RPC-quantities-and-block-state.md), [ENR record identity](Notes/ENR-record-bytes-and-identity.md), and [permit authority](Notes/Permit-nonces-and-allowance-authority.md).
 
-The latest follow-up batch adds [EVM arithmetic and shift boundaries](Notes/EVM-word-arithmetic-and-shift-boundaries.md), [password KDF parameters and resource bounds](Notes/Password-KDF-parameters-and-resource-boundaries.md), and [token callback order and hook authority](Notes/Token-callback-order-and-hook-authority.md).
+The latest follow-up batch adds [system calls and execution request commitments](Notes/System-calls-and-execution-request-commitments.md), [curve validation, ECDSA, and recovery boundaries](Notes/Curve-validation-ECDSA-and-recovery-boundaries.md), and a [payment URI revision assessment](Notes/Payment-URI-revisions-and-request-boundaries.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.
