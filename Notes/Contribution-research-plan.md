@@ -380,20 +380,47 @@ No EVM, signer, BLS/signature verification, deployment, EthLib execution, or Lea
 E06 retains long-exponent and later-fork cases, I05 retains full database concurrency and signer integration, and A05 retains deployed-helper and account-policy audits.
 The initial entries do not exhaust these families.
 
+### Follow-up batch 5: schema presence, compression boundaries, and metadata consumers
+
+This batch follows three representation questions through to their consumers.
+S03 extends the existing SSZ note into schema changes, W04 connects compressed bytes to response boundaries, and A08 extends receiver/ABI knowledge into metadata and royalty queries.
+Their original When needed priorities remain unchanged; the selection adds bounded source knowledge without assigning new EthLib implementations.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| S03: [progressive SSZ presence](Progressive-SSZ-presence-and-compatible-schemas.md) | Schema and proof callers need to distinguish field presence, zero leaves, and stable addresses from reusable proof bytes. | A three-position schema pair connects serialized fields, active-field words, SHA-256 roots, and branches. EIP and executable-source readings preserve the union selector-width ambiguity. |
+| W04: [Snappy frames and response boundaries](Snappy-frames-and-response-chunk-boundaries.md) | Networking callers need separate raw-block, framing, decoded-length, and method-context boundaries. | Complete abc streams connect the primary Snappy descriptions and RFC 3720 CRC rules to a pinned supporting consensus profile. Resource bounds and stricter decoder choices remain distinct. |
+| A08: [metadata updates and royalty queries](Metadata-updates-and-royalty-query-limits.md) | Application consumers need to distinguish resource/schema claims, refresh signals, query units, and payment actions. | Pinned ERC-1046/4906/2981 with selected ERC-721/1155 and ABI passages support constructed metadata, a complete event layout, and an explicit percentage policy. No token implementation is presumed. |
+
+The notes record the selected source passages and their limits.
+S03 separates Review/Draft proposal status from adoption and identifies the executable project's specification role.
+W04 uses RFC 3720 only for CRC-32C, while the consensus text supplies the selected networking profile rather than overriding the primary formats.
+A08 keeps optional extensions, MUST requirements, recommendations, and assumed royalty policy separate.
+
+Independent calculations reproduced the progressive-container bytes, layout masks, roots, and branches, including stale-branch and wrong-path controls.
+They also checked four published CRC controls, the derived abc checksum and complete frames, and the metadata JSON, royalty selector, event topic/data, and quotient/remainder arithmetic.
+These example checks did not execute the official SSZ package, a Snappy decoder, an EVM, a metadata server, a royalty payment, EthLib, or Lean proofs.
+
+RFC 3720 and the newly pinned supporting consensus URL bring the catalogue to 63 additional source entries; the generic consensus URL remains available in other families.
+All selected numbered sources were already mapped, so the census remains 1,232 documents with 138 mapped and 1,094 Unassessed, and the literature register remains at 17.
+The 70 questions and priority assignments are unchanged.
+S03 retains nested schema and full compatibility review, W04 retains complete streaming/parser and client integration cases, and A08 retains content-authenticity and marketplace-policy assessments.
+The first entries do not exhaust these families.
+
 ## Current coverage
 
-29 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-41 families still need a first entry.
+32 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+38 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | S03, C06, C07, A06 |
+| 2 | C06, C07, A06 |
 | 3 | E04, E05, E07, E08, E09, E10, E11, E12, A09 |
 | 4 | C02, C03, C05, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W03, W04, W06, W07, I02, I03, I04, I06 |
-| 6 | A08, A13, A14, A15 |
+| 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
+| 6 | A13, A14, A15 |
 
 ## Assess sources systematically
 
@@ -527,5 +554,6 @@ Follow-up batch 1 adds three reviewed notes, with Python 3.14.8 standard-library
 Follow-up batch 2 adds three reviewed notes, with independent JSON, RLP, Keccak, curve-coordinate, and conditional permit-state calculations.
 Follow-up batch 3 adds three reviewed notes, with hash-padding, curve/HKDF, signature-preimage, selector, and conditional transfer calculations.
 Follow-up batch 4 adds three reviewed notes, with ModExp byte/gas cases, interchange JSON/refusal arithmetic, and a contract-signature ABI wrapper calculation.
+Follow-up batch 5 adds three bounded source notes, with progressive-layout roots and branches, published CRC controls and complete Snappy frames, and metadata/event/royalty calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
