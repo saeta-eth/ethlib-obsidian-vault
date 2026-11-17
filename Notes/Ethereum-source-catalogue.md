@@ -21,6 +21,7 @@ An inventory entry outside these families remains Unassessed; omission from a fa
 Phase 1 provides two source notes: [document status and upgrade inclusion](Source-status-and-upgrade-inclusion.md) for P01 and [ERC-20 events versus native ETH logs](ERC-20-and-native-ETH-transfer-logs.md) for A01.
 Phase 2 adds [canonical RLP](RLP-canonical-encoding.md) for S01, [ABI encoding and event topics](ABI-encoding-and-event-topics.md) for S04, and [signed-data preimages](Signed-data-preimages-and-domains.md) for A03.
 Phase 3 adds [typed transactions](Typed-transaction-envelopes-and-signing.md) for E01, [authorization processing](Authorization-order-and-rollback.md) for E02, and [proxy/delegation context](Proxies-delegation-and-storage-context.md) for A10.
+Phase 4 adds [validator key derivation and keystores](Validator-key-derivation-and-keystores.md) for C16, [BLS verification preconditions](BLS-ciphersuites-and-verification-preconditions.md) for C08, and [KZG openings and setup assumptions](KZG-openings-and-setup-assumptions.md) for C09.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities
@@ -159,7 +160,7 @@ An abstract or source-location check is not a review of a proof.
 
 | ID and source | Version or publication | Related families | Review depth and next reading | Contribution question |
 | --- | --- | --- | --- | --- |
-| R01 [Constant-Size Commitments to Polynomials and Their Applications](https://doi.org/10.1007/978-3-642-17373-8_11) | ASIACRYPT 2010; extended report dated 2010-12-01 | C09 | Selected construction and security-definition passages | Opening equations, setup powers, and distinct binding notions. |
+| R01 [Constant-Size Commitments to Polynomials and Their Applications](https://doi.org/10.1007/978-3-642-17373-8_11) | ASIACRYPT 2010; extended report dated 2010-12-01 | C09 | Selected definitions, construction, trapdoor discussion, and Appendix C.1 of the extended report | Opening equations, setup powers, and distinct binding notions. |
 | R02 [Fast amortized KZG proofs](https://eprint.iacr.org/2023/033) | ePrint 2023/033; pin a revision before equations | C10 | Metadata; full argument pending | Amortized cell-proof computation and correction history. |
 | R03 [Proving the Security of PeerDAS without the AGM](https://eprint.iacr.org/2025/1683) | ePrint 2025/1683 | C11 | Metadata and EthLib citation targets; full argument pending | Code binding and security outside the algebraic group model. |
 | R04 [Casper the Friendly Finality Gadget](https://arxiv.org/abs/1710.09437v4) | arXiv 1710.09437v4 | N01 | Selected sections 2-3 | Finality, slashability, and dynamic validator sets. |

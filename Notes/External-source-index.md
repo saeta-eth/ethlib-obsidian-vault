@@ -26,6 +26,9 @@ Read the source section for the rule being changed, and check its version and ap
 | [Typed transaction envelopes and signing](Typed-transaction-envelopes-and-signing.md) | E01 | How do transaction bytes, signing preimages, receipt payloads, and blob network wrappers differ? | Pinned EIP-155/2718/2930/1559/4844/7702 sections; unsigned type-2 byte example and fee arithmetic. |
 | [Authorization order and rollback](Authorization-order-and-rollback.md) | E02 | When is a transaction invalid, when is a tuple skipped, and which state survives execution failure? | Pinned EIP-3607/7702 rules; assumed-recovery nonce/code trace; separately scoped EIP-2780/8037 amendments. |
 | [Proxies, delegation, and storage context](Proxies-delegation-and-storage-context.md) | A10 | Which account supplies code, and which account's address, caller, value, and storage does that code use? | Pinned EIP-7/140/7702 and ERC-1167/1967/2535 sections; runtime bytes, slot calculation, and source-derived context trace. |
+| [Validator key derivation and keystores](Validator-key-derivation-and-keystores.md) | C16 | How do seed derivation, validator paths, and keystore checks establish different facts? | Compared ERC-2333/2334/2335 revisions; published master/child and PBKDF2 fixtures; password bytes and bounded retry scope. |
+| [BLS ciphersuites and verification preconditions](BLS-ciphersuites-and-verification-preconditions.md) | C08 | Which point checks, domains, and caller possession proofs qualify aggregate verification? | BLS draft-04, RFC 9380, exact tags, symbolic rogue-key example, and selected EthLib game statements. |
+| [KZG openings and setup assumptions](KZG-openings-and-setup-assumptions.md) | C09 | What does an opening equation establish, and which setup and binding assumptions remain? | Versioned 2010 report, pinned EIPs, insecure scalar example, and qualified algebraic reductions; source conflict preserved. |
 
 ## Planning and discovery
 

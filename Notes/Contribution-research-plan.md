@@ -147,6 +147,48 @@ E01 retains signature recovery and complete amendment coverage; E02 retains late
 The initial notes do not exhaust these families.
 Phase 4 can take its selected cryptographic batch from the next queue.
 
+### Phase 4 batch and follow-up questions
+
+This batch connects validator key material to BLS verification, then separates KZG's use of the same curve from signature rules.
+It selects one bounded question in each of C16, C08, and C09.
+The notes distinguish encoded bytes, algebraic identities, and computational claims under a stated model.
+
+| Selected family and note | Connection and contribution value | Additional knowledge and bounded result |
+| --- | --- | --- |
+| C16: [validator keys and keystores](Validator-key-derivation-and-keystores.md) | Key-generation and storage contributions need to separate scalar derivation, role paths, password bytes, and decryption acceptance. | Published master/child and PBKDF2 fixtures connect three ERCs; the note compares both source revisions and preserves the retry-limit difference. |
+| C08: [BLS verification preconditions](BLS-ciphersuites-and-verification-preconditions.md) | Signature callers must preserve subgroup checks, exact domains, and verified proofs of possession. | An algebraic rogue-key trace, exact tags, and a qualified security-game bound connect the draft's scheme rules to caller obligations. |
+| C09: [KZG openings and setup](KZG-openings-and-setup-assumptions.md) | Commitment work needs a degree bound, consistent setup points, canonical input bytes, and a separate binding assumption. | A small quotient opening and known-trapdoor forgery connect the 2010 paper to Ethereum's representation rules and qualified reduction statements. |
+
+Each note received a separate source review.
+Independent calculations reproduced ERC-2333 Test Case 0 and the published ERC-2335 PBKDF2 checksum/decryption.
+Separate checks covered password and domain-tag bytes, symbolic BLS cancellation, and toy KZG arithmetic.
+The BLS and KZG examples are algebraic explanations, not executed pairing or signature vectors.
+The Python password examples use Unicode 15.0.0, while EthLib records Unicode 16.0.0; checking those examples does not compare the full normalization tables.
+
+Source distinctions remain explicit: BLS draft-04 versus RFC 9380, the ERC procedures versus EthLib's 16-attempt key-generation bound, and the unresolved KZG normative-text and endianness readings.
+The key-generation note records that its three ERC source files are byte-identical at EthLib's pin and the inventory pin.
+The KZG report has a dated version and file digest; selected sections and reduction statements were read without a full security or ceremony audit.
+No inventory source mapping or family priority changes in this batch.
+
+Ten Phase 4 families still need their first source note:
+
+| Family | Next bounded question |
+| --- | --- |
+| C02 | How does one compression-function precompile's length and state contract differ from a whole-message hash? |
+| C03 | Which counter, IV, and authentication obligations qualify one AES-mode example? |
+| C05 | How do one password KDF's algorithm bounds differ from caller-selected work and memory limits? |
+| C10 | Which FFT and convolution steps produce several KZG cell openings under a pinned corrected paper? |
+| C11 | What is the adversary's winning condition in one PeerDAS code-binding reduction without the algebraic group model? |
+| C12 | Which state and one-time-key reuse conditions distinguish RFC XMSS from the selected leanXMSS variant? |
+| C13 | Which parameters and address/hash rules distinguish the selected leanSPHINCS variant from FIPS SLH-DSA? |
+| C14 | How do one target-sum code and retry budget enter a WOTS+C security argument? |
+| C15 | Which oracle and adversary assumptions separate VRF uniqueness, unpredictability, and pseudorandomness? |
+| N06 | How does one custody or sampling response connect cell authenticity, recovery, and availability? |
+
+C16 retains deeper path and scrypt cases; C08 retains aggregate-PoP security games; C09 retains multipoint, batch, and setup-generation arguments.
+The initial notes do not exhaust these families.
+Phase 5 can take its selected consensus, networking, and interface batch from the next queue.
+
 ## Assess sources systematically
 
 For each candidate, record four judgments before assigning a writing priority:
@@ -269,8 +311,9 @@ Keep EthLib's contribution rules and complete proof-coverage descriptions in the
 The 1,232-document inventory is a metadata census of the two pinned repositories, not a semantic review of all their requirements.
 The 70-family catalogue combines metadata checks, selected external-source reading, and inspected EthLib source references.
 The 16 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
-The two Phase 1, three Phase 2, and three Phase 3 source notes record their completed reading and review limits.
+The two Phase 1 notes and the three notes in each of Phases 2, 3, and 4 record their completed reading and review limits.
 The Phase 2 byte calculations used Python 3.12.15, `rlp` 4.1.0, `eth-abi` 5.2.0, and PyCryptodome 3.23.0 in an isolated temporary environment.
 The Phase 3 calculations used separate RLP/Keccak tools and source-derived state traces, with no EthLib execution.
+The Phase 4 calculations used Python's hash, HMAC, PBKDF2, and Unicode functions, PyCryptodome 3.23.0 for AES, and scalar or symbolic arithmetic.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
