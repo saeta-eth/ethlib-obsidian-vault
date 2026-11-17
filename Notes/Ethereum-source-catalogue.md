@@ -25,6 +25,7 @@ Phase 4 adds [validator key derivation and keystores](Validator-key-derivation-a
 Phase 5 adds [accountable safety](Accountable-safety-and-validator-overlap.md) for N01, [Noise peer identity](Noise-handshakes-and-libp2p-peer-identity.md) for W05, and [Engine newPayloadV3 outcomes](Engine-newPayloadV3-outcomes-and-order.md) for I01.
 Phase 6 adds [vault rounding and limits](ERC-4626-rounding-and-vault-limits.md) for A07, [ENS resolver boundaries](ENS-namehash-and-resolver-boundaries.md) for A12, and a [wallet RPC assessment and source refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) for A11.
 Follow-up batch 1 adds [SSZ offsets, roots, and branches](SSZ-offsets-roots-and-branches.md) for S02, [storage gas and refunds](Storage-gas-and-refund-accounting.md) for E03, and [HKDF extract/expand](HKDF-extract-expand-and-context.md) for C04.
+Follow-up batch 2 adds [RPC quantities and block state](JSON-RPC-quantities-and-block-state.md) for S05, [ENR record identity](ENR-record-bytes-and-identity.md) for W01, and [permit authority](Permit-nonces-and-allowance-authority.md) for A04.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities

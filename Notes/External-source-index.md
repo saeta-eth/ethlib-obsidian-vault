@@ -38,6 +38,9 @@ Read the source section for the rule being changed, and check its version and ap
 | [SSZ offsets, roots, and branches](SSZ-offsets-roots-and-branches.md) | S02 | How do one container's bytes relate to its list root, length mix-in, and proof address? | Pinned historical prose and executable-project passages; a packed-list example and a two-sibling branch. |
 | [Storage gas and refund accounting](Storage-gas-and-refund-accounting.md) | E03 | How do original/current/new values, warmth, and a transaction refund cap interact? | Pinned storage EIPs composed for London; two conditional SSTORE traces and a retained rationale discrepancy. |
 | [HKDF extract, expand, and context](HKDF-extract-expand-and-context.md) | C04 | Which bytes distinguish salt, keying material, expansion context, and the output bound? | RFC 2104 and RFC 5869 sections; published SHA-256 Test Case 1, expansion intermediates, and caller assumptions. |
+| [JSON-RPC quantities and block state](JSON-RPC-quantities-and-block-state.md) | S05 | Which encodings and block selectors identify a state query, and what does a returned proof establish? | Pinned EIP-1474/1898/1186 passages; conditional requests and a separately trusted state root. |
+| [ENR record bytes and identity](ENR-record-bytes-and-identity.md) | W01 | Which bytes authenticate an ENR and derive its node address, and what remains an endpoint claim? | Pinned EIP-778 and devp2p passages; published record, content preimage, and v4 key/address encodings. |
+| [Permit nonces and allowance authority](Permit-nonces-and-allowance-authority.md) | A04 | How do owner and token nonces distinguish two signed approvals from token transfer authority? | Pinned ERC-2612/4494 with ERC-20 and EIP-712 context; conditional state trace and synthetic signing bytes. |
 
 ## Planning and discovery
 

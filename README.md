@@ -14,6 +14,7 @@ For cryptographic work, read [validator key derivation and keystores](Notes/Vali
 For consensus and client boundaries, read [accountable safety](Notes/Accountable-safety-and-validator-overlap.md), [Noise peer identity](Notes/Noise-handshakes-and-libp2p-peer-identity.md), and [Engine newPayloadV3 outcomes](Notes/Engine-newPayloadV3-outcomes-and-order.md).
 For application interfaces, read [vault rounding and limits](Notes/ERC-4626-rounding-and-vault-limits.md), [ENS resolver boundaries](Notes/ENS-namehash-and-resolver-boundaries.md), and the [wallet RPC assessment and source refresh](Notes/Wallet-RPC-assessment-and-catalogue-refresh.md).
 The first follow-up batch adds [SSZ offsets, roots, and branches](Notes/SSZ-offsets-roots-and-branches.md), [storage gas and refunds](Notes/Storage-gas-and-refund-accounting.md), and [HKDF extract/expand](Notes/HKDF-extract-expand-and-context.md).
+The second follow-up batch adds [RPC quantities and block state](Notes/JSON-RPC-quantities-and-block-state.md), [ENR record identity](Notes/ENR-record-bytes-and-identity.md), and [permit authority](Notes/Permit-nonces-and-allowance-authority.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.

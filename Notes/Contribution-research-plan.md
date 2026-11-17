@@ -60,6 +60,7 @@ A completed phase means its selected documentation batch was published with its 
 It does not mean the family queue is exhausted or a mathematical claim has been formally verified.
 Published commits record delivery; the [source index](External-source-index.md) records the source notes that exist.
 After Phase 6, continue bounded batches from the remaining catalogue and unassessed inventory.
+The batch sections record delivery history; [Current coverage](#current-coverage) gives the remaining first entries after the latest batch.
 
 Before each commit, check the changed prose, local links, source pins, metadata totals where affected, and the exact staged file list.
 Record commands actually run and their results.
@@ -82,7 +83,7 @@ Independent calculations reproduced the RLP and ABI examples and all four displa
 These checks evaluate the examples with separate Python packages; they do not test EthLib or replay its proofs.
 The signed-data note keeps the pinned RPC text's `v` description and the example's `v = 28` explicit; signature serialization remains outside its result.
 
-Nine families in the Phase 2 queue still need their first source note after follow-up batch 1:
+After follow-up batch 1, nine Phase 2 families still needed their first source note:
 
 | Family | Next bounded question |
 | --- | --- |
@@ -125,7 +126,7 @@ The reading also assesses two previously Unassessed inventory entries:
 | EIP-2780 → E02 | Its runtime-gas rules explain why failure before the first frame differs from failure inside it. | Selected runtime-gas and authorization-processing sections; Last Call at the inventory pin, without a network activation claim. |
 
 These source mappings bring the total to 131 mapped documents and 1,101 Unassessed documents without changing the metadata census or family priorities.
-Ten Phase 3 families still need their first source note after follow-up batch 1:
+After follow-up batch 1, ten Phase 3 families still needed their first source note:
 
 | Family | Next bounded question |
 | --- | --- |
@@ -167,7 +168,7 @@ The key-generation note records that its three ERC source files are byte-identic
 The KZG report has a dated version and file digest; selected sections and reduction statements were read without a full security or ceremony audit.
 No inventory source mapping or family priority changes in this batch.
 
-Ten Phase 4 families still need their first source note:
+At the initial Phase 4 delivery, ten families still needed their first source note:
 
 | Family | Next bounded question |
 | --- | --- |
@@ -208,7 +209,7 @@ I01's Engine API entry now pins the revision read by the note and cited by EthLi
 The numbered inventory, source mappings, and family priorities stay unchanged.
 The notes preserve source limitations: shared fixed-set assumptions for the one-third bound, a libp2p actor-wording defect, and unspecified total precedence among simultaneous Engine failures.
 
-Seventeen Phase 5 families still need their first source note:
+At the initial Phase 5 delivery, seventeen families still needed their first source note:
 
 | Family | Next bounded question |
 | --- | --- |
@@ -263,7 +264,7 @@ Two ERC document bodies changed, 8048 and 8049; their text was not semantically 
 The six ERCs used by the vault and ENS notes have identical bytes across the compared revisions.
 The inventory keeps its original pins, with the refresh comparison recorded separately so that metadata equality does not imply body equality.
 
-Four Phase 6 families still need their first entry:
+At the initial Phase 6 delivery, four families still needed their first entry:
 
 | Family | Next bounded question |
 | --- | --- |
@@ -309,6 +310,42 @@ After this batch, 20 of the 70 families have a first note or assessment entry, a
 The remaining first-entry counts are nine for Phase 2, ten for Phase 3, ten for Phase 4, seventeen for Phase 5, and four for Phase 6.
 S02 retains multi-chunk and nested-variable layouts, E03 retains rollback and later gas amendments, and C04 retains additional vectors and protocol-specific context encodings.
 The initial notes do not exhaust these families.
+
+
+### Follow-up batch 2: RPC state, node records, and permit authority
+
+This batch develops one interface, networking, and application question from the remaining families.
+S05 establishes state-query encoding and selection before further proof or API notes.
+W01 extends the RLP foundation into a signed discovery record, and A04 extends signed-data preimages into conditional approval changes.
+All three retain their When needed priority because the batch fills concrete coverage gaps rather than assigning implementation work.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| S05: [quantities and block state](JSON-RPC-quantities-and-block-state.md) | RPC callers need exact wire types and a stable state identifier before interpreting returned claims. | Two constructed requests connect EIP-1474 encodings, EIP-1898 selectors, and EIP-1186 proof roles. Reading records source discrepancies and separates selected Lean profiles. |
+| W01: [ENR bytes and identity](ENR-record-bytes-and-identity.md) | Discovery work needs the signed content and key-derived address, independently of an advertised endpoint. | The published EIP-778 vector connects RLP, Keccak, compressed keys, and selected devp2p rules. Packet exchange and live connectivity stay outside the note. |
+| A04: [permit authority](Permit-nonces-and-allowance-authority.md) | Signature and application callers need nonce ownership, deadline semantics, and the exact action authorized. | ERC-2612 and ERC-4494 supply a conditional state case and explicit signing bytes. The note retains different failure wording and ERC-4494's example discrepancy. |
+
+These sources were already mapped in the catalogue, so no inventory assessment or priority changes are needed.
+Each note received a separate source review, followed by a navigation and catalogue review.
+Independent calculations checked the constructed RPC JSON and widths, the published ENR's RLP/content hash and node address, and the synthetic permit's signing bytes and conditional state trace.
+They used Python 3.12.15 with `rlp` 4.1.0 and PyCryptodome 3.23.0 where needed, without executing EthLib, a signature verifier, a token, or a network endpoint.
+The census remains 1,232 documents, with 136 mapped and 1,096 Unassessed; the catalogue retains 60 additional source entries and 17 literature entries.
+S05 retains complete trie verification and wider method profiles, W01 retains discovery packet/state-machine analysis, and A04 retains signature validation and full token integration cases.
+
+## Current coverage
+
+23 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+47 families still need a first entry.
+An entry covers its stated question and reading depth, rather than the entire family.
+
+| Original phase queue | Families awaiting a first entry |
+| --- | --- |
+| 1 | None. |
+| 2 | S03, C01, C06, C07, A02, A05, A06 |
+| 3 | E04, E05, E06, E07, E08, E09, E10, E11, E12, A09 |
+| 4 | C02, C03, C05, C10, C11, C12, C13, C14, C15, N06 |
+| 5 | N02, N03, N04, N05, N07, N08, W02, W03, W04, W06, W07, I02, I03, I04, I05, I06 |
+| 6 | A08, A13, A14, A15 |
 
 ## Assess sources systematically
 
@@ -439,5 +476,6 @@ The Phase 4 calculations used Python's hash, HMAC, PBKDF2, and Unicode functions
 The Phase 5 calculations used set and list operations and PyCryptodome 3.23.0 for the public Ed25519 example.
 The Phase 6 calculations used exact rational arithmetic, PyCryptodome 3.23.0 for Keccak-256, and comparisons of refreshed metadata and document bytes.
 Follow-up batch 1 adds three reviewed notes, with Python 3.14.8 standard-library byte, hash, HMAC, and gas-model calculations.
+Follow-up batch 2 adds three reviewed notes, with independent JSON, RLP, Keccak, curve-coordinate, and conditional permit-state calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
