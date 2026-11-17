@@ -24,7 +24,7 @@ The contribution's scope and the library's inclusion policy are separate decisio
 
 | File | Purpose and present coverage |
 | --- | --- |
-| [Ethereum source catalogue](Ethereum-source-catalogue.md) | 70 candidate note families, each with sources, a concrete question or output, a provisional priority, and a reason. Includes a register of 15 research papers or design notes. |
+| [Ethereum source catalogue](Ethereum-source-catalogue.md) | 70 candidate note families, each with sources, a concrete question or output, a provisional priority, and a reason. Includes a register of 16 research papers or design notes. |
 | [Ethereum standards inventory](Ethereum-standards-inventory.md) | Every distinct numbered EIP/ERC document in the recorded source snapshots: 607 EIPs and 625 ERCs. Contains titles, document statuses, declared dependencies, and candidate-family links where identified. |
 
 The inventory was generated from the official repositories at these commits:
@@ -64,6 +64,43 @@ After Phase 6, continue bounded batches from the remaining catalogue and unasses
 Before each commit, check the changed prose, local links, source pins, metadata totals where affected, and the exact staged file list.
 Record commands actually run and their results.
 Use executable tests or proof checks when a batch changes or evaluates executable material.
+
+### Phase 2 batch and follow-up questions
+
+This batch develops three representation questions before the execution-state work in Phase 3.
+They supply reusable byte-level examples for callers, log readers, and signing code without requiring a new EthLib feature.
+The [source index](External-source-index.md) links each note's pinned reading and review limits.
+
+| Selected family and note | Connection and contribution value | Additional knowledge and bounded result |
+| --- | --- | --- |
+| S01: [canonical RLP](RLP-canonical-encoding.md) | Encoding and decoding callers need to separate generic items from scalar field rules. | One nested encoding, 55/56-byte boundaries, and rejection cases connect Appendix B to parser inverse properties and typed-envelope limits. |
+| S04: [ABI encoding and event topics](ABI-encoding-and-event-topics.md) | Log readers and call boundaries need a schema, relative offsets, and the correct indexed-value encoding. | One complete `(uint256,string)` argument block connects ordinary ABI encoding to indexed hashes, packed ambiguity, and decoder acceptance limits. |
+| A03: [signed-data preimages](Signed-data-preimages-and-domains.md) | Hashing and signature callers need an exact message format before reasoning about verification. | The complete published Ether Mail preimage connects ERC-191 envelopes, EIP-712 type/domain hashes, and application replay obligations. |
+
+Each note received a separate source review.
+Independent calculations reproduced the RLP and ABI examples and all four displayed EIP-712 published hash constants.
+These checks evaluate the examples with separate Python packages; they do not test EthLib or replay its proofs.
+The signed-data note keeps the pinned RPC text's `v` description and the example's `v = 28` explicit; signature serialization remains outside its result.
+
+Eleven families in the Phase 2 queue still need their first source note:
+
+| Family | Next bounded question |
+| --- | --- |
+| S02 | How does one variable-length SSZ list pass from container offsets to a length-mixed root and branch? |
+| S03 | How do missing and zero-valued fields differ across one pair of progressive schemas? |
+| S05 | How do quantity/data encodings and a block-hash selector determine one RPC state view? |
+| C01 | Which padding and domain choices distinguish one Keccak-256 calculation from SHA3-256? |
+| C04 | How do salt, PRK, info, and the expansion bound appear in one published HKDF vector? |
+| C06 | Which input checks belong to point decoding, ECDSA verification, recovery, and transaction low-s acceptance? |
+| C07 | Which bit/integer conversions and rejected candidates occur in an applicable RFC 6979 vector? |
+| A02 | How do interface discovery, a receiver callback, and a magic return determine one token-transfer outcome? |
+| A04 | Which nonce, deadline, and domain authorize one permit, and what action does it permit? |
+| A05 | How does contract-defined signature validity differ from ECDSA recovery for one counterfactual account? |
+| A06 | Which actors validate one UserOperation, and where do protocol delegation and account modules enter? |
+
+The three covered families also retain work: trie-field schemas for S01; nested ABI layouts and custom errors for S04; arrays, compact signatures, domain discovery, and signature-value conventions for A03.
+Their initial notes do not establish complete family coverage.
+Phase 3 can use these representation notes while taking the next selected batch from its own queue.
 
 ## Assess sources systematically
 
@@ -186,7 +223,8 @@ Keep EthLib's contribution rules and complete proof-coverage descriptions in the
 
 The 1,232-document inventory is a metadata census of the two pinned repositories, not a semantic review of all their requirements.
 The 70-family catalogue combines metadata checks, selected external-source reading, and inspected EthLib source references.
-The 15 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
-The two Phase 1 source notes record their completed reading and review limits.
-Detailed reading and note writing for the other families remain planned work.
+The 16 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
+The two Phase 1 and three Phase 2 source notes record their completed reading and review limits.
+The Phase 2 byte calculations used Python 3.12.15, `rlp` 4.1.0, `eth-abi` 5.2.0, and PyCryptodome 3.23.0 in an isolated temporary environment.
+Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

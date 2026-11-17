@@ -20,11 +20,14 @@ Read the source section for the rule being changed, and check its version and ap
 | --- | --- | --- | --- |
 | [Document status and upgrade inclusion](Source-status-and-upgrade-inclusion.md) | P01 | How do document status, inclusion in an upgrade, and EthLib support differ? | Pinned EIP-1 and EIP-7723 process sections and EthLib's admission policy. |
 | [ERC-20 events and native ETH transfer logs](ERC-20-and-native-ETH-transfer-logs.md) | A01 | Which event fields are shared, and where do emission, units, and rollback differ? | Pinned ERC-20, EIP-7708 and related proposal text; source-derived byte-layout example. |
+| [RLP: canonical bytes and typed values](RLP-canonical-encoding.md) | S01 | Which bytes encode generic items, and which extra conditions belong to integer fields or typed envelopes? | Pinned Yellow Paper Appendix B, Coglio's selected decoder sections, EIP-2718; nested and boundary calculations. |
+| [ABI encoding and event topics](ABI-encoding-and-event-topics.md) | S04 | Where do offsets start, and which event fields encode directly or contribute a hash? | Pinned Solidity v0.8.30 ABI sections; complete argument encoding, packed ambiguity, and indexed-value rules. |
+| [Signed-data preimages and domains](Signed-data-preimages-and-domains.md) | A03 | Which bytes form an ERC-191/EIP-712 message, and which replay obligations remain with the application? | Pinned ERC-191, EIP-712 and published examples; independent recomputation of the complete Ether Mail digest. |
 
 ## Planning and discovery
 
 - The [phased research plan](Contribution-research-plan.md#delivery-phases) defines the next batches and their completion conditions.
-- The [source catalogue](Ethereum-source-catalogue.md) contains 70 candidate families and 15 research papers or design notes.
+- The [source catalogue](Ethereum-source-catalogue.md) contains 70 candidate families and 16 research papers or design notes.
 - The [standards inventory](Ethereum-standards-inventory.md) contains 1,232 numbered documents and keeps unassessed sources visible.
 
 Catalogue entries are candidate notes, not completed source explanations.
