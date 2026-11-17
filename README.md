@@ -4,6 +4,15 @@ A public research notebook for contributing to [EthLib](https://github.com/ether
 Notes preserve source reading, proof attempts, and open questions between contributions.
 This is a personal notebook; EthLib's contribution rules, definitions, proofs, and documentation remain the references for work on the library.
 
+## Start reading
+
+The [external source index](Notes/External-source-index.md) links the source notes and explains their review status.
+Begin with [document status and upgrade inclusion](Notes/Source-status-and-upgrade-inclusion.md) or [ERC-20 events and native ETH transfer logs](Notes/ERC-20-and-native-ETH-transfer-logs.md).
+
+The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
+The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.
+The [standards inventory](Notes/Ethereum-standards-inventory.md) retains all 1,232 EIP/ERC documents in its pinned snapshots, including sources not yet assessed for note relevance.
+
 ## Open the vault
 
 Clone this repository:
