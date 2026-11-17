@@ -33,6 +33,7 @@ Follow-up batch 6 adds [creation collisions and rollback](Creation-collisions-ro
 Follow-up batch 7 adds [EVM arithmetic and shift boundaries](EVM-word-arithmetic-and-shift-boundaries.md) for E05, [password KDF parameters and resource bounds](Password-KDF-parameters-and-resource-boundaries.md) for C05, and [token callback order and hook authority](Token-callback-order-and-hook-authority.md) for A09.
 Follow-up batch 8 adds [system calls and execution request commitments](System-calls-and-execution-request-commitments.md) for E07, [curve validation, ECDSA, and recovery boundaries](Curve-validation-ECDSA-and-recovery-boundaries.md) for C06, and a [payment URI revision assessment](Payment-URI-revisions-and-request-boundaries.md) for A13.
 Follow-up batch 9 adds [receipt status and block commitments](Receipts-status-gas-and-block-commitments.md) for E08, [deterministic nonce conversions](Deterministic-nonces-and-RFC6979-conversions.md) for C07, and a [cross-chain message and token-authority assessment](Cross-chain-message-identity-and-token-authority.md) for A14.
+Follow-up batch 10 adds [account trie proofs and absence boundaries](Account-trie-proofs-and-absence-boundaries.md) for E09, [RLPx capabilities and fork-ID filtering](RLPx-capabilities-and-fork-ID-filtering.md) for W03, and [governance clocks, vote history, and DAO metadata](Governance-clocks-vote-history-and-DAO-metadata.md) for A15.
 Their review statements apply only to the sources and questions they name; the remaining catalogue questions stay open.
 
 ## Reading the priorities

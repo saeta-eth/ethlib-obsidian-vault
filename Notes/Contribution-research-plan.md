@@ -520,20 +520,50 @@ The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the 
 The 70 questions and priority assignments are unchanged.
 Each first entry leaves broader fork composition, signature security, or a chosen bridge's conformance and trust model for later work.
 
+### Follow-up batch 10: account proofs, peer compatibility, and governance history
+
+This batch connects three consumer decisions to the evidence they require.
+E09 distinguishes a proof relative to a root from trust in that root, W03 separates peer compatibility checks, and A15 separates historical weight from governance descriptions.
+All three retain their When needed priorities.
+The entries supply bounded source knowledge without selecting an EthLib implementation or a DAO execution model.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E09: [account trie proofs and absence boundaries](Account-trie-proofs-and-absence-boundaries.md) | State-proof consumers need the authenticated path and encoded account before interpreting returned fields or absence. | Selected Yellow Paper rules and EIP-1186/161 support a complete constructed one-leaf proof and conditional absence case. Header trust and EthLib's local absent-field policy remain separate. |
+| W03: [RLPx capabilities and fork-ID filtering](RLPx-capabilities-and-fork-ID-filtering.md) | Networking consumers must distinguish permitted extensions, shared capability versions, and claims about a fork schedule. | Pinned devp2p and four EIPs support an invented message-ID allocation, published historical CRC controls, and conditional fork-ID cases. Cryptographic handshake execution and complete peer admission remain outside scope. |
+| A15: [governance clocks and vote history](Governance-clocks-vote-history-and-DAO-metadata.md) | A voting consumer needs a known clock domain and snapshot convention before using delegated weight or DAO metadata. | Complete ERC-5805/6372/4824 texts support clock boundaries, same-clock delegation arithmetic, and constructed metadata JSON. A specific consumer and its execution policy still need selection. |
+
+The notes identify their source versions, reading depth, and applicability limits.
+The account note retains EIP-1186's storageHash wording and separates its absent-account field gaps from the selected code policy.
+The networking note preserves source-specific requirement strengths, historical block-fork controls, and the separately scoped timestamp amendment.
+Its EIP-1898 citation supplies only the genesis-hash literal and does not change the catalogue's family assignments.
+The governance note distinguishes lookup SHOULD clauses from the separate past-value constancy MUST, retaining signed-delegation example discrepancies.
+DAO metadata descriptions do not select a voting rule or grant execution authority.
+
+Python calculations checked the account, compact path, and complete leaf-node encodings, root hash, different-key absence case, and changed-balance/nested-list controls.
+They reproduced the published EIP-2124 CRC32 values and EIP-6122's fictional timestamp control, and checked the invented capability ranges and conditional fork-filter cases.
+They also checked the uint48 boundary, fixed-history delegation sums, and constructed JSON syntax.
+No generic trie verifier, live RPC, chain validation, RLPx connection, frame authentication, voting contract, JSON-LD processor, EthLib binding, Lean build, or proof replay ran.
+
+All referenced numbered standards and external source entries were already catalogued.
+The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the additional-source count remains 66 and the literature register remains at 17.
+The 70 questions, source-family assignments, and priority recommendations are unchanged.
+Each first entry leaves a complete verifier audit, network admission policy, or chosen governance consumer for later work.
+
 ## Current coverage
 
-44 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-26 families still need a first entry.
+47 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+23 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
 | 2 | None. |
-| 3 | E09, E10, E11, E12 |
+| 3 | E10, E11, E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
-| 6 | A15 |
+| 5 | N02, N03, N04, N05, N07, N08, W06, W07, I02, I03, I04, I06 |
+| 6 | None. |
 
 ## Assess sources systematically
 
@@ -672,5 +702,6 @@ Follow-up batch 6 adds three bounded source notes, with CREATE2 address and gas 
 Follow-up batch 7 adds three bounded source notes, with published shift/copy controls, password-derivation outputs and qualified cost arithmetic, and hook lookup/selector and nested-send calculations.
 Follow-up batch 8 adds two bounded source notes and a URI revision assessment, with request bytes and hashes, standalone curve/signature/recovery arithmetic, and fixed URI-field and exact amount checks.
 Follow-up batch 9 adds two bounded source notes and a cross-chain assessment, with constructed receipt bytes, a published deterministic nonce and HMAC-state calculation, and bridge-call/conditional-ledger checks.
+Follow-up batch 10 adds three bounded source entries, with a constructed account proof and conditional absence, published fork-hash controls and capability arithmetic, and clock/delegation/metadata calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
