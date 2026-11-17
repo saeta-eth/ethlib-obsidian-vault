@@ -60,8 +60,8 @@ Review changed requirements and applicability before updating a source note.
 
 ## Assessment meaning
 
-131 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
-The remaining 1101 are Unassessed for note relevance.
+135 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
+The remaining 1097 are Unassessed for note relevance.
 A family link is a proposed knowledge connection, not evidence that the full document has been read or that EthLib implements it.
 Unassessed does not mean irrelevant, rejected, or lower priority.
 Requires lists the source metadata dependencies; it is not a complete cross-specification dependency graph.
@@ -581,7 +581,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-2003](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2003.md) EVMC modules for implementations of precompiled contracts | Stagnant | 1352 | Unassessed |
 | [EIP-2015](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2015.md) wallet_updateEthereumChain RPC Method | Stagnant | 155 | Unassessed |
 | [EIP-2159](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2159.md) Common Prometheus Metrics Names for Clients | Final | None recorded | Unassessed |
-| [EIP-2255](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2255.md) Wallet Permissions System | Final | 1193 | Unassessed |
+| [EIP-2255](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2255.md) Wallet Permissions System | Final | 1193 | A11 |
 | [EIP-2256](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2256.md) wallet_getOwnedAssets JSON-RPC Method | Stagnant | 55, 155, 1474 | Unassessed |
 | [EIP-2566](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2566.md) Human Readable Parameters for Contract Function Execution | Stagnant | None recorded | Unassessed |
 | [EIP-2696](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2696.md) JavaScript `request` method RPC transport | Final | None recorded | Unassessed |
@@ -596,17 +596,17 @@ Read the linked exact revision before using a requirement.
 | [EIP-3045](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3045.md) Adds `baseFee` to `eth_getUncleByBlockHashAndIndex` | Stagnant | 1474, 1559 | Unassessed |
 | [EIP-3046](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3046.md) Adds `baseFee` to `eth_getUncleByBlockNumberAndIndex` | Stagnant | 1474, 1559 | Unassessed |
 | [EIP-3076](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3076.md) Slashing Protection Interchange Format | Last Call | None recorded | I04, I05 |
-| [EIP-3085](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3085.md) wallet_addEthereumChain RPC Method | Stagnant | 155 | Unassessed |
+| [EIP-3085](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3085.md) wallet_addEthereumChain RPC Method | Stagnant | 155 | A11 |
 | [EIP-3091](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3091.md) Block Explorer API Routes | Stagnant | None recorded | Unassessed |
 | [EIP-3155](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3155.md) EVM trace specification | Last Call | None recorded | Unassessed |
-| [EIP-3326](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3326.md) Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`) | Stagnant | 155, 695 | Unassessed |
+| [EIP-3326](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3326.md) Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`) | Stagnant | 155, 695 | A11 |
 | [EIP-3709](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3709.md) Remove Support for Type 1 Transactions | Stagnant | 1559 | Unassessed |
 | [EIP-4736](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-4736.md) Consensus Layer Withdrawal Protection | Final | None recorded | Unassessed |
 | [EIP-4881](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-4881.md) Deposit Contract Snapshot Interface | Final | None recorded | Unassessed |
 | [EIP-5345](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5345.md) Silent Signing Extension for JSON-RPC | Stagnant | None recorded | Unassessed |
 | [EIP-5593](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5593.md) Restrict Ethereum Provider API Injection | Stagnant | 1193 | Unassessed |
 | [EIP-5749](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5749.md) The 'window.evmproviders' object | Final | 1193 | Unassessed |
-| [EIP-5792](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5792.md) Wallet Call API | Final | 1193 | Unassessed |
+| [EIP-5792](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5792.md) Wallet Call API | Final | 1193 | A11 |
 | [EIP-6051](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-6051.md) Private Key Encapsulation | Stagnant | None recorded | Unassessed |
 | [EIP-6789](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-6789.md) Rename gas to mana | Stagnant | None recorded | Unassessed |
 | [EIP-6963](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-6963.md) Multi Injected Provider Discovery | Final | 1193 | A11 |

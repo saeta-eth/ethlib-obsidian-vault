@@ -32,11 +32,14 @@ Read the source section for the rule being changed, and check its version and ap
 | [Accountable safety and validator overlap](Accountable-safety-and-validator-overlap.md) | N01 | Which shared stake and vote assumptions turn conflicting finalizations into a slashable-weight bound? | Casper FFG v4, fixed-set definitions and qualified attestation bridge; twelve-unit quorum example. |
 | [Noise handshakes and libp2p peer identity](Noise-handshakes-and-libp2p-peer-identity.md) | W05 | How do the channel's static key, the signing identity, and a caller's expected Peer ID differ? | Noise revision 34 and pinned libp2p rules; exact Ed25519 identity bytes, separate from EthLib's secp256k1 profile. |
 | [Engine newPayloadV3 outcomes and order](Engine-newPayloadV3-outcomes-and-order.md) | I01 | Which response is an error or payload status, and which checks and ancestry determine it? | Pinned Paris/Shanghai/Cancun inheritance and Prague boundary; observed EthLib order distinguished from unspecified source precedence. |
+| [ERC-4626 rounding and vault limits](ERC-4626-rounding-and-vault-limits.md) | A07 | How do conversion estimates, previews, executable limits, and integer rounding differ? | Pinned ERC-4626 and selected ERC-7540/7575 contrasts; explicit proportional-model arithmetic. |
+| [ENS namehash and resolver boundaries](ENS-namehash-and-resolver-boundaries.md) | A12 | Which bytes identify a name, and what do registry, resolver, reverse-name, and text answers establish? | Pinned ERC-137/181/634, published namehash vectors, and a DNS encoding contrast; normalized ASCII scope. |
+| [Wallet RPC assessment and catalogue refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) | A11 | Which wallet standards deserve follow-up, and what changed in the refreshed source census? | Bounded assessment of four EIPs, conditional switch case, metadata/body comparison, and R17 literature candidate; not a complete wallet specification. |
 
 ## Planning and discovery
 
 - The [phased research plan](Contribution-research-plan.md#delivery-phases) defines the next batches and their completion conditions.
-- The [source catalogue](Ethereum-source-catalogue.md) contains 70 candidate families and 16 research papers or design notes.
+- The [source catalogue](Ethereum-source-catalogue.md) contains 70 candidate families and 17 research papers or design notes.
 - The [standards inventory](Ethereum-standards-inventory.md) contains 1,232 numbered documents and keeps unassessed sources visible.
 
 Catalogue entries are candidate notes, not completed source explanations.

@@ -24,7 +24,7 @@ The contribution's scope and the library's inclusion policy are separate decisio
 
 | File | Purpose and present coverage |
 | --- | --- |
-| [Ethereum source catalogue](Ethereum-source-catalogue.md) | 70 candidate note families, each with sources, a concrete question or output, a provisional priority, and a reason. Includes a register of 16 research papers or design notes. |
+| [Ethereum source catalogue](Ethereum-source-catalogue.md) | 70 candidate note families, each with sources, a concrete question or output, a provisional priority, and a reason. Includes a register of 17 research papers or design notes. |
 | [Ethereum standards inventory](Ethereum-standards-inventory.md) | Every distinct numbered EIP/ERC document in the recorded source snapshots: 607 EIPs and 625 ERCs. Contains titles, document statuses, declared dependencies, and candidate-family links where identified. |
 
 The inventory was generated from the official repositories at these commits:
@@ -36,7 +36,7 @@ The census resolves 365 Moved entries to their ERC destinations, leaving 1,232 d
 It includes all statuses and categories in those snapshots.
 It excludes unmerged proposals and files outside the numbered document paths; RFCs, API repositories, and papers have their separate catalogue entries.
 
-Of those documents, 131 are mapped to at least one candidate family and 1,101 remain Unassessed for note relevance.
+Of those documents, 135 are mapped to at least one candidate family and 1,097 remain Unassessed for note relevance.
 Mapping is a proposed knowledge connection, not evidence that the entire source has been reviewed or that EthLib implements it.
 The paper register is a literature seed rather than a complete literature survey.
 
@@ -237,6 +237,48 @@ N01 retains dynamic stake and liveness arguments; W05 retains handshake-security
 The initial notes do not exhaust these families.
 Phase 6 can take its selected application and catalogue-renewal batch from the next queue.
 
+### Phase 6 batch and follow-up questions
+
+This batch develops two application questions and one bounded assessment record.
+A07 separates vault arithmetic from executable capacity, A12 separates name bytes from resolver authority, and A11 assesses four wallet RPC sources.
+The assessment also compares fresh metadata with the frozen census and adds a literature candidate with its reading depth stated.
+
+| Selected family and note | Connection and contribution value | Additional knowledge and bounded result |
+| --- | --- | --- |
+| A07: [vault rounding and limits](ERC-4626-rounding-and-vault-limits.md) | Arithmetic and interface contributions need to distinguish fee-free estimates, previews, limits, and actual transfers. | A small proportional model traces four rounding directions, with qualified asynchronous and share-token contrasts. |
+| A12: [ENS resolver boundaries](ENS-namehash-and-resolver-boundaries.md) | Name and hash callers need the correct input bytes and distinct ownership, resolver, recipient, and metadata roles. | Published namehash vectors connect the original name protocol to address, reverse-name, and text profiles within an explicit normalization scope. |
+| A11: [wallet assessment and catalogue refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) | Provider integrations need to separate permissions, chain configuration, active-chain changes, and batched call submission. | Four source assessments, a conditional switch request, a fresh census comparison, and a bounded literature reading extend the discovery record. |
+
+Each note received a separate source review.
+Independent calculations checked the model's roundings, published namehash values, interface selectors, and DNS byte contrast.
+A separate metadata comparison checked all 1,232 records on the tracked fields and the refreshed archive digest.
+These checks did not execute a vault, resolver, Provider, wallet, or EthLib.
+
+The four assessed EIPs, 2255, 3085, 3326, and 5792, now map to A11.
+This brings the mapped total to 135 and leaves 1,097 Unassessed entries in the baseline census.
+A11's When needed priority is retained; the assessment does not settle every request schema or source discrepancy.
+RFC 1035 joins A12's encoding references, and R17, the fixed-version DeFi systematization paper, supplies contextual reading for A07.
+The catalogue now has 17 literature entries and 59 additional source entries, with all 70 family priorities unchanged.
+
+The refresh observed an unchanged EIPs head and a newer ERCs head, `50b3a3cdd2c12e2b81288b56f073c0ee812f95a8`.
+It found no added or removed IDs, tracked metadata changes, or changed redirects: the census remains 607 EIPs and 625 ERCs with 365 resolved redirects.
+Two ERC document bodies changed, 8048 and 8049; their text was not semantically reviewed.
+The six ERCs used by the vault and ENS notes have identical bytes across the compared revisions.
+The inventory keeps its original pins, with the refresh comparison recorded separately so that metadata equality does not imply body equality.
+
+Four Phase 6 families still need their first entry:
+
+| Family | Next bounded question |
+| --- | --- |
+| A08 | Which metadata schema, update signal, or royalty query supplies one concrete consumer guarantee? |
+| A13 | Which URI revision and caller determine the parsing and chain-selection rules of one payment request? |
+| A14 | Which trust and finality assumptions qualify one cross-chain interface result? |
+| A15 | How do one governance clock and historical voting query define the time of a vote? |
+
+A07 retains detailed asynchronous and fee models; A12 retains normalization and extended resolver reviews; A11 retains full method-specific explanations and integration cases.
+The six initial delivery batches do not exhaust their queues or the inventory.
+Continue with a bounded question from the remaining families, revisit a source ambiguity, or assess another Unassessed cluster when it supports a contribution.
+
 ## Assess sources systematically
 
 For each candidate, record four judgments before assigning a writing priority:
@@ -358,11 +400,12 @@ Keep EthLib's contribution rules and complete proof-coverage descriptions in the
 
 The 1,232-document inventory is a metadata census of the two pinned repositories, not a semantic review of all their requirements.
 The 70-family catalogue combines metadata checks, selected external-source reading, and inspected EthLib source references.
-The 16 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
-The two Phase 1 notes and the three notes in each of Phases 2 through 5 record their completed reading and review limits.
+The 17 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
+The two Phase 1 notes and the three entries in each of Phases 2 through 6 record their completed reading and review limits.
 The Phase 2 byte calculations used Python 3.12.15, `rlp` 4.1.0, `eth-abi` 5.2.0, and PyCryptodome 3.23.0 in an isolated temporary environment.
 The Phase 3 calculations used separate RLP/Keccak tools and source-derived state traces, with no EthLib execution.
 The Phase 4 calculations used Python's hash, HMAC, PBKDF2, and Unicode functions, PyCryptodome 3.23.0 for AES, and scalar or symbolic arithmetic.
 The Phase 5 calculations used set and list operations and PyCryptodome 3.23.0 for the public Ed25519 example.
+The Phase 6 calculations used exact rational arithmetic, PyCryptodome 3.23.0 for Keccak-256, and comparisons of refreshed metadata and document bytes.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

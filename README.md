@@ -12,6 +12,7 @@ For representation and signing work, read [canonical RLP](Notes/RLP-canonical-en
 For execution-state work, continue with [typed transaction envelopes](Notes/Typed-transaction-envelopes-and-signing.md), [authorization order and rollback](Notes/Authorization-order-and-rollback.md), and [proxy/delegation context](Notes/Proxies-delegation-and-storage-context.md).
 For cryptographic work, read [validator key derivation and keystores](Notes/Validator-key-derivation-and-keystores.md), [BLS verification preconditions](Notes/BLS-ciphersuites-and-verification-preconditions.md), and [KZG openings and setup assumptions](Notes/KZG-openings-and-setup-assumptions.md).
 For consensus and client boundaries, read [accountable safety](Notes/Accountable-safety-and-validator-overlap.md), [Noise peer identity](Notes/Noise-handshakes-and-libp2p-peer-identity.md), and [Engine newPayloadV3 outcomes](Notes/Engine-newPayloadV3-outcomes-and-order.md).
+For application interfaces, read [vault rounding and limits](Notes/ERC-4626-rounding-and-vault-limits.md), [ENS resolver boundaries](Notes/ENS-namehash-and-resolver-boundaries.md), and the [wallet RPC assessment and source refresh](Notes/Wallet-RPC-assessment-and-catalogue-refresh.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.
