@@ -35,6 +35,9 @@ Read the source section for the rule being changed, and check its version and ap
 | [ERC-4626 rounding and vault limits](ERC-4626-rounding-and-vault-limits.md) | A07 | How do conversion estimates, previews, executable limits, and integer rounding differ? | Pinned ERC-4626 and selected ERC-7540/7575 contrasts; explicit proportional-model arithmetic. |
 | [ENS namehash and resolver boundaries](ENS-namehash-and-resolver-boundaries.md) | A12 | Which bytes identify a name, and what do registry, resolver, reverse-name, and text answers establish? | Pinned ERC-137/181/634, published namehash vectors, and a DNS encoding contrast; normalized ASCII scope. |
 | [Wallet RPC assessment and catalogue refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) | A11 | Which wallet standards deserve follow-up, and what changed in the refreshed source census? | Bounded assessment of four EIPs, conditional switch case, metadata/body comparison, and R17 literature candidate; not a complete wallet specification. |
+| [SSZ offsets, roots, and branches](SSZ-offsets-roots-and-branches.md) | S02 | How do one container's bytes relate to its list root, length mix-in, and proof address? | Pinned historical prose and executable-project passages; a packed-list example and a two-sibling branch. |
+| [Storage gas and refund accounting](Storage-gas-and-refund-accounting.md) | E03 | How do original/current/new values, warmth, and a transaction refund cap interact? | Pinned storage EIPs composed for London; two conditional SSTORE traces and a retained rationale discrepancy. |
+| [HKDF extract, expand, and context](HKDF-extract-expand-and-context.md) | C04 | Which bytes distinguish salt, keying material, expansion context, and the output bound? | RFC 2104 and RFC 5869 sections; published SHA-256 Test Case 1, expansion intermediates, and caller assumptions. |
 
 ## Planning and discovery
 

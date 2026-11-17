@@ -13,6 +13,7 @@ For execution-state work, continue with [typed transaction envelopes](Notes/Type
 For cryptographic work, read [validator key derivation and keystores](Notes/Validator-key-derivation-and-keystores.md), [BLS verification preconditions](Notes/BLS-ciphersuites-and-verification-preconditions.md), and [KZG openings and setup assumptions](Notes/KZG-openings-and-setup-assumptions.md).
 For consensus and client boundaries, read [accountable safety](Notes/Accountable-safety-and-validator-overlap.md), [Noise peer identity](Notes/Noise-handshakes-and-libp2p-peer-identity.md), and [Engine newPayloadV3 outcomes](Notes/Engine-newPayloadV3-outcomes-and-order.md).
 For application interfaces, read [vault rounding and limits](Notes/ERC-4626-rounding-and-vault-limits.md), [ENS resolver boundaries](Notes/ENS-namehash-and-resolver-boundaries.md), and the [wallet RPC assessment and source refresh](Notes/Wallet-RPC-assessment-and-catalogue-refresh.md).
+The first follow-up batch adds [SSZ offsets, roots, and branches](Notes/SSZ-offsets-roots-and-branches.md), [storage gas and refunds](Notes/Storage-gas-and-refund-accounting.md), and [HKDF extract/expand](Notes/HKDF-extract-expand-and-context.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.

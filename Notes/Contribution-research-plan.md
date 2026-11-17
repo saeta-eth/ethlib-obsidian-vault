@@ -36,7 +36,7 @@ The census resolves 365 Moved entries to their ERC destinations, leaving 1,232 d
 It includes all statuses and categories in those snapshots.
 It excludes unmerged proposals and files outside the numbered document paths; RFCs, API repositories, and papers have their separate catalogue entries.
 
-Of those documents, 135 are mapped to at least one candidate family and 1,097 remain Unassessed for note relevance.
+Of those documents, 136 are mapped to at least one candidate family and 1,096 remain Unassessed for note relevance.
 Mapping is a proposed knowledge connection, not evidence that the entire source has been reviewed or that EthLib implements it.
 The paper register is a literature seed rather than a complete literature survey.
 
@@ -82,15 +82,13 @@ Independent calculations reproduced the RLP and ABI examples and all four displa
 These checks evaluate the examples with separate Python packages; they do not test EthLib or replay its proofs.
 The signed-data note keeps the pinned RPC text's `v` description and the example's `v = 28` explicit; signature serialization remains outside its result.
 
-Eleven families in the Phase 2 queue still need their first source note:
+Nine families in the Phase 2 queue still need their first source note after follow-up batch 1:
 
 | Family | Next bounded question |
 | --- | --- |
-| S02 | How does one variable-length SSZ list pass from container offsets to a length-mixed root and branch? |
 | S03 | How do missing and zero-valued fields differ across one pair of progressive schemas? |
 | S05 | How do quantity/data encodings and a block-hash selector determine one RPC state view? |
 | C01 | Which padding and domain choices distinguish one Keccak-256 calculation from SHA3-256? |
-| C04 | How do salt, PRK, info, and the expansion bound appear in one published HKDF vector? |
 | C06 | Which input checks belong to point decoding, ECDSA verification, recovery, and transaction low-s acceptance? |
 | C07 | Which bit/integer conversions and rejected candidates occur in an applicable RFC 6979 vector? |
 | A02 | How do interface discovery, a receiver callback, and a magic return determine one token-transfer outcome? |
@@ -127,11 +125,10 @@ The reading also assesses two previously Unassessed inventory entries:
 | EIP-2780 → E02 | Its runtime-gas rules explain why failure before the first frame differs from failure inside it. | Selected runtime-gas and authorization-processing sections; Last Call at the inventory pin, without a network activation claim. |
 
 These source mappings bring the total to 131 mapped documents and 1,101 Unassessed documents without changing the metadata census or family priorities.
-Eleven Phase 3 families still need their first source note:
+Ten Phase 3 families still need their first source note after follow-up batch 1:
 
 | Family | Next bounded question |
 | --- | --- |
-| E03 | How do original/current/new values determine the gas and refund of one storage-write sequence? |
 | E04 | Which state and value changes roll back across one failed call or creation? |
 | E05 | What boundary inputs distinguish one opcode amendment from its historical behaviour? |
 | E06 | How does one precompile's input/output/error contract differ from the underlying mathematical operation? |
@@ -279,6 +276,40 @@ A07 retains detailed asynchronous and fee models; A12 retains normalization and 
 The six initial delivery batches do not exhaust their queues or the inventory.
 Continue with a bounded question from the remaining families, revisit a source ambiguity, or assess another Unassessed cluster when it supports a contribution.
 
+### Follow-up batch 1: serialization, storage, and key derivation
+
+This batch takes three remaining families from the representation, execution, and cryptography queues.
+S02 and E03 fill foundational gaps before more complex schema and call-state questions.
+C04 fills a shared prerequisite for the published validator-key and Noise notes, while retaining its When needed priority.
+The selection uses the first worked result and its reuse, with all 70 family priorities unchanged.
+
+| Family and narrow question | Connection and contribution value | Additional knowledge, coverage, and effort |
+| --- | --- | --- |
+| S02: How does one list-containing container pass from bytes to a root and branch? | Serialization and proof callers need distinct offsets, limits, lengths, and authenticated chunk addresses. | A small `List[uint16, 4]` example connects historical prose to selected executable-project passages. One schema keeps this first note bounded. |
+| E03: How do repeated writes affect storage gas and the refund counter? | Execution work needs to compose amendments rather than copy an isolated gas table. | Two London-scoped traces separate cold costs, dirty-slot changes, counter deltas, and the transaction cap. Later resource models remain separate work. |
+| C04: How do salt, input material, and context enter HKDF? | Key derivation and secure-channel work need exact HMAC argument roles and expansion bounds. | RFC 5869 Test Case 1 exposes both blocks and truncation, without treating a known answer as a security theorem. Full scheme reductions remain unread. |
+
+Source readiness is recorded in [the SSZ note](SSZ-offsets-roots-and-branches.md), [the storage note](Storage-gas-and-refund-accounting.md), and [the HKDF note](HKDF-extract-expand-and-context.md).
+The SSZ reading separates historical consensus-specs prose from the executable project's stated specification role.
+The storage reading composes pinned EIPs for the assumed London rules and retains EIP-3529's conflicting rationale figure.
+The HKDF reading names its RFC sections and published vector, separating caller assumptions from algorithmic checks.
+
+Each note received a separate review against its named sources and selected EthLib definitions.
+Independent Python 3.14.8 calculations reproduced the SSZ bytes, roots, and branch, the storage traces and assumed refund cap, and RFC 5869's published PRK/OKM with expansion intermediates.
+Additional controls checked small SSZ decoding boundaries, branch changes, the storage sentry, and the HKDF counter arithmetic and context inputs.
+These are source-model and example checks, without executing EthLib, the official SSZ package, or an EVM.
+
+EIP-1283 moves from Unassessed to E03 because EIP-2200 explicitly inherits its original/current/new vocabulary.
+The assessment covers that definition passage as a historical prerequisite, not its superseded standalone gas schedule or complete argument.
+This brings the inventory to 136 mapped documents and 1,096 Unassessed documents, with its 1,232 source records and baseline pins retained.
+The historical SSZ Merkle-proof document joins S02's references, bringing additional source entries to 60.
+The literature register stays at 17 entries.
+
+After this batch, 20 of the 70 families have a first note or assessment entry, and 50 still need one.
+The remaining first-entry counts are nine for Phase 2, ten for Phase 3, ten for Phase 4, seventeen for Phase 5, and four for Phase 6.
+S02 retains multi-chunk and nested-variable layouts, E03 retains rollback and later gas amendments, and C04 retains additional vectors and protocol-specific context encodings.
+The initial notes do not exhaust these families.
+
 ## Assess sources systematically
 
 For each candidate, record four judgments before assigning a writing priority:
@@ -407,5 +438,6 @@ The Phase 3 calculations used separate RLP/Keccak tools and source-derived state
 The Phase 4 calculations used Python's hash, HMAC, PBKDF2, and Unicode functions, PyCryptodome 3.23.0 for AES, and scalar or symbolic arithmetic.
 The Phase 5 calculations used set and list operations and PyCryptodome 3.23.0 for the public Ed25519 example.
 The Phase 6 calculations used exact rational arithmetic, PyCryptodome 3.23.0 for Keccak-256, and comparisons of refreshed metadata and document bytes.
+Follow-up batch 1 adds three reviewed notes, with Python 3.14.8 standard-library byte, hash, HMAC, and gas-model calculations.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.

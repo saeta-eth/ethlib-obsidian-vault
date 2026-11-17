@@ -60,8 +60,8 @@ Review changed requirements and applicability before updating a source note.
 
 ## Assessment meaning
 
-135 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
-The remaining 1097 are Unassessed for note relevance.
+136 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
+The remaining 1096 are Unassessed for note relevance.
 A family link is a proposed knowledge connection, not evidence that the full document has been read or that EthLib implements it.
 Unassessed does not mean irrelevant, rejected, or lower priority.
 Requires lists the source metadata dependencies; it is not a complete cross-specification dependency graph.
@@ -124,7 +124,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-1234](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1234.md) Constantinople Difficulty Bomb Delay and Block Reward Adjustment | Final | None recorded | Unassessed |
 | [EIP-1240](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1240.md) Remove Difficulty Bomb | Withdrawn | None recorded | Unassessed |
 | [EIP-1276](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1276.md) Eliminate Difficulty Bomb and Adjust Block Reward on Constantinople Shift | Stagnant | None recorded | Unassessed |
-| [EIP-1283](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1283.md) Net gas metering for SSTORE without dirty maps | Final | None recorded | Unassessed |
+| [EIP-1283](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1283.md) Net gas metering for SSTORE without dirty maps | Final | None recorded | E03 |
 | [EIP-1285](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1285.md) Increase Gcallstipend gas in the CALL opcode | Stagnant | None recorded | Unassessed |
 | [EIP-1295](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1295.md) Modify Ethereum PoW Incentive Structure and Delay Difficulty Bomb | Stagnant | None recorded | Unassessed |
 | [EIP-1344](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-1344.md) ChainID opcode | Final | 155 | E05 |
