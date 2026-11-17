@@ -60,8 +60,8 @@ Review changed requirements and applicability before updating a source note.
 
 ## Assessment meaning
 
-129 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
-The remaining 1103 are Unassessed for note relevance.
+131 documents are linked to at least one candidate family in the [source catalogue](Ethereum-source-catalogue.md).
+The remaining 1101 are Unassessed for note relevance.
 A family link is a proposed knowledge connection, not evidence that the full document has been read or that EthLib implements it.
 Unassessed does not mean irrelevant, rejected, or lower priority.
 Requires lists the source metadata dependencies; it is not a complete cross-specification dependency graph.
@@ -75,7 +75,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-2](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2.md) Homestead Hard-fork Changes | Final | None recorded | E11, C06 |
 | [EIP-3](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-3.md) Addition of CALLDEPTH opcode | Withdrawn | None recorded | Unassessed |
 | [EIP-5](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-5.md) Gas Usage for `RETURN` and `CALL*` | Final | None recorded | Unassessed |
-| [EIP-7](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7.md) DELEGATECALL | Final | None recorded | Unassessed |
+| [EIP-7](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-7.md) DELEGATECALL | Final | None recorded | A10 |
 | [EIP-86](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-86.md) Abstraction of transaction origin and signature | Stagnant | None recorded | Unassessed |
 | [EIP-100](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-100.md) Change difficulty adjustment to target mean block time including uncles | Final | None recorded | Unassessed |
 | [EIP-101](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-101.md) Serenity Currency and Crypto Abstraction | Stagnant | None recorded | Unassessed |
@@ -180,7 +180,7 @@ Read the linked exact revision before using a requirement.
 | [EIP-2711](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2711.md) Sponsored, expiring and batch transactions. | Withdrawn | 2718 | Unassessed |
 | [EIP-2718](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2718.md) Typed Transaction Envelope | Final | None recorded | E01, E08 |
 | [EIP-2733](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2733.md) Transaction Package | Withdrawn | 2718 | Unassessed |
-| [EIP-2780](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2780.md) Resource-Based Intrinsic Transaction Gas | Last Call | 2718, 2929, 2930, 6780, 7623, 7702, 7708, 7928, 8037, 8038 | Unassessed |
+| [EIP-2780](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2780.md) Resource-Based Intrinsic Transaction Gas | Last Call | 2718, 2929, 2930, 6780, 7623, 7702, 7708, 7928, 8037, 8038 | E02 |
 | [EIP-2803](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2803.md) Rich Transactions | Stagnant | None recorded | Unassessed |
 | [EIP-2926](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2926.md) Chunk-Based Code Merkleization | Draft | 161, 170 | Unassessed |
 | [EIP-2929](https://github.com/ethereum/EIPs/blob/8194528a2ee9a4893a398a5871c470ab0ac3b09a/EIPS/eip-2929.md) Gas cost increases for state access opcodes | Final | None recorded | E03 |

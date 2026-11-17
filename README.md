@@ -9,6 +9,7 @@ This is a personal notebook; EthLib's contribution rules, definitions, proofs, a
 The [external source index](Notes/External-source-index.md) links the source notes and explains their review status.
 Begin with [document status and upgrade inclusion](Notes/Source-status-and-upgrade-inclusion.md) or [ERC-20 events and native ETH transfer logs](Notes/ERC-20-and-native-ETH-transfer-logs.md).
 For representation and signing work, read [canonical RLP](Notes/RLP-canonical-encoding.md), [ABI encoding and event topics](Notes/ABI-encoding-and-event-topics.md), and [signed-data preimages and domains](Notes/Signed-data-preimages-and-domains.md).
+For execution-state work, continue with [typed transaction envelopes](Notes/Typed-transaction-envelopes-and-signing.md), [authorization order and rollback](Notes/Authorization-order-and-rollback.md), and [proxy/delegation context](Notes/Proxies-delegation-and-storage-context.md).
 
 The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
 The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.

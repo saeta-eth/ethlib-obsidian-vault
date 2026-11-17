@@ -36,7 +36,7 @@ The census resolves 365 Moved entries to their ERC destinations, leaving 1,232 d
 It includes all statuses and categories in those snapshots.
 It excludes unmerged proposals and files outside the numbered document paths; RFCs, API repositories, and papers have their separate catalogue entries.
 
-Of those documents, 129 are mapped to at least one candidate family and 1,103 remain Unassessed for note relevance.
+Of those documents, 131 are mapped to at least one candidate family and 1,101 remain Unassessed for note relevance.
 Mapping is a proposed knowledge connection, not evidence that the entire source has been reviewed or that EthLib implements it.
 The paper register is a literature seed rather than a complete literature survey.
 
@@ -101,6 +101,51 @@ Eleven families in the Phase 2 queue still need their first source note:
 The three covered families also retain work: trie-field schemas for S01; nested ABI layouts and custom errors for S04; arrays, compact signatures, domain discovery, and signature-value conventions for A03.
 Their initial notes do not establish complete family coverage.
 Phase 3 can use these representation notes while taking the next selected batch from its own queue.
+
+### Phase 3 batch and follow-up questions
+
+This batch connects the Phase 2 byte encodings to transaction admission, authorization state, and execution context.
+It selects E01 and E02 before A10 so that the proxy comparison can use the transaction and authorization boundaries already explained.
+Each note describes a bounded reading at exact source revisions, with later amendments identified separately.
+
+| Selected family and note | Connection and contribution value | Additional knowledge and bounded result |
+| --- | --- | --- |
+| E01: [typed transactions](Typed-transaction-envelopes-and-signing.md) | Transaction codecs and signature callers must distinguish wire bytes, signing bytes, and inclusion conditions. | One complete unsigned type-2 preimage and conditional fee calculation connect RLP to per-type signing domains and blob network wrappers. |
+| E02: [authorization order and rollback](Authorization-order-and-rollback.md) | State-transition work must distinguish an invalid transaction, a skipped tuple, and a failed execution. | An assumed-recovery trace follows warming, nonce changes, delegation replacements, and refund credits before a reverting frame. |
+| A10: [proxy/delegation context](Proxies-delegation-and-storage-context.md) | Call and storage work must track code source separately from the account whose state it uses. | A complete minimal-proxy runtime and published storage-slot calculation support a context comparison with EIP-7702 delegation. |
+
+The notes received separate source reviews and independent checks of their displayed bytes, slot hashes, arithmetic, and conditional state trace.
+The state and context traces are deductions under their stated assumptions, not executed EVM vectors or Lean proofs.
+The transaction note preserves the unresolved EIP-7702 outer-signing wording; its complete numeric signing example uses EIP-1559's explicit formula.
+The authorization note keeps the original EIP-7702 rules separate from the pinned Last Call EIP-2780/8037 amendments.
+
+The reading also assesses two previously Unassessed inventory entries:
+
+| Source and family | Connection and reason for assessment | Review depth and limit |
+| --- | --- | --- |
+| EIP-7 → A10 | Its caller/value rules are a direct prerequisite for explaining a proxy's `DELEGATECALL` context. | Overview, Specification, and Rationale; gas amendments are outside the proxy trace. |
+| EIP-2780 → E02 | Its runtime-gas rules explain why failure before the first frame differs from failure inside it. | Selected runtime-gas and authorization-processing sections; Last Call at the inventory pin, without a network activation claim. |
+
+These source mappings bring the total to 131 mapped documents and 1,101 Unassessed documents without changing the metadata census or family priorities.
+Eleven Phase 3 families still need their first source note:
+
+| Family | Next bounded question |
+| --- | --- |
+| E03 | How do original/current/new values determine the gas and refund of one storage-write sequence? |
+| E04 | Which state and value changes roll back across one failed call or creation? |
+| E05 | What boundary inputs distinguish one opcode amendment from its historical behaviour? |
+| E06 | How does one precompile's input/output/error contract differ from the underlying mathematical operation? |
+| E07 | Which fields and ordered steps form one system-contract request? |
+| E08 | Which fields belong to one fork's header, receipt, and log commitments? |
+| E09 | How does one account or storage path establish inclusion or absence under its pinned trie rules? |
+| E10 | Which assumptions and migration rules distinguish two proposed state-tree designs? |
+| E11 | Which activation conditions select protected or unprotected signing rules for one historical transaction? |
+| E12 | Which historical fork and exception rules qualify one comparison with a formal EVM semantics paper? |
+| A09 | How does one token hook's callback order affect failure propagation and reentrant calls? |
+
+E01 retains signature recovery and complete amendment coverage; E02 retains later gas-meter traces; A10 retains upgrades, initialization, and storage-layout compatibility.
+The initial notes do not exhaust these families.
+Phase 4 can take its selected cryptographic batch from the next queue.
 
 ## Assess sources systematically
 
@@ -224,7 +269,8 @@ Keep EthLib's contribution rules and complete proof-coverage descriptions in the
 The 1,232-document inventory is a metadata census of the two pinned repositories, not a semantic review of all their requirements.
 The 70-family catalogue combines metadata checks, selected external-source reading, and inspected EthLib source references.
 The 16 literature entries include metadata-only candidates and scheme-design notes as well as papers with selected passages examined.
-The two Phase 1 and three Phase 2 source notes record their completed reading and review limits.
+The two Phase 1, three Phase 2, and three Phase 3 source notes record their completed reading and review limits.
 The Phase 2 byte calculations used Python 3.12.15, `rlp` 4.1.0, `eth-abi` 5.2.0, and PyCryptodome 3.23.0 in an isolated temporary environment.
+The Phase 3 calculations used separate RLP/Keccak tools and source-derived state traces, with no EthLib execution.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
