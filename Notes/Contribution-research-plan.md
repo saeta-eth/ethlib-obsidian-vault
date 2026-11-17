@@ -407,18 +407,45 @@ The 70 questions and priority assignments are unchanged.
 S03 retains nested schema and full compatibility review, W04 retains complete streaming/parser and client integration cases, and A08 retains content-authenticity and marketplace-policy assessments.
 The first entries do not exhaust these families.
 
+### Follow-up batch 6: creation checkpoints, encryption modes, and account authority
+
+This batch connects three interfaces to the conditions their callers must preserve.
+E04 follows a creation through collision and rollback, C03 separates encryption from authenticated decryption, and A06 separates account validation from execution authority.
+The selection retains E04's First priority and C03/A06's When needed priorities.
+It supplies source context for bounded contributions without assigning new EthLib implementations.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| E04: [creation collisions and rollback](Creation-collisions-rollback-and-destruction.md) | Execution callers must place creator nonces and new-account writes on the correct sides of a failure checkpoint. | A published CREATE2 address and conditional creation trace connect collision rules, initcode limits, enclosing rollback, and the same-transaction SELFDESTRUCT exception. Later amendments retain their own scope. |
+| C03: [AES modes and authentication failure](AES-counter-modes-and-authentication-failure.md) | Cryptographic callers must distinguish block transforms, counter uniqueness, and authentication failure. | The complete published AES-128 CTR example supports derived partial-block and bit-flip cases. A separate GCM example and selected Lean definitions distinguish algorithm outputs, supported tags, and caller-managed IV history. |
+| A06: [account validation and module authority](Account-abstraction-validation-and-module-authority.md) | Account consumers must distinguish validation, fee sponsorship, executor permission, and protocol delegation. | Exact nonce and inner-call bytes accompany an explicitly assumed sponsored-operation trace. Version differences and conflicting validation-failure wording remain visible. |
+
+The notes identify the selected source passages, versions, and reading limits.
+The AES note keeps the 2001/2007 algorithms separate from NIST's revision notices, including the June 2026 pre-draft announcement that supplies no revised specification.
+The account note compares the modular-account proposals without treating their interfaces or permissions as interchangeable.
+The creation note separates baseline rules and account-write rollback from later code branches and other transaction bookkeeping.
+
+Independent calculations checked published CREATE2 addresses and CTR blocks, derived length/gas and partial-block cases, GCM output and modified-input rejection in a separate library, and the account nonce/mode/call bytes.
+Conditional state traces explain selected source rules rather than report EVM execution.
+No EthLib binding, Lean build, proof replay, deployed account, or EntryPoint ran.
+
+The two NIST revision notices bring the catalogue to 65 additional source entries.
+All selected numbered standards were already mapped, so the inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; the literature register remains at 17.
+The 70 questions and priority assignments are unchanged.
+Each first entry leaves deeper fork composition, lifecycle history, or implementation-specific account behaviour for later work.
+
 ## Current coverage
 
-32 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-38 families still need a first entry.
+35 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+35 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
 | --- | --- |
 | 1 | None. |
-| 2 | C06, C07, A06 |
-| 3 | E04, E05, E07, E08, E09, E10, E11, E12, A09 |
-| 4 | C02, C03, C05, C10, C11, C12, C13, C14, C15, N06 |
+| 2 | C06, C07 |
+| 3 | E05, E07, E08, E09, E10, E11, E12, A09 |
+| 4 | C02, C05, C10, C11, C12, C13, C14, C15, N06 |
 | 5 | N02, N03, N04, N05, N07, N08, W03, W06, W07, I02, I03, I04, I06 |
 | 6 | A13, A14, A15 |
 
@@ -555,5 +582,6 @@ Follow-up batch 2 adds three reviewed notes, with independent JSON, RLP, Keccak,
 Follow-up batch 3 adds three reviewed notes, with hash-padding, curve/HKDF, signature-preimage, selector, and conditional transfer calculations.
 Follow-up batch 4 adds three reviewed notes, with ModExp byte/gas cases, interchange JSON/refusal arithmetic, and a contract-signature ABI wrapper calculation.
 Follow-up batch 5 adds three bounded source notes, with progressive-layout roots and branches, published CRC controls and complete Snappy frames, and metadata/event/royalty calculations.
+Follow-up batch 6 adds three bounded source notes, with CREATE2 address and gas calculations, published CTR blocks and derived GCM cases, and account nonce/mode/call bytes.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
