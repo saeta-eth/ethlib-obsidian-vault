@@ -609,10 +609,38 @@ The inventory remains 1,232 documents with 138 mapped and 1,094 Unassessed; ther
 The 70 questions, numbered-source family assignments, and priorities are unchanged.
 Choosing a target tree, a consensus topic profile, or a trusted archive checkpoint remains later work.
 
+### Follow-up batch 13: validator selection and external API evidence
+
+This batch separates mathematical, server-reported, and signed evidence.
+N02 distinguishes a permutation from a selection-security claim, I02 qualifies a node's response, and I03 separates a bid from its execution and release obligations.
+All three retain their When needed priorities.
+The notes supply bounded context without selecting a live chain configuration or external service.
+
+| Family and first result | Connection and contribution value | Additional knowledge, scope, and readiness |
+| --- | --- | --- |
+| N02: [validator weight, shuffling, and committee boundaries](Validator-weight-shuffling-and-committee-boundaries.md) | Consensus contributions need to distinguish index partitions, balance filters, state-derived seeds, and changing lifecycle accounting. | Three pinned EIPs, a separately versioned shuffle paper, and EIP-linked supporting helpers supply a constructed shuffle and two Electra decisions. A complete epoch fixture, probabilistic model, or security reduction remains outside scope. |
+| I02: [Beacon API identifiers and response evidence](Beacon-API-identifiers-and-response-evidence.md) | API consumers need the requested object domain, selected representation, and chain view before interpreting roots or flags. | Exact schemas support complete constructed root/error JSON and selected identifier cases. A node report or HTTP 404 supplies neither independent authentication nor global absence evidence. |
+| I03: [builder/relay bids and payload release](Builder-relay-bids-and-payload-release-boundaries.md) | Builder consumers need distinct signature objects, payment evidence, and conditions around proposer commitment and payload availability. | Exact parent and nested schema revisions support unsigned registration bytes and conditional replacement arithmetic. Bellatrix clauses, later endpoint changes, and incomplete pseudocode remain explicitly separated. |
+
+The shuffle paper's selected arXiv revision is distinct from its DOI edition, and no numerical bound is transferred to a public Ethereum seed.
+The note preserves the hypotheses of selected partition statements and distinguishes their reading from Lean replay.
+The Beacon note keeps StateId and BlockId alternatives separate and preserves required endpoint fields despite generic compatibility descriptions.
+The builder note retains required local building, advisory parallel scheduling and cancellation, and the prohibition on local fallback after publishing a signed blinded block.
+It also separates a declared bid amount, relay simulation requirements, and an actual transfer.
+
+Independent Python calculations reproduced the ten-position shuffle and inverse on those inputs, three helper slices, displayed SHA-256 values, and inclusive 16-bit balance-filter cases.
+They checked complete constructed root/error JSON and its field widths, the 84-byte fixed SSZ registration, and exact wei conversions and replacement arithmetic.
+No complete beacon transition, duty query, fairness experiment, BLS operation, signing-root computation, RPC, relay simulation, payment, auction, EthLib binding, Lean build, or proof replay ran.
+
+The catalogue pins the selected supporting/API repositories and adds the separately versioned shuffle paper; its literature reading record now reflects the examined passages.
+There remain 1,232 inventory documents, 138 mapped and 1,094 Unassessed; additional source entries increase from 67 to 70 and literature entries remain 17.
+The 70 questions, numbered-source family assignments, and priorities are unchanged.
+A selected fork/preset, trusted checkpoint procedure, or complete external-builder deployment still requires its own assessment.
+
 ## Current coverage
 
-53 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
-17 families still need a first entry.
+56 of the 70 families have a first source note or bounded assessment entry in the [source index](External-source-index.md).
+14 families still need a first entry.
 An entry covers its stated question and reading depth, rather than the entire family.
 
 | Original phase queue | Families awaiting a first entry |
@@ -621,7 +649,7 @@ An entry covers its stated question and reading depth, rather than the entire fa
 | 2 | None. |
 | 3 | E12 |
 | 4 | C02, C10, C11, C12, C13, C14, C15, N06 |
-| 5 | N02, N03, N04, N05, N07, N08, I02, I03 |
+| 5 | N03, N04, N05, N07, N08 |
 | 6 | None. |
 
 ## Assess sources systematically
@@ -764,5 +792,6 @@ Follow-up batch 9 adds two bounded source notes and a cross-chain assessment, wi
 Follow-up batch 10 adds three bounded source entries, with a constructed account proof and conditional absence, published fork-hash controls and capability arithmetic, and clock/delegation/metadata calculations.
 Follow-up batch 11 adds three bounded source entries, with conditional fork/signature arithmetic, published QUIC Initial-key controls, and constructed deletion/history JSON checks.
 Follow-up batch 12 adds a state-tree design assessment and two bounded source notes, with layout/preimage arithmetic, conditional gossip transitions, and archive-framing/index checks.
+Follow-up batch 13 adds three bounded source notes, with a constructed shuffle/filter trace, root-response JSON checks, and unsigned builder-registration bytes and value arithmetic.
 Detailed reading and note writing for the remaining catalogue questions stay planned work.
 No Lean build, proof check, binding test, or performance measurement was run for this documentation revision.
