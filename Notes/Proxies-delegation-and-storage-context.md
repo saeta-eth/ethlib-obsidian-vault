@@ -2,7 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 3
 catalogue_family: A10
 ethlib_commit: "3df5b24641b4a251ed094af02c02d28a621b31c7"
 eips_commit: "8194528a2ee9a4893a398a5871c470ab0ac3b09a"

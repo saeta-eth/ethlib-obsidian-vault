@@ -2,7 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 4
 catalogue_family: C08
 ethlib_commit: "3df5b24641b4a251ed094af02c02d28a621b31c7"
 bls_signature_draft: "draft-irtf-cfrg-bls-signature-04, 2020-09-10"

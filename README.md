@@ -6,20 +6,18 @@ This is a personal notebook; EthLib's contribution rules, definitions, proofs, a
 
 ## Start reading
 
-The [external source index](Notes/External-source-index.md) links the source notes and explains their review status.
-Begin with [document status and upgrade inclusion](Notes/Source-status-and-upgrade-inclusion.md) or [ERC-20 events and native ETH transfer logs](Notes/ERC-20-and-native-ETH-transfer-logs.md).
-For representation and signing work, read [canonical RLP](Notes/RLP-canonical-encoding.md), [ABI encoding and event topics](Notes/ABI-encoding-and-event-topics.md), and [signed-data preimages and domains](Notes/Signed-data-preimages-and-domains.md).
-For execution-state work, continue with [typed transaction envelopes](Notes/Typed-transaction-envelopes-and-signing.md), [authorization order and rollback](Notes/Authorization-order-and-rollback.md), and [proxy/delegation context](Notes/Proxies-delegation-and-storage-context.md).
-For cryptographic work, read [validator key derivation and keystores](Notes/Validator-key-derivation-and-keystores.md), [BLS verification preconditions](Notes/BLS-ciphersuites-and-verification-preconditions.md), and [KZG openings and setup assumptions](Notes/KZG-openings-and-setup-assumptions.md).
-For consensus and client boundaries, read [accountable safety](Notes/Accountable-safety-and-validator-overlap.md), [Noise peer identity](Notes/Noise-handshakes-and-libp2p-peer-identity.md), and [Engine newPayloadV3 outcomes](Notes/Engine-newPayloadV3-outcomes-and-order.md).
-For application interfaces, read [vault rounding and limits](Notes/ERC-4626-rounding-and-vault-limits.md), [ENS resolver boundaries](Notes/ENS-namehash-and-resolver-boundaries.md), and the [wallet RPC assessment and source refresh](Notes/Wallet-RPC-assessment-and-catalogue-refresh.md).
-The first follow-up batch adds [SSZ offsets, roots, and branches](Notes/SSZ-offsets-roots-and-branches.md), [storage gas and refunds](Notes/Storage-gas-and-refund-accounting.md), and [HKDF extract/expand](Notes/HKDF-extract-expand-and-context.md).
-The second follow-up batch adds [RPC quantities and block state](Notes/JSON-RPC-quantities-and-block-state.md), [ENR record identity](Notes/ENR-record-bytes-and-identity.md), and [permit authority](Notes/Permit-nonces-and-allowance-authority.md).
+Use the [external source index](Notes/External-source-index.md) to find a note by subject and question:
 
-The latest follow-up batch adds [Compression functions and complete hashes](Notes/Compression-functions-and-whole-message-hash-boundaries.md) and [KEVM semantics and validation evidence](Notes/KEVM-semantics-and-validation-evidence-boundaries.md).
+- [Source authority and representations](Notes/External-source-index.md#source-authority-and-representations): document status, RLP, SSZ, ABI and JSON-RPC encodings.
+- [Execution](Notes/External-source-index.md#execution): transactions, state changes, gas, precompiles, proofs and formal semantics.
+- [Cryptography](Notes/External-source-index.md#cryptography): hashes, signatures, KDFs, KZG and security assumptions.
+- [Consensus and data availability](Notes/External-source-index.md#consensus-and-data-availability): finality, committees, light clients, PeerDAS and block obligations.
+- [Networking](Notes/External-source-index.md#networking): discovery, transport, peer identity, framing and gossip.
+- [APIs and history](Notes/External-source-index.md#apis-and-history): Engine, Beacon, Builder, signing and archive interfaces.
+- [ERCs and application interfaces](Notes/External-source-index.md#ercs-and-application-interfaces): tokens, account authority, proxies, wallets, names and governance.
 
-The [research plan](Notes/Contribution-research-plan.md#delivery-phases) divides the work into phases, each delivered in small reviewed batches.
-The [source catalogue](Notes/Ethereum-source-catalogue.md) lists 70 candidate note families and their reasons for priority.
+Choose the question relevant to the contribution, then read the note's source revisions, assumptions and limits before using the cited primary text.
+The [source catalogue](Notes/Ethereum-source-catalogue.md) maps 70 families to specifications and research papers.
 The [standards inventory](Notes/Ethereum-standards-inventory.md) retains all 1,232 EIP/ERC documents in its pinned snapshots, including sources not yet assessed for note relevance.
 
 ## Open the vault
@@ -35,6 +33,8 @@ The shared settings enable the built-in Templates plugin, use standard Markdown 
 You can also read and edit the Markdown files on GitHub or in any text editor.
 
 ## Write a note
+
+Follow the [contribution guide](CONTRIBUTING.md) for source selection, evidence and review.
 
 1. Create a note in `Notes/` with a name that describes its question.
 2. Open the command palette and run **Templates: Insert template**, then select **Research-note**.

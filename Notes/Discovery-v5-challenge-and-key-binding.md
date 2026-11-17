@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 5
-delivery_batch: "follow-up-3"
 catalogue_family: W02
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 devp2p_commit: "88f1c80800d622cc3a542a2125bbe33cc18c9f9c"

@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 4
-delivery_batch: "follow-up-17"
 catalogue_family: C15
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 mrv_source: "FOCS 1999, MIT-hosted 11-page PDF"

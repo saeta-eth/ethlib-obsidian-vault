@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 2
-delivery_batch: "follow-up-1"
 catalogue_family: S02
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 consensus_specs_commit: "802485ec74a6986542bd53bf153189623aab440c"

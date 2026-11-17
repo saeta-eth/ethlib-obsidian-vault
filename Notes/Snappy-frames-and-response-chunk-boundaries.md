@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 5
-delivery_batch: "follow-up-5"
 catalogue_family: W04
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 snappy_commit: "7406111ac4ae539ea0db8b7ea2dc76730cd957f4"

@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 2
-delivery_batch: "follow-up-3"
 catalogue_family: C01
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 fips202_version: "August 2015"

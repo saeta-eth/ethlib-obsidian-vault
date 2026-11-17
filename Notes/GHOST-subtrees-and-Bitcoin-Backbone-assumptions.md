@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 5
-delivery_batch: "follow-up-15"
 catalogue_family: N08
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 ghost_source_version: "FC 2015 preproceedings, paper_30.pdf"

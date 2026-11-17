@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 3
-delivery_batch: "follow-up-12"
 catalogue_family: E10
 assessment_priority: Unresolved
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"

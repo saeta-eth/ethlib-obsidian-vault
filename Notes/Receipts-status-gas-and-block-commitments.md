@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 3
-delivery_batch: "follow-up-9"
 catalogue_family: E08
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 eips_commit: "8194528a2ee9a4893a398a5871c470ab0ac3b09a"

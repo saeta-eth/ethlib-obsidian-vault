@@ -18,33 +18,9 @@ They reference 138 distinct numbered standards and 73 additional source entries.
 The [full standards inventory](Ethereum-standards-inventory.md) retains every EIP and ERC in the recorded repository snapshots.
 An inventory entry outside these families remains Unassessed; omission from a family is not a rejection.
 
-Phase 1 provides two source notes: [document status and upgrade inclusion](Source-status-and-upgrade-inclusion.md) for P01 and [ERC-20 events versus native ETH logs](ERC-20-and-native-ETH-transfer-logs.md) for A01.
-Phase 2 adds [canonical RLP](RLP-canonical-encoding.md) for S01, [ABI encoding and event topics](ABI-encoding-and-event-topics.md) for S04, and [signed-data preimages](Signed-data-preimages-and-domains.md) for A03.
-Phase 3 adds [typed transactions](Typed-transaction-envelopes-and-signing.md) for E01, [authorization processing](Authorization-order-and-rollback.md) for E02, and [proxy/delegation context](Proxies-delegation-and-storage-context.md) for A10.
-Phase 4 adds [validator key derivation and keystores](Validator-key-derivation-and-keystores.md) for C16, [BLS verification preconditions](BLS-ciphersuites-and-verification-preconditions.md) for C08, and [KZG openings and setup assumptions](KZG-openings-and-setup-assumptions.md) for C09.
-Phase 5 adds [accountable safety](Accountable-safety-and-validator-overlap.md) for N01, [Noise peer identity](Noise-handshakes-and-libp2p-peer-identity.md) for W05, and [Engine newPayloadV3 outcomes](Engine-newPayloadV3-outcomes-and-order.md) for I01.
-Phase 6 adds [vault rounding and limits](ERC-4626-rounding-and-vault-limits.md) for A07, [ENS resolver boundaries](ENS-namehash-and-resolver-boundaries.md) for A12, and a [wallet RPC assessment and source refresh](Wallet-RPC-assessment-and-catalogue-refresh.md) for A11.
-Follow-up batch 1 adds [SSZ offsets, roots, and branches](SSZ-offsets-roots-and-branches.md) for S02, [storage gas and refunds](Storage-gas-and-refund-accounting.md) for E03, and [HKDF extract/expand](HKDF-extract-expand-and-context.md) for C04.
-Follow-up batch 2 adds [RPC quantities and block state](JSON-RPC-quantities-and-block-state.md) for S05, [ENR record identity](ENR-record-bytes-and-identity.md) for W01, and [permit authority](Permit-nonces-and-allowance-authority.md) for A04.
-Follow-up batch 3 adds [Keccak and SHA-3 padding](Keccak-SHA3-padding-and-domains.md) for C01, [discovery-v5 key binding](Discovery-v5-challenge-and-key-binding.md) for W02, and [receiver callbacks](Token-receiver-interfaces-and-callbacks.md) for A02.
-Follow-up batch 4 adds [MODEXP bytes and gas](Modexp-precompile-bytes-and-gas.md) for E06, [slashing-protection imports](Slashing-protection-imports-and-missing-roots.md) for I05, and [contract-signature validation](Contract-signatures-and-counterfactual-validation.md) for A05.
-Follow-up batch 5 adds [progressive SSZ presence](Progressive-SSZ-presence-and-compatible-schemas.md) for S03, [Snappy frames and response boundaries](Snappy-frames-and-response-chunk-boundaries.md) for W04, and [metadata updates and royalty queries](Metadata-updates-and-royalty-query-limits.md) for A08.
-Follow-up batch 6 adds [creation collisions and rollback](Creation-collisions-rollback-and-destruction.md) for E04, [AES modes and authentication failure](AES-counter-modes-and-authentication-failure.md) for C03, [account validation and module authority](Account-abstraction-validation-and-module-authority.md) for A06.
-Follow-up batch 7 adds [EVM arithmetic and shift boundaries](EVM-word-arithmetic-and-shift-boundaries.md) for E05, [password KDF parameters and resource bounds](Password-KDF-parameters-and-resource-boundaries.md) for C05, and [token callback order and hook authority](Token-callback-order-and-hook-authority.md) for A09.
-Follow-up batch 8 adds [system calls and execution request commitments](System-calls-and-execution-request-commitments.md) for E07, [curve validation, ECDSA, and recovery boundaries](Curve-validation-ECDSA-and-recovery-boundaries.md) for C06, and a [payment URI revision assessment](Payment-URI-revisions-and-request-boundaries.md) for A13.
-Follow-up batch 9 adds [receipt status and block commitments](Receipts-status-gas-and-block-commitments.md) for E08, [deterministic nonce conversions](Deterministic-nonces-and-RFC6979-conversions.md) for C07, and a [cross-chain message and token-authority assessment](Cross-chain-message-identity-and-token-authority.md) for A14.
-Follow-up batch 10 adds [account trie proofs and absence boundaries](Account-trie-proofs-and-absence-boundaries.md) for E09, [RLPx capabilities and fork-ID filtering](RLPx-capabilities-and-fork-ID-filtering.md) for W03, and [governance clocks, vote history, and DAO metadata](Governance-clocks-vote-history-and-DAO-metadata.md) for A15.
-Follow-up batch 11 adds [historical fork activation and Merge boundaries](Historical-fork-activation-and-Merge-boundaries.md) for E11, [TLS/QUIC transcripts and Initial keys](TLS-QUIC-transcripts-and-initial-key-boundaries.md) for W06, and [key-management and remote-signing obligations](Key-management-and-remote-signing-obligations.md) for I04.
-Follow-up batch 12 adds [alternative state-tree designs and migration boundaries](Alternative-state-tree-designs-and-migration-boundaries.md) for E10, [Gossipsub validation, mesh, and caches](Gossipsub-validation-mesh-and-cache-boundaries.md) for W07, and [history retention and archive authentication](History-retention-and-archive-authentication-boundaries.md) for I06.
-Follow-up batch 13 adds [validator weight, shuffling, and committee boundaries](Validator-weight-shuffling-and-committee-boundaries.md) for N02, [Beacon API identifiers and response evidence](Beacon-API-identifiers-and-response-evidence.md) for I02, and [builder/relay bids and payload release](Builder-relay-bids-and-payload-release-boundaries.md) for I03.
-Follow-up batch 14 adds [weak subjectivity, churn, and balance changes](Weak-subjectivity-churn-and-balance-change-boundaries.md) for N03, [light-client trusted roots and updates](Light-client-trusted-roots-and-update-boundaries.md) for N04, and [light-client amendment candidates](Light-client-amendment-candidates-and-applicability.md) for N05.
-Follow-up batch 15 adds [PeerDAS custody and recovery boundaries](PeerDAS-custody-sampling-and-recovery-boundaries.md) for N06, [enshrined PBS and inclusion-list obligations](Enshrined-PBS-and-inclusion-list-obligations.md) for N07, and [GHOST and Bitcoin Backbone assumptions](GHOST-subtrees-and-Bitcoin-Backbone-assumptions.md) for N08.
-Follow-up batch 16 adds [Amortized KZG openings and cell proofs](Amortized-KZG-openings-and-cell-proof-computation.md) for C10, [PeerDAS code-binding games and assumptions](PeerDAS-code-binding-games-and-reduction-assumptions.md) for C11, and [Stateful hash signatures and leanXMSS boundaries](Stateful-hash-signatures-and-leanXMSS-boundaries.md) for C12.
-Follow-up batch 17 adds [Stateless signatures and leanSPHINCS boundaries](Stateless-hash-signatures-and-leanSPHINCS-boundaries.md) for C13, [WOTS+C codewords and grinding budgets](WOTS-C-target-sum-codewords-and-grinding-budgets.md) for C14, and [VRF properties and random-oracle assumptions](VRF-properties-and-random-oracle-assumptions.md) for C15.
-Follow-up batch 18 adds [Compression functions and complete hashes](Compression-functions-and-whole-message-hash-boundaries.md) for C02 and [KEVM semantics and validation evidence](KEVM-semantics-and-validation-evidence-boundaries.md) for E12.
-All 70 families now have a first source note or bounded assessment in the [source index](External-source-index.md).
-Their review statements apply only to the sources, questions and reading depths they name.
-Deeper research and unresolved source questions remain explicit in each entry.
+Find the existing notes by subject and question in the [source index](External-source-index.md).
+Their review statements apply to the sources, questions and reading depths they name.
+Unresolved interpretations and deeper source questions remain explicit in each note.
 
 ## Reading the priorities
 
@@ -54,14 +30,14 @@ Deeper research and unresolved source questions remain explicit in each entry.
 
 Every row names its question, useful output, and reason for the tier.
 First is a candidate pool; it does not commission every note at once or impose a universal order.
-Select a small batch using the criteria in the [research plan](Contribution-research-plan.md).
+Use the [contribution guide](../CONTRIBUTING.md) when selecting a source question or extending a note.
 
 ## Source and review status
 
 Numbered links resolve to exact files in the EIP/ERC repository snapshots, preserving the repository that owns the document.
 Identifiers and titles were checked against source metadata; selected technical sections were examined for some families.
 Listing a family does not claim that every linked document or its complete argument has been reviewed.
-Detailed reading, amendment checks, and fork applicability remain work for each proposed note.
+Check a note's recorded reading depth, amendments and fork applicability before using its explanation.
 
 EIPs, ERCs, interface schemas, format specifications, RFCs, and papers are primary for the rules or models they define.
 EthLib treats consensus-specs and execution-specs as peer specifications with the supporting/provenance role described in its contribution policy.
@@ -205,13 +181,11 @@ The mutable ePrint 2013/881 record has a different title, so it must not silentl
 RFC 8391 supplies comparison context for leanXMSS; FIPS 205 supplies comparison context for leanSPHINCS.
 Neither alone specifies the pinned scheme variants.
 
-## Assessment queues
+## Finding additional sources
 
-For numbered sources not yet mapped to a family, search the inventory by title, category, requirements, and status.
-Review one bounded cluster at a time: EOF/code formats, other wallet and provider standards, token extensions, names/identity, payments, governance, cross-chain interfaces, and proposed consensus changes.
-These are discovery queues, not excluded areas.
-For a new paper, begin from a primary archive, author, or venue; record its title and version before applying a result.
-A broader paper search should include execution semantics, consensus attacks and defenses, data availability, and cryptographic reductions beyond the seed register.
+For numbered sources not yet mapped to a family, search the inventory by title, category, requirements and status.
+For a paper, use a primary archive, author or venue and identify the exact version before applying a result.
+The seed register leaves further literature and unmapped standards available for questions beyond its present scope.
 
 ## Snapshot limits
 

@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 5
-delivery_batch: "follow-up-13"
 catalogue_family: I02
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 beacon_api_commit: "6bc8c7bde19d0499f88e67417419eb12331438f4"

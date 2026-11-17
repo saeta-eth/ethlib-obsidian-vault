@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 5
-delivery_batch: "follow-up-13"
 catalogue_family: I03
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 builder_specs_commit: "fce64468a81a87892d7cb9b4858272bb3d010e50"

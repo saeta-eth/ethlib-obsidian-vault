@@ -2,7 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 6
 catalogue_family: A11
 assessment_kind: "bounded Unassessed cluster and source refresh"
 ethlib_commit: "3df5b24641b4a251ed094af02c02d28a621b31c7"

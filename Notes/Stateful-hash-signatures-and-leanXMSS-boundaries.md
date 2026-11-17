@@ -2,8 +2,6 @@
 created: "2026-11-17"
 last_reviewed: "2026-11-17"
 status: reviewed
-phase: 4
-delivery_batch: "follow-up-16"
 catalogue_family: C12
 ethlib_commit: "4f5f4111d17b040fe562bc0f2c362ebf625ed78d"
 leanxmss_source_commit: "4af2cdddd7cd41b9df2cc7e123e314a91b0b4462"
